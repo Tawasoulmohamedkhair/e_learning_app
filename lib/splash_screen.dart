@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:e_learning_app/Theme/colors.dart';
+import 'package:e_learning_app/Theme/widget/splash_screen_content.dart';
 import 'package:e_learning_app/screens/home_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -42,14 +43,10 @@ class _SplashScreenState extends State<SplashScreen> {
                   children: [
                     Align(
                       alignment: const Alignment(-0.98, 0.30),
-                      child: Container(
-                        decoration: BoxDecoration(
-                            color: orangecolor,
-                            borderRadius: BorderRadius.circular(18)),
-                        width: 52,
-                        height: 52,
-                        child: Image.asset('assets/images/Frame.png'),
-                      ),
+                        child: SplashContentScreen(
+                          color: orangecolor,
+                          img1: Image.asset('assets/images/Frame.png'),
+                        )
                     ),
                    
                     Container(
@@ -57,15 +54,9 @@ class _SplashScreenState extends State<SplashScreen> {
                       height: 500,
                       decoration: const BoxDecoration(),
                       child: Stack(children: [
-                        Container(
-                          width: 52,
-                          height: 52,
-                          decoration: BoxDecoration(
-                              color: orangecolor,
-                              borderRadius: BorderRadius.circular(18)),
-                          child: Container(
-                            child: Image.asset('assets/images/Vector.png'),
-                          ),
+                        SplashContentScreen(
+                          color: orangecolor,
+                          img1: Image.asset('assets/images/Vector.png'),
                         ),
                         const Align(
                           alignment: Alignment(-0.60, .40),
@@ -82,44 +73,23 @@ class _SplashScreenState extends State<SplashScreen> {
                        
                         Align(
                           alignment: const Alignment(-0.80, .80),
-                          child: Container(
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(18),
-                              color: greycolor,
-                            ),
-                            width: 52,
-                            height: 52,
-                            child: Container(
-                              child: Image.asset('assets/images/circle.png'),
-                            ),
+                          child: SplashContentScreen(
+                            color: greycolor,
+                            img1: Image.asset('assets/images/circle.png'),
                           ),
                         ),
                         Align(
                           alignment: const Alignment(1, -0.40),
-                          child: Container(
-                            width: 52,
-                            height: 52,
-                            decoration: BoxDecoration(
-                                color: bluecolor,
-                                borderRadius: BorderRadius.circular(18)),
-                            child: Container(
-                              child: Image.asset('assets/images/cap.png'),
-                            ),
+                          child: SplashContentScreen(
+                            color: bluecolor, 
+                            img1: Image.asset('assets/images/cap.png'),
                           ),
                         ),
                         Align(
                           alignment: const Alignment(1, 1.3),
-                          child: Container(
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(18),
-                              color: bluecolor,
-                            ),
-                            width: 52,
-                            height: 52,
-                            child: Container(
-                              child:
-                                  Image.asset('assets/images/contact-card.png'),
-                            ),
+                          child: SplashContentScreen(
+                            color: bluecolor,
+                            img1: Image.asset('assets/images/contact-card.png'),
                           ),
                         ),
                       ]),
@@ -129,16 +99,9 @@ class _SplashScreenState extends State<SplashScreen> {
                 
                 Align(
                   alignment: const Alignment(-.90, 0),
-                  child: Container(
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(18),
-                      color:orangecolor,
-                    ),
-                    width: 50,
-                    height: 52,
-                    child: Container(
-                      child: Image.asset('assets/images/healthicons.png'),
-                    ),
+                  child: SplashContentScreen(
+                    color: orangecolor,
+                    img1: Image.asset('assets/images/healthicons.png'),
                   ),
                 ),
               ],
