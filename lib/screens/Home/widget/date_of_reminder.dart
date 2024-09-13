@@ -13,28 +13,34 @@ class _DateOfReminderState extends State<DateOfReminder> {
 
   @override
   Widget build(BuildContext context) {
+    var height = MediaQuery.of(context).size.height;
+    var width = MediaQuery.of(context).size.width;
+    var accessscolor;
     return Container(
-      padding: EdgeInsets.only(left: 10, right: 10),
       height: 150,
-      child: AnimatedHorizontalCalendar(
-          tableCalenderButtonColor: bluecolor,
-          tableCalenderIcon: Icon(
-            Icons.calendar_today,
-            color: Colors.white,
-          ),
-          date: DateTime.now(),
-          textColor: Colors.black45,
-          backgroundColor: Colors.blue,
-          tableCalenderThemeData: ThemeData.light().copyWith(
-            primaryColor: Colors.blue,
-            buttonTheme: ButtonThemeData(textTheme: ButtonTextTheme.primary),
-            colorScheme: ColorScheme.light(primary: Colors.blue)
-                .copyWith(secondary: Colors.blue),
-          ),
-          selectedColor: bluecolor,
-          onDateSelected: (date) {
-            selectedDate = date;
-          }),
+      padding: EdgeInsets.all(10),
+      child: Expanded(
+        flex: 2,
+        child: AnimatedHorizontalCalendar(
+          
+            tableCalenderIcon: Icon(
+              Icons.calendar_today,
+              color: Colors.white,
+            ),
+            date: DateTime.now(),
+            textColor: Colors.black45,
+            backgroundColor: Colors.white,
+            tableCalenderThemeData: ThemeData.light().copyWith(
+              primaryColor: Colors.green,
+              buttonTheme: ButtonThemeData(textTheme: ButtonTextTheme.primary),
+              colorScheme: ColorScheme.light(primary: Colors.green)
+                  .copyWith(secondary: Colors.red),
+            ),
+            selectedColor: Colors.redAccent,
+            onDateSelected: (date) {
+              selectedDate = date;
+            }),
+      ),
     );
   }
 }
