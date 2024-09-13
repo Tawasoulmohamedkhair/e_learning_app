@@ -1,51 +1,49 @@
 import 'package:e_learning_app/Theme/colors.dart';
-import 'package:e_learning_app/Theme/widget/clip_path_widget.dart';
-import 'package:e_learning_app/Theme/widget/splash_screen_content.dart';
-import 'package:e_learning_app/screens/splash_screen_explore.dart';
+import 'package:e_learning_app/screens/Home/Ui/reminder_screen.dart';
+import 'package:e_learning_app/screens/splash/widget/clip_path_widget.dart';
+import 'package:e_learning_app/screens/splash/widget/splash_screen_content.dart';
 import 'package:flutter/material.dart';
 
-class FindCourseScreen extends StatelessWidget {
-  const FindCourseScreen({super.key});
+class SplashScreenExplore extends StatelessWidget {
+  const SplashScreenExplore({super.key});
 
   @override
   Widget build(BuildContext context) {
-    var width = MediaQuery.of(context).size.width;
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: lightbluecolor,
+        backgroundColor: Lavender,
       ),
       body: SingleChildScrollView(
         child: Container(
           decoration: const BoxDecoration(
-            color: lightbluecolor,
+            color: Lavender,
           ),
           child: Column(children: [
             Stack(
               children: [
                 Container(
-                  width: width,
+                  width: double.infinity,
                   height: 360,
                   decoration: const BoxDecoration(
-                    image: const DecorationImage(
-                        image: AssetImage('assets/images/find.png')),
+                    image: DecorationImage(
+                        image: AssetImage('assets/images/explore.png')),
                   ),
                   child: Align(
-                      alignment: const Alignment(.600, -.50),
-                      child: SplashContentScreen(
-                        color: greycolor,
-                        img1: Image.asset('assets/images/circle.png'),
-                      )),
+                    alignment: const Alignment(.600, -.900),
+                    child: SplashContentScreen(
+                        color: bluecolor,
+                        img1: Image.asset('assets/images/cap.png')),
+                  ),
                 ),
                 Positioned(
-                  top: 5,
+                  top: 60,
                   bottom: 50,
-                  left: 100,
+                  left: 20,
                   child: Align(
-                    alignment: const Alignment(-.400, -.700),
+                    alignment: Alignment(-.400, -.700),
                     child: SplashContentScreen(
-                      color: orangecolor,
-                      img1: Image.asset('assets/images/Frame.png'),
-                    ),
+                        img1: Image.asset('assets/images/healthicons.png'),
+                        color: RoyalOrange),
                   ),
                 ),
                 Positioned(
@@ -54,8 +52,8 @@ class FindCourseScreen extends StatelessWidget {
                   child: Align(
                       alignment: const Alignment(.900, -.400),
                       child: SplashContentScreen(
-                        color: bluecolor,
-                        img1: Image.asset('assets/images/contact-card.png'),
+                        color: PhilippineGray,
+                        img1: Image.asset('assets/images/circle.png'),
                       )),
                 ),
                 Positioned(
@@ -64,8 +62,8 @@ class FindCourseScreen extends StatelessWidget {
                   child: Align(
                       alignment: const Alignment(1, -.80),
                       child: SplashContentScreen(
-                        color: orangecolor,
-                        img1: Image.asset('assets/images/healthicons.png'),
+                        color: RoyalOrange,
+                        img1: Image.asset('assets/images/Frame.png'),
                       )),
                 ),
               ],
@@ -74,14 +72,14 @@ class FindCourseScreen extends StatelessWidget {
               Positioned(
                 child: Stack(children: [
                   ClippathWidget(
-                    'Ready to find \n a Course',
+                    'Explore it \nToday!',
                     'A handful of model sentence structures,\n too generate Lorem which looks reason\n able.',
-                    70,
+                    100,
                     onTap: () {
                       Navigator.pushReplacement(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => SplashScreenExplore()),
+                            builder: (context) => Learning_Reminder_Screen()),
                       );
                     },
                   ),
@@ -94,4 +92,3 @@ class FindCourseScreen extends StatelessWidget {
     );
   }
 }
-                                                         

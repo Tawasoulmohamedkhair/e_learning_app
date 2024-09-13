@@ -1,4 +1,5 @@
-import 'package:e_learning_app/splash_screen.dart';
+import 'package:e_learning_app/screens/Home/Ui/reminder_screen.dart';
+import 'package:e_learning_app/screens/splash/Ui/splash_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -17,7 +18,9 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         useMaterial3: true,
       ),
-    home: SplashScreen(),
+      home: SplashScreen(),
+      // home: Learning_Reminder_Screen()
+      // home: ScreenOfPickPlan(),
       );
   }
 }

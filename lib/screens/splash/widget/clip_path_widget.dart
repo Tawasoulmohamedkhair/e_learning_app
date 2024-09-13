@@ -54,7 +54,7 @@ class ClippathWidget extends StatelessWidget {
                 currentStep: currentStep,
                 stepSize: 2,
                 selectedColor: bluecolor.withOpacity(0.5),
-                unselectedColor: lightbluecolor,
+                unselectedColor: Lavender,
                 padding: 0,
                 width: 71,
                 height: 71,

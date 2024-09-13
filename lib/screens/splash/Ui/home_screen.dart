@@ -1,5 +1,5 @@
 import 'package:e_learning_app/Theme/colors.dart';
-import 'package:e_learning_app/screens/splashscreen_two.dart';
+import 'package:e_learning_app/screens/splash/Ui/splashscreen_two.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_custom_clippers/flutter_custom_clippers.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -10,20 +10,19 @@ class SplashOnlineLearning extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-     var height = MediaQuery.of(context).size.height;
+    var height = MediaQuery.of(context).size.height;
     var width = MediaQuery.of(context).size.width;
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(
-          backgroundColor:lightbluecolor,
+          backgroundColor: Lavender,
         ),
         body: SingleChildScrollView(
           child: Container(
             width: width,
             height: height,
-            decoration: const 
-            BoxDecoration(
-              color: lightbluecolor,
+            decoration: const BoxDecoration(
+              color: Lavender,
             ),
             child: Column(children: [
               Stack(
@@ -33,8 +32,8 @@ class SplashOnlineLearning extends StatelessWidget {
                     height: 360,
                     decoration: const BoxDecoration(
                       image: DecorationImage(
-                          image: AssetImage('assets/images/online.png'),
-                          ),
+                        image: AssetImage('assets/images/online.png'),
+                      ),
                     ),
                   ),
                   Positioned(
@@ -65,7 +64,7 @@ class SplashOnlineLearning extends StatelessWidget {
                         width: 52,
                         height: 52,
                         decoration: BoxDecoration(
-                            color:orangecolor, 
+                            color: RoyalOrange,
                             borderRadius: BorderRadius.circular(18)),
                         child: Container(
                           child: Image.asset('assets/images/healthicons.png'),
@@ -75,11 +74,9 @@ class SplashOnlineLearning extends StatelessWidget {
                   ),
                 ],
               ),
-              Stack(
-                children: [
+              Stack(children: [
                 Positioned(
-                  child: Stack(
-                    children: [
+                  child: Stack(children: [
                     ClipPath(
                         clipper: OvalTopBorderClipper(),
                         child: Container(
@@ -120,16 +117,19 @@ class SplashOnlineLearning extends StatelessWidget {
                                 currentStep: 20,
                                 stepSize: 2,
                                 selectedColor: bluecolor,
-                                unselectedColor: lightbluecolor,
+                                unselectedColor: Lavender,
                                 padding: 0,
                                 width: 71,
                                 height: 71,
                                 selectedStepSize: 2,
                                 roundedCap: (_, __) => true,
                                 child: TextButton(
-                                  onPressed: (){
-                                    Navigator.pushReplacement(context, MaterialPageRoute(
-                                      builder: (context) => const SplashScreenSchedule()));
+                                  onPressed: () {
+                                    Navigator.pushReplacement(
+                                        context,
+                                        MaterialPageRoute(
+                                            builder: (context) =>
+                                                const SplashScreenSchedule()));
                                   },
                                   child: const Icon(
                                       color: bluecolor,
@@ -146,7 +146,7 @@ class SplashOnlineLearning extends StatelessWidget {
                         width: 52,
                         height: 52,
                         decoration: BoxDecoration(
-                            color: greycolor,
+                            color: PhilippineGray,
                             borderRadius: BorderRadius.circular(18)),
                         child: Container(
                           child: Image.asset('assets/images/circle.png'),
@@ -161,7 +161,7 @@ class SplashOnlineLearning extends StatelessWidget {
                           width: 52,
                           height: 52,
                           decoration: BoxDecoration(
-                              color: orangecolor,
+                              color: RoyalOrange,
                               borderRadius: BorderRadius.circular(18)),
                           child: Container(
                             child: Image.asset('assets/images/Frame.png'),

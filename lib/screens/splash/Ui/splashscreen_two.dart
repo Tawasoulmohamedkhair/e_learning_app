@@ -1,7 +1,7 @@
 import 'package:e_learning_app/Theme/colors.dart';
-import 'package:e_learning_app/Theme/widget/clip_path_widget.dart';
-import 'package:e_learning_app/Theme/widget/splash_screen_content.dart';
-import 'package:e_learning_app/screens/splash_screen_find_course.dart';
+import 'package:e_learning_app/screens/splash/widget/clip_path_widget.dart';
+import 'package:e_learning_app/screens/splash/widget/splash_screen_content.dart';
+import 'package:e_learning_app/screens/splash/Ui/splash_screen_find_course.dart';
 import 'package:flutter/material.dart';
 
 class SplashScreenSchedule extends StatelessWidget {
@@ -11,12 +11,12 @@ class SplashScreenSchedule extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor:lightbluecolor,
+        backgroundColor: Lavender,
       ),
       body: SingleChildScrollView(
         child: Container(
           decoration: const BoxDecoration(
-            color: lightbluecolor,
+            color: Lavender,
           ),
           child: Column(children: [
             Stack(
@@ -27,20 +27,19 @@ class SplashScreenSchedule extends StatelessWidget {
                   decoration: const BoxDecoration(
                     image: DecorationImage(
                         image: AssetImage(
-                          'assets/images/schedule.png',
-                        )),
+                      'assets/images/schedule.png',
+                    )),
                   ),
                   child: Column(
                     children: [
                       Align(
                           alignment: const Alignment(.900, .100),
                           child: SplashContentScreen(
-                            color: greycolor,
+                            color: PhilippineGray,
                             img1: Image.asset(
                               'assets/images/circle.png',
                             ),
-                          )
-                      ),
+                          )),
                     ],
                   ),
                 ),
@@ -91,7 +90,7 @@ class SplashScreenSchedule extends StatelessWidget {
                         width: 52,
                         height: 52,
                         decoration: BoxDecoration(
-                            color:orangecolor,
+                            color: RoyalOrange,
                             borderRadius: BorderRadius.circular(18)),
                         child: Container(
                           child: Image.asset('assets/images/Frame.png'),
