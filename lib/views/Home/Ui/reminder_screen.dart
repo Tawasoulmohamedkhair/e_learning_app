@@ -19,6 +19,7 @@ class Learning_Reminder_Screen extends StatelessWidget {
         ),
         body: SafeArea(
           child: SingleChildScrollView(
+            scrollDirection: Axis.vertical,
             child: Container(
               padding: const EdgeInsets.only(right: 30, left: 20),
               width: width,

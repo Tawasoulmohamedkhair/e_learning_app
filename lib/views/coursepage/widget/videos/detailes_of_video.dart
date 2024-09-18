@@ -11,7 +11,7 @@ Widget Detailesofvideos() {
       color: lavender,
       child: Container(
         padding: const EdgeInsets.only(top: 20),
-        width: 700,
+        width: 448,
         child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -46,9 +46,7 @@ Widget Detailesofvideos() {
                   ),
                   color: lavender,
                   width: 270,
-                  height: 800,
-                  child: SingleChildScrollView(
-                      child: Column(
+                  child: Column(
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
@@ -101,7 +99,7 @@ Widget Detailesofvideos() {
                         height: 20,
                       ),
                       Container(
-                        width: 260,
+                        width: 280,
                         child: Column(
                           children: [
                             Row(
@@ -111,7 +109,7 @@ Widget Detailesofvideos() {
                                   '1.hour 30 min',
                                 ),
                                 const SizedBox(
-                                  width: 40,
+                                  width: 20,
                                 ),
                                 subdetailes(
                                     Image.asset('assets/images/video.png'),
@@ -127,7 +125,7 @@ Widget Detailesofvideos() {
                                     Image.asset('assets/images/Frame3.png'),
                                     '4.7  (753)'),
                                 const SizedBox(
-                                  width: 60,
+                                  width: 10,
                                 ),
                                 subdetailes(
                                     Image.asset('assets/images/Frame2.png'),
@@ -145,7 +143,7 @@ Widget Detailesofvideos() {
                         style: fontsize12w400,
                       ),
                     ],
-                  )))
+                  ))
             ]),
       ),
     ),

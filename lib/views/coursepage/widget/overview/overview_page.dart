@@ -10,8 +10,8 @@ Widget overviewscreen() {
     color: lavender,
     child: DefaultTabController(
       length: 2,
-      child: SingleChildScrollView(
-        padding: const EdgeInsets.only(left: 30),
+      child: Container(
+        padding: EdgeInsets.only(left: 20),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,

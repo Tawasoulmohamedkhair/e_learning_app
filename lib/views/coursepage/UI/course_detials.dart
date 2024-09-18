@@ -13,22 +13,24 @@ class CourseDetialsScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: lavender,
-      body: ListView.builder(
-          itemCount: 1,
-          shrinkWrap: true,
-          scrollDirection: Axis.vertical,
-          itemBuilder: (context, index) {
-            return Column(
+        body: SafeArea(
+          child: SingleChildScrollView(
+            scrollDirection: Axis.vertical, 
+            child: Column(
               children: [
                 Detailesofvideos(),
+                const SizedBox(height: 60),
+
                 overviewscreen(),
                 const SizedBox(height: 20),
                 feedbackscreen(),
                 projectscreen(),
                 Comments(),
               ],
-            );
-          }),
+            ),
+          ),
+        )
+          
     );
   }
 }

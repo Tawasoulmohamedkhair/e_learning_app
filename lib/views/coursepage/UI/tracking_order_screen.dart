@@ -35,7 +35,7 @@ class _TrackongOrderScreenState extends State<TrackongOrderScreen> {
                         width: 24, height: 15, 'assets/images/Path.png'),
                   ),
                   const SizedBox(
-                    width: 40,
+                    width: 20,
                   ),
                   Text(
                     'Tracking Order',
@@ -71,7 +71,7 @@ class _TrackongOrderScreenState extends State<TrackongOrderScreen> {
                     ),
                     Container(
                       padding: const EdgeInsets.only(left: 5),
-                      width: 155,
+                      width: 200,
                       height: 29,
                       decoration: BoxDecoration(
                           color: Colors.white,
@@ -80,7 +80,7 @@ class _TrackongOrderScreenState extends State<TrackongOrderScreen> {
                         children: [
                           Image.asset('assets/images/clock.png'),
                           const SizedBox(
-                            width: 10,
+                            width: 2,
                           ),
                           Text(
                             'Sat 13- Tue 16 Mar',
