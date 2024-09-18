@@ -1,5 +1,3 @@
-import 'package:e_learning_app/views/Home/Ui/reminder_screen.dart';
-import 'package:e_learning_app/views/coursepage/UI/course_detials.dart';
 import 'package:e_learning_app/views/coursepage/UI/tracking_order_screen.dart';
 
 import 'package:flutter/material.dart';
@@ -19,10 +17,8 @@ class MyApp extends StatelessWidget {
       title: 'ELearning App',
       theme: ThemeData(
         useMaterial3: true,
-      ),
-        //home: CourceDetialsScreen(),
+        ),
         home: TrackongOrderScreen()
-        //home: Learning_Reminder_Screen(),
       
       );
   }
