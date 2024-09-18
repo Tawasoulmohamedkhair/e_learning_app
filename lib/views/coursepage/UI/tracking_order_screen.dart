@@ -146,23 +146,12 @@ class _TrackongOrderScreenState extends State<TrackongOrderScreen> {
                 width: double.infinity,
                 height: 280,
               ),
-              /*  ButtonScreen(
-                onTap: () {
-                  setState(() {
-                    Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => CourceDetialsScreen(),
-                        ));
-                  });
-                },
-                text1: 'Back to home',
-              ),*/
+              
               ButtonScreen('Back to home', onTap: () {
                 Navigator.pushReplacement(
                     context,
                     MaterialPageRoute(
-                        builder: (context) => const CourceDetialsScreen()));
+                        builder: (context) => const CourseDetialsScreen()));
               }),
               Container(
                 width: 700,

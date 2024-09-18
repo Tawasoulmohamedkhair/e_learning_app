@@ -11,7 +11,6 @@ Widget feedbackscreen() {
   return Material(
     color: lavender,
     child: SingleChildScrollView(
-      // padding: EdgeInsets.only(left: 30),
       scrollDirection: Axis.vertical,
       child: Column(
         mainAxisAlignment: MainAxisAlignment.start,

@@ -6,8 +6,8 @@ import 'package:e_learning_app/views/coursepage/widget/videos/detailes_of_video.
 import 'package:e_learning_app/views/coursepage/widget/feedback/feedback.dart';
 import 'package:flutter/material.dart';
 
-class CourceDetialsScreen extends StatelessWidget {
-  const CourceDetialsScreen({super.key});
+class CourseDetialsScreen extends StatelessWidget {
+  const CourseDetialsScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
