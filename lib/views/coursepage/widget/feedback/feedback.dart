@@ -81,6 +81,7 @@ Widget feedbackscreen() {
               child: ButtonScreen(
                 onTap: () {},
                 'Load more',
+                bluecolor
               ),
             ),
             const SizedBox(

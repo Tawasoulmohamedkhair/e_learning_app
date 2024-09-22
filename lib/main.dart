@@ -1,6 +1,4 @@
-import 'package:e_learning_app/views/Home/Ui/reminder_screen.dart';
 import 'package:e_learning_app/views/coursepage/UI/tracking_order_screen.dart';
-
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -27,7 +25,6 @@ class MyApp extends StatelessWidget {
         home: child,
       ),
       child: TrackongOrderScreen(),
-      // child: Learning_Reminder_Screen(),
     );
   }
 }

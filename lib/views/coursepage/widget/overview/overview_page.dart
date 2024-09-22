@@ -66,6 +66,7 @@ Widget overviewscreen() {
             ButtonScreen(
               onTap: () {},
               'See more',
+              bluecolor
             ),
           ],
         ),

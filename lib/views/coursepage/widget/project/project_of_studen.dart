@@ -1,3 +1,4 @@
+import 'package:e_learning_app/Theme/colors.dart';
 import 'package:e_learning_app/Theme/style.dart';
 import 'package:e_learning_app/views/component/button.dart';
 import 'package:e_learning_app/views/coursepage/widget/project/project_item.dart';
@@ -27,6 +28,7 @@ Widget projectofstudent() {
          ButtonScreen(
           onTap: () {},
           'Load more',
+          bluecolor
         ),
       ],
     ),

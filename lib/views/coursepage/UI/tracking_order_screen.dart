@@ -147,7 +147,7 @@ class _TrackongOrderScreenState extends State<TrackongOrderScreen> {
                 height: 280,
               ),
               
-              ButtonScreen('Back to home', onTap: () {
+              ButtonScreen('Back to home', bluecolor, onTap: () {
                 Navigator.pushReplacement(
                     context,
                     MaterialPageRoute(
