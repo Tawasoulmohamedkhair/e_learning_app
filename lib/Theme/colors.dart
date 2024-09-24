@@ -10,3 +10,5 @@ const fawn = Color(0xffE5AA77);
 const peachPuff = Color(0xffFFD9BB);
 const cetaceanBlue = Color(0xff0c042E);
 const pink = Color(0xffD66BAB);
+const Lightorange = Color(0xffFF9D42);
+const Lightgrey = Color(0xffF4F3FD);

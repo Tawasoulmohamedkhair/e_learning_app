@@ -1,5 +1,6 @@
 import 'package:e_learning_app/Theme/colors.dart';
 import 'package:e_learning_app/Theme/fontstyle.dart';
+import 'package:e_learning_app/views/component/appbar_section.dart';
 
 import 'package:e_learning_app/views/coursepage/widget/videos/subdetails_of_videos.dart';
 import 'package:flutter/material.dart';
@@ -16,19 +17,18 @@ Widget Detailesofvideos() {
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  const Icon(Icons.arrow_back_ios_new),
-                  Text(
-                    'Details',
-                    style: fontsize18,
-                  ),
+
+
+              appbarsection(
+                  Icons.arrow_back_ios_new,
+                  'Details',
                   Image.asset(
                     'assets/images/Book.png',
+                    
                   ),
-                ],
+                  () {}
               ),
+
               const SizedBox(
                 height: 20,
               ),

@@ -12,10 +12,16 @@ var fontsize28 = GoogleFonts.dmSans(
     fontSize: 28, fontWeight: FontWeight.w500, color: blackcolor);
 var fontsize25 = GoogleFonts.dmSans(
     fontSize: 25, fontWeight: FontWeight.w500, color: blackcolor);
+var fontsize24 = GoogleFonts.dmSans(
+    fontSize: 24, fontWeight: FontWeight.w500, color: blackcolor);
 var fonsize23w500 = GoogleFonts.dmSans(
     color: blackcolor, fontSize: 23, fontWeight: FontWeight.w500);
 var fontsize21 = GoogleFonts.dmSans(
     fontSize: 21, fontWeight: FontWeight.w500, color: blackcolor);
+var fontsize20 = GoogleFonts.dmSans(
+    fontSize: 20, fontWeight: FontWeight.w600,
+     color: blackcolor
+     );
 
 var fontsize19w500 = GoogleFonts.dmSans(
     color: blackcolor, fontSize: 19, fontWeight: FontWeight.w500);
@@ -47,6 +53,10 @@ var fontsize12 = GoogleFonts.dmSans(
     fontSize: 12.r, fontWeight: FontWeight.w500, color: Colors.white);
 var fontsizew400 = GoogleFonts.dmSans(
     fontSize: 12.r, fontWeight: FontWeight.w400, color: Colors.white);
+var fontsize11 = GoogleFonts.dmSans(
+    fontSize: 11.r, fontWeight: FontWeight.w400, color: Colors.white);
+var fontsize10 = GoogleFonts.dmSans(
+    fontSize: 10.r, fontWeight: FontWeight.w400, color: Colors.white);
 var fontsize21w500 = GoogleFonts.dmSans(
     fontSize: 21.r, fontWeight: FontWeight.w500, color: sonicSilver);
 var fontw500 = GoogleFonts.dmSans(
@@ -56,3 +66,5 @@ var fontsize12w500 = GoogleFonts.dmSans(
 
 var fontsize12w400 = GoogleFonts.dmSans(
     fontSize: 12.r, fontWeight: FontWeight.w400, color: sonicSilver);
+var fontw400 = GoogleFonts.dmSans(
+    fontSize: 11.r, fontWeight: FontWeight.w400, color: sonicSilver);
