@@ -39,7 +39,7 @@ Widget coursecontainer(Color color) {
             height: 20,
           ),
           Center(
-            child: Icon(Icons.arrow_drop_down),
+            child: Icon(Icons.keyboard_arrow_down_outlined),
           ),
           SizedBox(
             height: 10,
@@ -85,9 +85,11 @@ Widget coursecontainer(Color color) {
             height: 40,
           ),
           bottomcontainer(
-            color: bluecolor,
+           bluecolor, lavender,
             text1: 'Buy Now',
-            Colors.white,
+            color: lavender
+        
+            
           ),
         ]),
       ],

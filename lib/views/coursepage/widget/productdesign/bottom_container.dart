@@ -1,17 +1,20 @@
 import 'package:e_learning_app/Theme/colors.dart';
+import 'package:e_learning_app/Theme/fontstyle.dart';
 import 'package:flutter/material.dart';
 
 //the last section of product screen include BuyNow button
 Widget bottomcontainer(
-  Color color2, {
+  Color color2,
+  Color color1, {
   required Color color,
+  
   required String text1,
 }) {
   return Container(
     padding: EdgeInsets.only(left: 20),
     height: 89,
     decoration:
-        BoxDecoration(color: lavender, borderRadius: BorderRadius.circular(16)),
+        BoxDecoration(color: color1, borderRadius: BorderRadius.circular(16)),
     child: Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
@@ -33,13 +36,13 @@ Widget bottomcontainer(
               width: 236,
               height: 50,
               decoration: BoxDecoration(
-                color: color,
+                color: color2,
                 borderRadius: BorderRadius.circular(20),
               ),
               child: Center(
                   child: Text(
                 text1,
-                style: TextStyle(color: color2),
+                style: fontsize18w500,
               )),
             ),
           ],

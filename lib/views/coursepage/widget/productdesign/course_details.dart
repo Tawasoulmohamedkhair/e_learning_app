@@ -13,7 +13,10 @@ Widget coursedetails(
 }) {
   return Container(
     padding: EdgeInsets.only(left: 20, right: 20),
-    child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
+    child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
       Text(
         text1,
         style: fontsize24,
@@ -22,6 +25,8 @@ Widget coursedetails(
         width: 60,
       ),
       Column(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
             text2,
@@ -43,7 +48,7 @@ Widget coursedetails(
               style: fontsize15,
             ),
             SizedBox(
-              width: 20,
+                  width: 40,
             ),
             if (text1 == '01')
               Container(
@@ -56,14 +61,14 @@ Widget coursedetails(
         ],
       ),
       SizedBox(
-        width: 120,
+            width: 100,
       ),
-      Container(
-        width: 44,
-        height: 44,
-        decoration: BoxDecoration(color: color, shape: BoxShape.circle),
-        child: img,
-      ),
+          Container(
+            width: 44,
+            height: 44,
+            decoration: BoxDecoration(color: color, shape: BoxShape.circle),
+            child: img,
+          ),
     ]),
   );
 }

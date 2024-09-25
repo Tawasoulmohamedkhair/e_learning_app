@@ -1,3 +1,4 @@
+import 'package:e_learning_app/Theme/colors.dart';
 import 'package:e_learning_app/views/coursepage/UI/productdesign.dart';
 import 'package:e_learning_app/views/coursepage/widget/productdesign/course_container.dart';
 import 'package:video_player/video_player.dart';
@@ -55,7 +56,7 @@ class _ProductDesigndetailsState extends State<ProductDesigndetails> {
                         aspectRatio: 12 / 7,
                         child: FlickVideoPlayer(flickManager: flickManager)),
                   ),
-                  coursecontainer(Colors.white)
+                  coursecontainer(lavender)
                 ]),
           ),
         )));
