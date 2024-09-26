@@ -1,6 +1,5 @@
 import 'package:e_learning_app/Theme/colors.dart';
 import 'package:e_learning_app/views/studentprofilesetting/UI/courses_screen.dart';
-import 'package:e_learning_app/views/studentprofilesetting/widget/appbar_item.dart';
 import 'package:e_learning_app/views/studentprofilesetting/widget/bottomnavigation_bar.dart';
 import 'package:e_learning_app/views/studentprofilesetting/widget/project_tab.dart';
 import 'package:e_learning_app/views/studentprofilesetting/widget/student_information.dart';
@@ -24,6 +23,7 @@ class _PremiumUserScreenState extends State<PremiumUserScreen> {
           child: SingleChildScrollView(
         padding: EdgeInsets.only(top: 20, right: 10, left: 10),
         child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+          Icon(Icons.arrow_back_ios),
           studentinformation(() {
             Navigator.pushReplacement(context,
                 MaterialPageRoute(builder: (context) => CoursesScreen()));
