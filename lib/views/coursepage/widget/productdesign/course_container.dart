@@ -11,17 +11,17 @@ Widget coursecontainer(Color color) {
     decoration: BoxDecoration(
         color: color,
         borderRadius: (color == Colors.white)
-            ? BorderRadius.only(
+            ? const BorderRadius.only(
                 topLeft: Radius.circular(30),
                 topRight: Radius.circular(30),
               )
             : BorderRadius.circular(0)),
     width: double.infinity,
-    height: 620,
+    height: 500,
     child: Stack(
       children: [
         Column(children: [
-          SizedBox(
+          const SizedBox(
             height: 30,
           ),
           textofcoursedetails(
@@ -35,13 +35,13 @@ Widget coursecontainer(Color color) {
               fontsize15,
               'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, ',
               sonicSilver),
-          SizedBox(
+          const SizedBox(
             height: 20,
           ),
-          Center(
+          const Center(
             child: Icon(Icons.keyboard_arrow_down_outlined),
           ),
-          SizedBox(
+          const SizedBox(
             height: 10,
           ),
           coursedetails(
@@ -53,7 +53,7 @@ Widget coursecontainer(Color color) {
             text4: 'mins',
             img: Image.asset('assets/images/Polygon 1.png'),
           ),
-          SizedBox(
+          const SizedBox(
             height: 10,
           ),
           coursedetails(
@@ -67,7 +67,7 @@ Widget coursecontainer(Color color) {
               'assets/images/Polygon 1.png',
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 10,
           ),
           coursedetails(
@@ -81,16 +81,8 @@ Widget coursecontainer(Color color) {
               'assets/images/lock.png',
             ),
           ),
-          SizedBox(
-            height: 40,
-          ),
-          bottomcontainer(
-           bluecolor, lavender,
-            text1: 'Buy Now',
-            color: lavender
-        
-            
-          ),
+          
+          
         ]),
       ],
     ),

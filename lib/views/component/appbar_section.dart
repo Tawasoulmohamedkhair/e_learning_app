@@ -8,7 +8,7 @@ Widget appbarsection(
   VoidCallback onTap,
 ) {
   return Container(
-      padding: EdgeInsets.only(left: 20, right: 20),
+      padding: const EdgeInsets.only(left: 20, right: 20),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [

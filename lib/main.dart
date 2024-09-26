@@ -1,10 +1,11 @@
-import 'package:e_learning_app/views/coursepage/UI/online_courses_screen.dart';
+import 'package:e_learning_app/views/studentprofilesetting/UI/change_password.dart';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
+
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -25,8 +26,7 @@ class MyApp extends StatelessWidget {
         ),
         home: child,
       ),
-      child: OnlineCoursesScreen(),
-      //child: ProductDesginScreen(),
+      child: const ChangePasswordScreen(),
     );
   }
 }

@@ -1,0 +1,51 @@
+import 'package:e_learning_app/Theme/fontstyle.dart';
+import 'package:e_learning_app/model/data/following_data.dart';
+import 'package:flutter/material.dart';
+
+class FollowingStudentListScreen extends StatelessWidget {
+  const FollowingStudentListScreen({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      height: 1200,
+      width: 700,
+      child: ListView.builder(
+          padding: EdgeInsets.only(top: 30),
+          itemCount: followingList.length,
+          itemBuilder: (context, index) {
+            final items = followingList[index];
+            return Container(
+              padding: EdgeInsets.only(top: 10),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Image.asset(
+                    items.image,
+                    width: 47,
+                    height: 42,
+                  ),
+                  Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(items.title, style: fontsize15),
+                        Text(items.subtitle, style: fontsizew40012)
+                      ]),
+                  Container(
+                    width: 77,
+                    height: 41,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(20),
+                      color: Colors.white,
+                    ),
+                    child: Center(
+                      child: Text(items.text, style: fontsizew50014),
+                    ),
+                  )
+                ],
+              ),
+            );
+          }),
+    );
+  }
+}

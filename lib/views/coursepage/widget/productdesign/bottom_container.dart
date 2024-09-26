@@ -5,10 +5,13 @@ import 'package:flutter/material.dart';
 //the last section of product screen include BuyNow button
 Widget bottomcontainer(
   Color color2,
-  Color color1, {
+  Color color1,
+  TextStyle style,
+   {
   required Color color,
   
   required String text1,
+
 }) {
   return Container(
     padding: EdgeInsets.only(left: 20),
@@ -42,7 +45,7 @@ Widget bottomcontainer(
               child: Center(
                   child: Text(
                 text1,
-                style: fontsize18w500,
+                style: style,
               )),
             ),
           ],

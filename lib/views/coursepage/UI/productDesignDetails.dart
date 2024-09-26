@@ -1,5 +1,7 @@
 import 'package:e_learning_app/Theme/colors.dart';
+import 'package:e_learning_app/Theme/fontstyle.dart';
 import 'package:e_learning_app/views/coursepage/UI/productdesign.dart';
+import 'package:e_learning_app/views/coursepage/widget/productdesign/bottom_container.dart';
 import 'package:e_learning_app/views/coursepage/widget/productdesign/course_container.dart';
 import 'package:video_player/video_player.dart';
 import 'package:flick_video_player/flick_video_player.dart';
@@ -33,7 +35,6 @@ class _ProductDesigndetailsState extends State<ProductDesigndetails> {
         ),
         body: SafeArea(
             child: Container(
-          height: 1500,
           color: Color(0xffA1AAAE),
           child: SingleChildScrollView(
             child: Column(
@@ -53,10 +54,16 @@ class _ProductDesigndetailsState extends State<ProductDesigndetails> {
                   ),
                   Center(
                     child: AspectRatio(
-                        aspectRatio: 12 / 7,
+                        aspectRatio: 14 / 8,
                         child: FlickVideoPlayer(flickManager: flickManager)),
                   ),
-                  coursecontainer(lavender)
+                  coursecontainer(lavender),
+                  bottomcontainer(
+                      Colors.white,
+                      bluecolor,
+                      text1: 'Buy Now',
+                      fonsize23w500,
+                      color: lavender),
                 ]),
           ),
         )));

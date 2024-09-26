@@ -12,3 +12,5 @@ const cetaceanBlue = Color(0xff0c042E);
 const pink = Color(0xffD66BAB);
 const Lightorange = Color(0xffFF9D42);
 const Lightgrey = Color(0xffF4F3FD);
+const greylight = Color(0xff888C94);
+const darkblack = Color(0xff000000);

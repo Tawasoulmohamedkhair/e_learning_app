@@ -19,13 +19,13 @@ class _TimePickerState extends State<TimePicker> {
           color: bluecolor, borderRadius: BorderRadius.circular(20)),
       width: 375,
       height: 273,
-      padding: EdgeInsets.only(top: 50, left: 10, right: 10),
+      padding: const EdgeInsets.only(top: 50, left: 10, right: 10),
       child: new Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: <Widget>[
           Column(
             children: [
-              Divider(
+              const Divider(
                 color: Colors.white,
                 height: 5,
                 thickness: 2,
@@ -33,7 +33,7 @@ class _TimePickerState extends State<TimePicker> {
               hourMinute15Interval(),
             ],
           ),
-          Divider(
+          const Divider(
             color: Colors.white,
             height: 5,
             thickness: 2,
@@ -44,7 +44,7 @@ class _TimePickerState extends State<TimePicker> {
   }
 
   Widget hourMinute12H() {
-    return new TimePickerSpinner(
+    return TimePickerSpinner(
       is24HourMode: true,
       onTimeChange: (time) {
         setState(() {
@@ -55,7 +55,7 @@ class _TimePickerState extends State<TimePicker> {
   }
 
   Widget hourMinuteSecond() {
-    return new TimePickerSpinner(
+    return TimePickerSpinner(
       isShowSeconds: false,
       onTimeChange: (time) {
         setState(() {
@@ -66,8 +66,8 @@ class _TimePickerState extends State<TimePicker> {
   }
 
   Widget hourMinute15Interval() {
-    return new TimePickerSpinner(
-      highlightedTextStyle: TextStyle(fontSize: 24, color: Colors.yellow),
+    return TimePickerSpinner(
+      highlightedTextStyle: const TextStyle(fontSize: 24, color: Colors.yellow),
       spacing: 5,
       minutesInterval: 1,
       onTimeChange: (time) {
@@ -79,10 +79,10 @@ class _TimePickerState extends State<TimePicker> {
   }
 
   Widget hourMinute12HCustomStyle() {
-    return new TimePickerSpinner(
+    return TimePickerSpinner(
       is24HourMode: false,
-      normalTextStyle: TextStyle(fontSize: 24, color: Colors.deepOrange),
-      highlightedTextStyle: TextStyle(fontSize: 24, color: Colors.yellow),
+      normalTextStyle: const TextStyle(fontSize: 24, color: Colors.deepOrange),
+      highlightedTextStyle: const TextStyle(fontSize: 24, color: Colors.yellow),
       spacing: 30,
       itemHeight: 80,
       isForce2Digits: true,
