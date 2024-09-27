@@ -8,7 +8,7 @@ class FollowingStudentListScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 1200,
+      height: 700,
       width: 700,
       child: ListView.builder(
           padding: EdgeInsets.only(top: 30),
