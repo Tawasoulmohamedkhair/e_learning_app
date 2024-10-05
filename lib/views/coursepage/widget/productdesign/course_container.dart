@@ -1,9 +1,9 @@
 import 'package:e_learning_app/Theme/colors.dart';
 import 'package:e_learning_app/Theme/fontstyle.dart';
-import 'package:e_learning_app/views/coursepage/widget/productdesign/bottom_container.dart';
 import 'package:e_learning_app/views/coursepage/widget/productdesign/course_details.dart';
 import 'package:e_learning_app/views/coursepage/widget/productdesign/text_of_course_details.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 //this widget for the second part of the screen of product design and the product design details
 Widget coursecontainer(Color color) {
@@ -11,18 +11,18 @@ Widget coursecontainer(Color color) {
     decoration: BoxDecoration(
         color: color,
         borderRadius: (color == Colors.white)
-            ? const BorderRadius.only(
-                topLeft: Radius.circular(30),
-                topRight: Radius.circular(30),
+            ? BorderRadius.only(
+                topLeft: Radius.circular(30.r),
+                topRight: Radius.circular(30.r),
               )
-            : BorderRadius.circular(0)),
+            : BorderRadius.circular(0.r)),
     width: double.infinity,
-    height: 500,
+    height: 500.h,
     child: Stack(
       children: [
         Column(children: [
-          const SizedBox(
-            height: 30,
+          SizedBox(
+            height: 30.h,
           ),
           textofcoursedetails(
               'Product Design v1.0',
@@ -35,14 +35,14 @@ Widget coursecontainer(Color color) {
               fontsize15,
               'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, ',
               sonicSilver),
-          const SizedBox(
-            height: 20,
+          SizedBox(
+            height: 20.h,
           ),
           const Center(
             child: Icon(Icons.keyboard_arrow_down_outlined),
           ),
-          const SizedBox(
-            height: 10,
+          SizedBox(
+            height: 10.h,
           ),
           coursedetails(
             color: bluecolor,
@@ -53,8 +53,8 @@ Widget coursecontainer(Color color) {
             text4: 'mins',
             img: Image.asset('assets/images/Polygon 1.png'),
           ),
-          const SizedBox(
-            height: 10,
+          SizedBox(
+            height: 10.h,
           ),
           coursedetails(
             color: bluecolor,
@@ -67,8 +67,8 @@ Widget coursecontainer(Color color) {
               'assets/images/Polygon 1.png',
             ),
           ),
-          const SizedBox(
-            height: 10,
+          SizedBox(
+            height: 10.h,
           ),
           coursedetails(
             color: bluecolor.withOpacity(.4),

@@ -3,6 +3,7 @@ import 'package:e_learning_app/Theme/fontstyle.dart';
 import 'package:e_learning_app/Theme/style.dart';
 import 'package:e_learning_app/views/component/button.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 //the screen of overview the second section
 Widget overviewscreen() {
@@ -31,26 +32,26 @@ Widget overviewscreen() {
                     ),
                   ),
                 ]),
-            const SizedBox(
+            SizedBox(
               child: sizeboxs,
             ),
             Text(
               'Introduction',
               style: fontsize15,
             ),
-            const SizedBox(
-              height: 30,
+            SizedBox(
+              height: 30.h,
             ),
             Container(
-              width: 400,
-              height: 52,
+              width: 400.w,
+              height: 52.h,
               color: lavender,
               child: Text(
                 'Ipsum quam imperdiet mollis massa bibendum odio vitae in\n  vehicula augue ullamcorper eget a ultrices amet amet, arcu at \n sem et egestassaf a  facilisi a, diam integer velit, sed gravida\n sed eu',
                 style: fontsize12w400,
               ),
             ),
-            const SizedBox(
+            SizedBox(
               child: sizeboxs,
             ),
             Container(
@@ -60,13 +61,16 @@ Widget overviewscreen() {
                 style: fontsize12w400,
               ),
             ),
-            const SizedBox(
-              height: 60,
+            SizedBox(
+              height: 60.h,
             ),
             ButtonScreen(
               onTap: () {},
               'See more',
-              bluecolor
+                fontsize18w500,
+                bluecolor,
+                width: 335,
+                height: 60
             ),
           ],
         ),

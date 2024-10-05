@@ -4,8 +4,8 @@ import 'package:flutter_custom_clippers/flutter_custom_clippers.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:step_progress_indicator/step_progress_indicator.dart';
 
-class ClippathWidget extends StatelessWidget {
-  const ClippathWidget(this.text1, this.text2, this.currentStep,
+class ClippathSplashScreen extends StatelessWidget {
+  const ClippathSplashScreen(this.text1, this.text2, this.currentStep,
       {required this.onTap, super.key});
   final String text1;
   final String text2;

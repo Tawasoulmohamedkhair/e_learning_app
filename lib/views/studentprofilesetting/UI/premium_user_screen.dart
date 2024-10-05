@@ -5,6 +5,7 @@ import 'package:e_learning_app/views/studentprofilesetting/widget/project_tab.da
 import 'package:e_learning_app/views/studentprofilesetting/widget/student_information.dart';
 import 'package:e_learning_app/views/studentprofilesetting/widget/tab_bar.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class PremiumUserScreen extends StatefulWidget {
   const PremiumUserScreen({super.key});
@@ -23,7 +24,7 @@ class _PremiumUserScreenState extends State<PremiumUserScreen> {
           child: SingleChildScrollView(
         padding: EdgeInsets.only(top: 20, right: 10, left: 10),
         child: Container(
-          height: 1200,
+          height: 1200.h,
           child:
               Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
             Icon(Icons.arrow_back_ios),
@@ -47,7 +48,7 @@ class _PremiumUserScreenState extends State<PremiumUserScreen> {
               'Following',
             ),
             SizedBox(
-              height: 40,
+              height: 40.h,
             ),
             ProjectTab(),
           ]),

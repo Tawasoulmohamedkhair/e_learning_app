@@ -1,9 +1,11 @@
+import 'package:e_learning_app/Theme/fontstyle.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 Widget studentinformation(void Function()? onTap, Icon icon, Image img1,
     String title1, String title2, Image img2, Image img3, Image img4) {
   return Container(
-    height: 300,
+    height: 300.h,
     child: Column(
       children: [
         Row(
@@ -17,8 +19,8 @@ Widget studentinformation(void Function()? onTap, Icon icon, Image img1,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Container(
-                width: 120,
-                height: 120,
+                width: 120.w,
+                height: 120.h,
                 child: CircleAvatar(
                   child: img1,
                 )),
@@ -29,8 +31,14 @@ Widget studentinformation(void Function()? onTap, Icon icon, Image img1,
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Text(title1),
-            Text(title2),
+            Text(
+              title1,
+              style: fontsize25,
+            ),
+            Text(
+              title2,
+              style: fontsize13,
+            ),
           ],
         )),
         Row(
@@ -38,11 +46,11 @@ Widget studentinformation(void Function()? onTap, Icon icon, Image img1,
           children: [
             img2,
             SizedBox(
-              width: 10,
+              width: 10.w,
             ),
             img3,
             SizedBox(
-              width: 10,
+              width: 10.w,
             ),
             img4
           ],

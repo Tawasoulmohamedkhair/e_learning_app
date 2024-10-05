@@ -3,8 +3,8 @@ import 'package:e_learning_app/Theme/fontstyle.dart';
 import 'package:e_learning_app/views/Home/widget/clip_Path_container.dart';
 import 'package:flutter/material.dart';
 
-class ImageContainer extends StatelessWidget {
-  const ImageContainer({super.key});
+class ImageContainerDiscount extends StatelessWidget {
+  const ImageContainerDiscount({super.key});
 
   @override
   Widget build(BuildContext context) {

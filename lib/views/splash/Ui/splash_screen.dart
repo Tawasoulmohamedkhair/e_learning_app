@@ -3,8 +3,10 @@ import 'dart:async';
 import 'package:e_learning_app/Theme/colors.dart';
 import 'package:e_learning_app/Theme/fontstyle.dart';
 import 'package:e_learning_app/views/splash/widget/splash_screen_content.dart';
-import 'package:e_learning_app/views/splash/Ui/home_screen.dart';
+import 'package:e_learning_app/views/splash/Ui/splashonlinelearningplatform.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:get/get.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -19,10 +21,7 @@ class _SplashScreenState extends State<SplashScreen> {
     super.initState();
     Timer(
         const Duration(seconds: 3),
-        () => Navigator.pushReplacement(
-            context,
-            MaterialPageRoute(
-                builder: (context) => const SplashOnlineLearning())));
+        () => Get.to(() => SplashOnlineLearningPlatform()));
   }
 
   @override
@@ -52,8 +51,8 @@ class _SplashScreenState extends State<SplashScreen> {
                           img1: Image.asset('assets/images/Frame.png'),
                         )),
                     Container(
-                      width: 300,
-                      height: 500,
+                      width: 300.w,
+                      height: 500.h,
                       decoration: const BoxDecoration(),
                       child: Stack(children: [
                         SplashContentScreen(
@@ -65,7 +64,7 @@ class _SplashScreenState extends State<SplashScreen> {
                           child: Text(
                             'Education\nApp',
                             textAlign: TextAlign.center,
-                            style: fontsize30,
+                            style: fontsize29,
                           ),
                         ),
                         Align(

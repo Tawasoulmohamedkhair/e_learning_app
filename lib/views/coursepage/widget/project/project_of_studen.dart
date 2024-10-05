@@ -1,4 +1,5 @@
 import 'package:e_learning_app/Theme/colors.dart';
+import 'package:e_learning_app/Theme/fontstyle.dart';
 import 'package:e_learning_app/Theme/style.dart';
 import 'package:e_learning_app/views/component/button.dart';
 import 'package:e_learning_app/views/coursepage/widget/project/project_item.dart';
@@ -22,13 +23,16 @@ Widget projectofstudent() {
           Image.asset('assets/images/Project 3.png'),
           Image.asset('assets/images/unsplash3.png'),
         ),
-        const SizedBox(
+        SizedBox(
           child: sizeboxs,
         ),
          ButtonScreen(
           onTap: () {},
           'Load more',
-          bluecolor
+          fontsize18w500,
+          bluecolor,
+          width: 335,
+          height: 60,
         ),
       ],
     ),

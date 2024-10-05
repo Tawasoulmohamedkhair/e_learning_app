@@ -1,6 +1,7 @@
 import 'package:e_learning_app/Theme/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_custom_clippers/flutter_custom_clippers.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class ClipPathContainer extends StatelessWidget {
   const ClipPathContainer({super.key});
@@ -11,11 +12,11 @@ class ClipPathContainer extends StatelessWidget {
       clipper: RoundedDiagonalPathClipper(),
       child: Container(
         padding: const EdgeInsets.only(left: 100),
-        width: 327,
-        height: 143,
+        width: 327.w,
+        height: 143.h,
         decoration: const BoxDecoration(
           borderRadius: BorderRadius.only(
-            topLeft: Radius.circular(50.0),
+            topLeft: Radius.circular(16.0),
           ),
           color: fawn,
         ),

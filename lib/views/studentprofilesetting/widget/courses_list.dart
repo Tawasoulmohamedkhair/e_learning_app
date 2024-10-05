@@ -1,6 +1,7 @@
 import 'package:e_learning_app/Theme/fontstyle.dart';
 import 'package:e_learning_app/model/data/courser_data.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class CourserListScreen extends StatelessWidget {
   const CourserListScreen({super.key});
@@ -10,8 +11,8 @@ class CourserListScreen extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.only(left: 20, right: 20, top: 10),
       child: SizedBox(
-        width: 700,
-        height: 700,
+        width: 700.w,
+        height: 700.h,
         child: ListView.builder(
           padding: EdgeInsets.only(top: 10),
           scrollDirection: Axis.vertical,
@@ -20,19 +21,19 @@ class CourserListScreen extends StatelessWidget {
           itemBuilder: (context, index) {
             final item = courses_list[index];
             return Container(
-              width: 300,
+              width: 300.w,
               padding: EdgeInsets.only(top: 5),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.start,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Image.asset(
-                    width: 80,
-                    height: 92,
+                    width: 80.w,
+                    height: 92.h,
                     item.image,
                   ),
-                  const SizedBox(
-                    width: 20,
+                  SizedBox(
+                    width: 20.w,
                   ),
                   Expanded(
                     child: Column(
@@ -47,8 +48,8 @@ class CourserListScreen extends StatelessWidget {
                             item.subtitle,
                             style: fontsize12w400,
                           ),
-                          const SizedBox(
-                            height: 5,
+                          SizedBox(
+                            height: 5.h,
                           ),
                           Row(
                             children: [

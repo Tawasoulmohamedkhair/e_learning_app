@@ -1,8 +1,10 @@
 import 'package:e_learning_app/Theme/colors.dart';
 import 'package:e_learning_app/views/Home/Ui/reminder_screen.dart';
-import 'package:e_learning_app/views/splash/widget/clip_path_widget.dart';
+import 'package:e_learning_app/views/splash/widget/clip_path_splash_screen.dart';
 import 'package:e_learning_app/views/splash/widget/splash_screen_content.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
 
 class SplashScreenExplore extends StatelessWidget {
   const SplashScreenExplore({super.key});
@@ -10,9 +12,7 @@ class SplashScreenExplore extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: lavender,
-      ),
+      
       body: SingleChildScrollView(
         child: Container(
           decoration: const BoxDecoration(
@@ -71,18 +71,12 @@ class SplashScreenExplore extends StatelessWidget {
             Stack(children: [
               Positioned(
                 child: Stack(children: [
-                  ClippathWidget(
+                  ClippathSplashScreen(
                     'Explore it \nToday!',
                     'A handful of model sentence structures,\n too generate Lorem which looks reason\n able.',
                     100,
-                    onTap: () {
-                      Navigator.pushReplacement(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) =>
-                                const Learning_Reminder_Screen()),
-                      );
-                    },
+                    onTap: () => Get.to(() => Learning_Reminder_Screen()),
+                  
                   ),
                 ]),
               )

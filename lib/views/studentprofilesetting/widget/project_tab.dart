@@ -1,5 +1,6 @@
 import 'package:e_learning_app/model/data/project_list.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class ProjectTab extends StatefulWidget {
   const ProjectTab({super.key});
@@ -12,7 +13,7 @@ class _ProjectTabState extends State<ProjectTab> {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 500,
+      height: 500.h,
       child: GridView(
         scrollDirection: Axis.vertical,
         padding: const EdgeInsets.all(8.0),

@@ -1,6 +1,7 @@
 import 'package:e_learning_app/Theme/fontstyle.dart';
 import 'package:e_learning_app/model/data/following_data.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class FollowingStudentListScreen extends StatelessWidget {
   const FollowingStudentListScreen({super.key});
@@ -8,8 +9,8 @@ class FollowingStudentListScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 700,
-      width: 700,
+      height: 700.h,
+      width: 700.w,
       child: ListView.builder(
           padding: EdgeInsets.only(top: 30),
           itemCount: followingList.length,
@@ -22,8 +23,8 @@ class FollowingStudentListScreen extends StatelessWidget {
                 children: [
                   Image.asset(
                     items.image,
-                    width: 47,
-                    height: 42,
+                    width: 47.w,
+                    height: 42.h,
                   ),
                   Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
@@ -32,10 +33,10 @@ class FollowingStudentListScreen extends StatelessWidget {
                         Text(items.subtitle, style: fontsizew40012)
                       ]),
                   Container(
-                    width: 77,
-                    height: 41,
+                    width: 77.w,
+                    height: 41.h,
                     decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(20),
+                      borderRadius: BorderRadius.circular(20.r),
                       color: Colors.white,
                     ),
                     child: Center(

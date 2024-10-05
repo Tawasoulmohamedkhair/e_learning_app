@@ -1,15 +1,16 @@
 import 'package:e_learning_app/Theme/colors.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_time_picker_spinner/flutter_time_picker_spinner.dart';
 
-class TimePicker extends StatefulWidget {
-  const TimePicker({super.key});
+class TimePickerOfPlanScreen extends StatefulWidget {
+  const TimePickerOfPlanScreen({super.key});
 
   @override
-  State<TimePicker> createState() => _TimePickerState();
+  State<TimePickerOfPlanScreen> createState() => _TimePickerOfPlanScreenState();
 }
 
-class _TimePickerState extends State<TimePicker> {
+class _TimePickerOfPlanScreenState extends State<TimePickerOfPlanScreen> {
   DateTime _dateTime = DateTime.now();
 
   @override
@@ -17,10 +18,10 @@ class _TimePickerState extends State<TimePicker> {
     return new Container(
       decoration: BoxDecoration(
           color: bluecolor, borderRadius: BorderRadius.circular(20)),
-      width: 375,
-      height: 273,
-      padding: const EdgeInsets.only(top: 50, left: 10, right: 10),
-      child: new Column(
+      width: 375.w,
+      height: 273.h,
+      padding: const EdgeInsets.only(top: 40, left: 10, right: 10),
+      child: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: <Widget>[
           Column(

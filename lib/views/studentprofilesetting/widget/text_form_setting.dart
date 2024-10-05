@@ -2,10 +2,10 @@ import 'package:e_learning_app/Theme/fontstyle.dart';
 import 'package:flutter/material.dart';
 
 class TextFormeSetting extends StatelessWidget {
-  late String title;
-  Icon? icon;
+  final String title;
+  final Icon? icon;
 
-  bool obscureText = false;
+  final bool obscureText = false;
 
   TextFormeSetting(this.icon, {required this.title, super.key});
 

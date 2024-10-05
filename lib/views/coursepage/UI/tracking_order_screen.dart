@@ -24,7 +24,7 @@ class _TrackongOrderScreenState extends State<TrackongOrderScreen> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
-              const SizedBox(
+              SizedBox(
                 child: sizeboxs,
               ),
               Row(
@@ -43,7 +43,7 @@ class _TrackongOrderScreenState extends State<TrackongOrderScreen> {
                   ),
                 ],
               ),
-              const SizedBox(
+              SizedBox(
                 child: sizeboxs,
               ),
               Container(
@@ -92,7 +92,7 @@ class _TrackongOrderScreenState extends State<TrackongOrderScreen> {
                   ],
                 ),
               ),
-              const SizedBox(child: sizeboxs),
+              SizedBox(child: sizeboxs),
               Row(
                 children: [
                   Container(
@@ -147,7 +147,8 @@ class _TrackongOrderScreenState extends State<TrackongOrderScreen> {
                 height: 280,
               ),
               
-              ButtonScreen('Back to home', bluecolor, onTap: () {
+              ButtonScreen('Back to home', fontsize15w500, bluecolor,
+                  width: 304, height: 46, onTap: () {
                 Navigator.pushReplacement(
                     context,
                     MaterialPageRoute(

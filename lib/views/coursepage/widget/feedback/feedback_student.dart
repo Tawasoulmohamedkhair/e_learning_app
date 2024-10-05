@@ -30,7 +30,7 @@ Widget feedbackstudent(Image img, String text1, String text2, String text3) {
           ),
         ],
       ),
-      const SizedBox(
+       SizedBox(
         child: sizeboxs,
       )
     ],

@@ -10,6 +10,12 @@ class Books extends StatelessWidget {
         title: Text("Books"),
         centerTitle: true,
       ),
+      body: SafeArea(
+          child: Center(
+              child: Text(
+        'Books',
+        style: TextStyle(fontSize: 20),
+      ))),
     );
   }
 }

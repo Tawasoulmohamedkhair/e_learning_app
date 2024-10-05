@@ -1,5 +1,4 @@
 import 'package:e_learning_app/Theme/colors.dart';
-import 'package:e_learning_app/views/studentprofilesetting/UI/change_password.dart';
 import 'package:e_learning_app/views/studentprofilesetting/widget/bottomnavigation_bar.dart';
 import 'package:e_learning_app/views/studentprofilesetting/widget/following_list_student.dart';
 import 'package:e_learning_app/views/studentprofilesetting/widget/student_information.dart';
@@ -31,10 +30,7 @@ class _StudentFollowingState extends State<StudentFollowing> {
               child: Column(
                 children: [
                   studentinformation(() {
-                    Navigator.pushReplacement(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => ChangePasswordScreen()));
+                  
                   },
                       Icon(Icons.settings_outlined),
                       Image.asset('assets/images/Profile Avatar.png'),

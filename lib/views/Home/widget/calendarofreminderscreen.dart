@@ -1,12 +1,14 @@
 import 'package:e_learning_app/Theme/colors.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-class Calendar extends StatefulWidget {
+class CalendarOfReminderScreen extends StatefulWidget {
   @override
-  _CalendarState createState() => _CalendarState();
+  _CalendarOfReminderScreenState createState() =>
+      _CalendarOfReminderScreenState();
 }
 
-class _CalendarState extends State<Calendar> {
+class _CalendarOfReminderScreenState extends State<CalendarOfReminderScreen> {
   DateTime selectedDate = DateTime.now(); // TO tracking date
 
   int currentDateSelectedIndex = 0; //For Horizontal Date
@@ -34,7 +36,7 @@ class _CalendarState extends State<Calendar> {
   Widget build(BuildContext context) {
     return Column(children: [
       Container(
-          height: 100,
+          height: 100.h,
           child: Container(
               child: ListView.separated(
             separatorBuilder: (BuildContext context, int index) {
@@ -52,11 +54,11 @@ class _CalendarState extends State<Calendar> {
                   });
                 },
                 child: Container(
-                  height: 80,
-                  width: 60,
+                  height: 73.h,
+                  width: 63.w,
                   alignment: Alignment.center,
                   decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(8),
+                      borderRadius: BorderRadius.circular(16.r),
                       boxShadow: [
                         BoxShadow(offset: Offset(3, 3), blurRadius: 5)
                       ],
@@ -79,7 +81,7 @@ class _CalendarState extends State<Calendar> {
                                 : Colors.white),
                       ),
                       SizedBox(
-                        height: 5,
+                        height: 5.h,
                       ),
                       Text(
                         listOfDays[DateTime.now()

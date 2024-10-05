@@ -1,8 +1,10 @@
 import 'package:e_learning_app/Theme/colors.dart';
-import 'package:e_learning_app/views/splash/widget/clip_path_widget.dart';
+import 'package:e_learning_app/views/splash/widget/clip_path_splash_screen.dart';
 import 'package:e_learning_app/views/splash/widget/splash_screen_content.dart';
 import 'package:e_learning_app/views/splash/Ui/splash_screen_find_course.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
 
 class SplashScreenSchedule extends StatelessWidget {
   const SplashScreenSchedule({super.key});
@@ -60,17 +62,11 @@ class SplashScreenSchedule extends StatelessWidget {
             Stack(children: [
               Positioned(
                 child: Stack(children: [
-                  ClippathWidget(
+                  ClippathSplashScreen(
                     'Learn on your \n Schedule',
                     'A handful of model sentence structures,\n too generate Lorem which looks reason\n able.',
                     50,
-                    onTap: () {
-                      Navigator.pushReplacement(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => const FindCourseScreen()),
-                      );
-                    },
+                    onTap: () => Get.to(() => FindCourseScreen()),
                   ),
                   Positioned(
                     left: 30,

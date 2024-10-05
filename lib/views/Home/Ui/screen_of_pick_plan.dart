@@ -1,11 +1,13 @@
 import 'package:e_learning_app/Theme/colors.dart';
 import 'package:e_learning_app/Theme/fontstyle.dart';
-import 'package:e_learning_app/Theme/style.dart';
-import 'package:e_learning_app/views/Home/widget/container_list.dart';
-import 'package:e_learning_app/views/Home/widget/image_container_plan.dart';
+import 'package:e_learning_app/views/Home/widget/containerListofpickplantutor.dart';
+import 'package:e_learning_app/views/Home/widget/image_container_discount.dart';
 import 'package:e_learning_app/views/Home/widget/triangle_clip.dart';
-import 'package:e_learning_app/views/splash/Ui/home_screen.dart';
+import 'package:e_learning_app/views/coursepage/UI/online_courses_screen.dart';
+import 'package:e_learning_app/views/splash/Ui/splashonlinelearningplatform.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:get/get.dart';
 
 class ScreenOfPickPlan extends StatelessWidget {
   const ScreenOfPickPlan({super.key});
@@ -14,40 +16,42 @@ class ScreenOfPickPlan extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: lavender,
-      appBar: AppBar(
-        backgroundColor: lavender,
-      ),
+     
       body: SafeArea(
         child: SingleChildScrollView(
             padding: const EdgeInsets.only(left: 20),
             child: Center(
               child: Container(
+                height: double.maxFinite,
                 padding: EdgeInsets.only(left: 20),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                const ImageContainer(),
-                const SizedBox(
-                      height: 40,
+                    SizedBox(
+                      height: 30.h,
+                    ),
+                const ImageContainerDiscount(),
+                    SizedBox(
+                      height: 20.h,
                 ),
                     
                 Text(
                     textAlign: TextAlign.start,
                     'Pick a Plan to Try for free. You\n can cancel anytime',
                         style: fontsize21),
-                const SizedBox(
-                  height: 15,
+                    SizedBox(
+                      height: 15.h,
                 ),
                 Text('Choose a plan to start after you 1 week fre trial',
                         style: fontw500),
                     SizedBox(
-                      child: sizeboxs,
+                      height: 20,
                 ),
                     Stack(alignment: AlignmentDirectional.topEnd, children: [
                       Align(
                           alignment: Alignment.topLeft,
-                          child: containerList(
+                          child: containerListofpickplantutor(
                               Image.asset('assets/images/tick.png'),
                               'BRAINLY \n TUTOR',
                               'All answers, no ads1',
@@ -57,7 +61,7 @@ class ScreenOfPickPlan extends StatelessWidget {
                       Stack(alignment: Alignment(.70, -.99), children: [
                         Align(
                           alignment: Alignment(.50, 0),
-                          child: containerList(
+                          child: containerListofpickplantutor(
                               Image.asset('assets/images/tick.png'),
                               'BRAINLY \nTUTOR',
                               'All answers, no ads',
@@ -68,9 +72,8 @@ class ScreenOfPickPlan extends StatelessWidget {
                         ClipPath(
                           clipper: ClipperClipper(),
                           child: Container(
-                            padding: EdgeInsets.only(left: 15),
                             color: Colors.white,
-                            width: 47,
+                            width: 40.w,
                             child: Image.asset(
                                 alignment: AlignmentDirectional.topCenter,
                                 color: bluecolor,
@@ -79,49 +82,57 @@ class ScreenOfPickPlan extends StatelessWidget {
                         ),
                       ]),
                     ]),
-                    const SizedBox(
-                      child: sizeboxs,
+                    SizedBox(
+                      height: 20,
                     ),
                     Padding(
                       padding: const EdgeInsets.only(left: 50),
                       child: Row(children: [
                         Image.asset('assets/images/informations.png'),
-                        const SizedBox(
-                          width: 15,
+                        SizedBox(
+                          width: 15.w,
                         ),
                         Text('What is Brainly Tutor?', style: fontsize18)
                       ]),
                     ),
-                    const SizedBox(
-                      height: 20,
+                    SizedBox(
+                      height: 20.h,
                     ),
                     Row(
                       children: [
-                        TextButton(
-                            onPressed: () {},
-                            child: Text('Skip', style: fontsize15)),
-                        const SizedBox(
-                          width: 20,
+                        Container(
+                          width: 80,
+                          height: 120,
+                          child: TextButton(
+                              onPressed: () {},
+                              child: Text('Skip', style: fontsize15)),
                         ),
+                        SizedBox(
+                          width: 10,
+                        ),
+                       
                         InkWell(
                           onTap: () {
                             Navigator.pushReplacement(
                                 context,
                                 MaterialPageRoute(
                                   builder: (context) =>
-                                      const SplashOnlineLearning(),
+                                      SplashOnlineLearningPlatform(),
                                 ));
                           },
-                          child: Container(
-                              width: 300,
-                              height: 60,
-                              padding: EdgeInsets.all(20),
-                              decoration: BoxDecoration(
-                                  color: bluecolor,
-                                  borderRadius: BorderRadius.circular(50)),
-                              child: Center(
-                                  child: Text('Start Free Trail',
-                                      style: fontsize15w500))),
+                          child: GestureDetector(
+                            onTap: () => Get.to(() => OnlineCoursesScreen()),
+                            child: Container(
+                                width: 260,
+                                height: 60.h,
+                                padding: EdgeInsets.all(20),
+                                decoration: BoxDecoration(
+                                    color: bluecolor,
+                                    borderRadius: BorderRadius.circular(50)),
+                                child: Center(
+                                    child: Text('Start Free Trail',
+                                        style: fontsize15w500))),
+                          ),
                         ),
                       ],
                     ),

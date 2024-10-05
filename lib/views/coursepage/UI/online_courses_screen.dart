@@ -1,10 +1,12 @@
 import 'package:e_learning_app/Theme/colors.dart';
 import 'package:e_learning_app/Theme/fontstyle.dart';
 import 'package:e_learning_app/views/component/appbar_section.dart';
-import 'package:e_learning_app/views/coursepage/UI/onlinecoursdetails.dart';
+import 'package:e_learning_app/views/coursepage/UI/books.dart';
+import 'package:e_learning_app/views/coursepage/UI/home.dart';
 import 'package:e_learning_app/views/coursepage/widget/onlinecourses/onlinecourse.dart';
 import 'package:e_learning_app/views/coursepage/widget/onlinecourses/icon_circle.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 //the mian screen of online courses
 class OnlineCoursesScreen extends StatefulWidget {
@@ -20,21 +22,18 @@ class _OnlineCoursesScreenState extends State<OnlineCoursesScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: lavender,
-      ),
+      
       backgroundColor: lavender,
       body: SafeArea(
         child: SingleChildScrollView(
           child: Column(
             children: [
               appbarsection(Icons.arrow_back, 'Courses',
-                  Image.asset('assets/images/Book.png'), () {
-                Navigator.pushReplacement(
-                    context,
-                    MaterialPageRoute(
-                        builder: (context) => OnlineCourseDetails()));
-              }),
+                Image.asset('assets/images/Book.png'),
+                () => Get.to(() => Home()),
+              ),
+            
+                  
               SizedBox(
                 height: 40,
               ),
@@ -144,10 +143,10 @@ class _OnlineCoursesScreenState extends State<OnlineCoursesScreen> {
                   ),
                 ],
               ),
-            ],
+            
+            ]),
           ),
-        ),
-      ),
-    );
+      
+        ));
   }
 }

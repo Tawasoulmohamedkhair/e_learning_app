@@ -1,7 +1,5 @@
 import 'package:e_learning_app/Theme/colors.dart';
-import 'package:e_learning_app/views/studentprofilesetting/UI/following_student.dart';
 import 'package:e_learning_app/views/studentprofilesetting/widget/bottomnavigation_bar.dart';
-import 'package:e_learning_app/views/studentprofilesetting/widget/courses_list.dart';
 import 'package:e_learning_app/views/studentprofilesetting/widget/student_information.dart';
 import 'package:e_learning_app/views/studentprofilesetting/widget/tab_bar.dart';
 import 'package:flutter/material.dart';
@@ -25,11 +23,8 @@ class CoursesScreen extends StatelessWidget {
           width: double.infinity,
           child: Column(
             children: [
-              studentinformation(() {
-                Navigator.pushReplacement(
-                    context,
-                    MaterialPageRoute(
-                        builder: (context) => StudentFollowing()));
+              studentinformation(
+                  () {
               },
                   Icon(Icons.settings_outlined),
                   Image.asset('assets/images/Profile Avatar.png'),
@@ -46,7 +41,6 @@ class CoursesScreen extends StatelessWidget {
                 '20',
                 'Following',
               ),
-              CourserListScreen(),
             ],
           ),
         ),

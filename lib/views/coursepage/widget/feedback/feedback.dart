@@ -73,7 +73,7 @@ Widget feedbackscreen() {
                         'Flit sit trist gristi do musch!'),
                   ],
                 )),
-            const SizedBox(
+             SizedBox(
               child: sizeboxs,
             ),
             Container(
@@ -81,7 +81,10 @@ Widget feedbackscreen() {
               child: ButtonScreen(
                 onTap: () {},
                 'Load more',
-                bluecolor
+                fontsize18w500,
+                bluecolor,
+                width: 335,
+                height: 60,
               ),
             ),
             const SizedBox(

@@ -1,8 +1,10 @@
 import 'package:e_learning_app/Theme/colors.dart';
-import 'package:e_learning_app/views/splash/widget/clip_path_widget.dart';
+import 'package:e_learning_app/views/splash/widget/clip_path_splash_screen.dart';
 import 'package:e_learning_app/views/splash/widget/splash_screen_content.dart';
 import 'package:e_learning_app/views/splash/Ui/splash_screen_explore.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
 
 class FindCourseScreen extends StatelessWidget {
   const FindCourseScreen({super.key});
@@ -11,9 +13,7 @@ class FindCourseScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     var width = MediaQuery.of(context).size.width;
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: lavender,
-      ),
+      
       body: SingleChildScrollView(
         child: Container(
           decoration: const BoxDecoration(
@@ -73,17 +73,11 @@ class FindCourseScreen extends StatelessWidget {
             Stack(children: [
               Positioned(
                 child: Stack(children: [
-                  ClippathWidget(
+                  ClippathSplashScreen(
                     'Ready to find \n a Course',
                     'A handful of model sentence structures,\n too generate Lorem which looks reason\n able.',
                     70,
-                    onTap: () {
-                      Navigator.pushReplacement(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => const SplashScreenExplore()),
-                      );
-                    },
+                    onTap: () => Get.to(() => SplashScreenExplore()),
                   ),
                 ]),
               )

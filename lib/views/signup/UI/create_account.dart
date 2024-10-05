@@ -1,9 +1,10 @@
 import 'package:e_learning_app/Theme/colors.dart';
 import 'package:e_learning_app/Theme/fontstyle.dart';
 import 'package:e_learning_app/views/component/button.dart';
-import 'package:e_learning_app/views/signup/widget/text_field_form.dart';
+import 'package:e_learning_app/views/signup/widget/socialmedialink.dart';
+import 'package:e_learning_app/views/signup/widget/text_form.dart';
 import 'package:flutter/material.dart';
-import 'package:responsive_sizer/responsive_sizer.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class CreateAccount extends StatelessWidget {
   const CreateAccount({super.key});
@@ -14,41 +15,45 @@ class CreateAccount extends StatelessWidget {
       backgroundColor: lavender,
       body: SafeArea(
         child: Container(
-          width: 420,
-          height: 812,
+          width: 375.w,
+          height: 812.h,
           padding: EdgeInsets.only(top: 60, right: 20, left: 20),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              Container(
-                height: 100,
+              SizedBox(
+                height: 60.sp,
               ),
+             
               Image.asset('assets/images/Icons.png'),
               SizedBox(
-                height: 20,
+                height: 10.sp,
               ),
               Text(
                 'Create an Account',
                 style: fontsize25,
               ),
               SizedBox(
-                height: 20,
+                height: 10,
               ),
+              
               Text(
                 'A handful of model sentence structures',
                 style: fontsize12w500,
               ),
               SizedBox(
-                height: 20,
+                height: 40,
               ),
-              textformfiled(
-                  Image.asset('assets/images/Profile.png'), 'Username'),
+              textformsignup(Icon(Icons.person), 'UserName'),
+
+             
               SizedBox(
                 height: 20,
               ),
-              textformfiled(
-                  Image.asset('assets/images/Profile.png'), 'Email id'),
+              textformsignup(Icon(Icons.email_outlined), 'Email id'),
+
+              
               SizedBox(
                 height: 20,
               ),
@@ -56,79 +61,92 @@ class CreateAccount extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
-                  Container(
-                    padding: EdgeInsets.only(left: 40),
-                    width: 300.px,
-                    height: 53.px,
-                    child: TextFormField(
-                      obscureText: false,
-                      decoration: InputDecoration(
-                        prefixIcon: Icon(Icons.remove_red_eye_outlined),
-                        border: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(50)),
-                        labelText: 'Password',
-                        labelStyle: fontsize15,
-                      ),
-                    ),
-                  ),
+                  SocialMediaLink(
+                      Image.asset(
+                          width: 17, height: 22, 'assets/images/Hide.png'),
+                      lavender,
+                      50.r,
+                      1,
+                      200.sp,
+                      40.sp,
+                      title: 'Password'),
+                 
                   SizedBox(
-                    width: 5,
+                    width: 10.sp,
                   ),
                   Container(
-                    width: 66,
-                    height: 53,
+                    width: 66.sp,
+                    height: 53.sp,
                     decoration: BoxDecoration(
                         border: Border.all(color: blackcolor),
-                        borderRadius: BorderRadius.circular(50)),
+                        borderRadius: BorderRadius.circular(50.r)),
                     child: Image.asset('assets/images/Icon.png'),
                   )
                 ],
               ),
-              SizedBox(
-                height: 20,
-              ),
-              Row(
-                children: [
-                  Container(
-                      height: 22.px,
+              
+              Container(
+                width: 285.sp,
+                height: 45.sp,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Container(
+                      height: 22.sp,
+                      width: 22.sp,
                       decoration: BoxDecoration(
                         color: Colors.white,
-                        borderRadius: BorderRadius.circular(8),
-                      )),
-                  Row(
-                    children: [
-                      Text('I hereby agree to the '),
-                      InkWell(
-                        onTap: () {},
-                        child: Text(
-                          'terms of services ',
+                        borderRadius: BorderRadius.circular(8.r),
+                      ),
+                    ),
+                    SizedBox(
+                      width: 20,
+                    ),
+                    Row(
+                      children: [
+                        Text(
+                          'I hereby agree to the ',
+                          style: fontsize14w500,
+                        ),
+                        SizedBox(
+                          width: 10,
+                        ),
+                        InkWell(
+                          onTap: () {},
+                          child: Text(
+                            'terms of services ',
+                            style: TextStyle(
+                              color: bluecolor,
+                            ),
+                          ),
+                        ),
+                        Text('and'),
+                        InkWell(
+                            child: Text(
+                          ' privacy policy',
                           style: TextStyle(
                             color: bluecolor,
                           ),
-                        ),
-                      ),
-                      Text('and'),
-                      InkWell(
-                          child: Text(
-                        ' privacy policy',
-                        style: TextStyle(
-                          color: bluecolor,
-                        ),
-                      )),
-                    ],
+                        )),
+                      ],
+                    ),
+                  ],
+                ),
+              ),
+             
+              ButtonScreen('Create Account', fontsize18w500, bluecolor,
+                  width: 332, height: 53, onTap: () {}),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  Text('Already have an account?'),
+                  TextButton(
+                    onPressed: () {},
+                    child: Text(' Sign in'),
                   ),
                 ],
-              ),
-              SizedBox(
-                height: 20,
-              ),
-              ButtonScreen('Create Account', bluecolor, onTap: () {}),
-              SizedBox(
-                height: 20,
-              ),
-              TextButton(
-                onPressed: () {},
-                child: Text('Already have an account? Sign in'),
               ),
             ],
           ),

@@ -4,7 +4,8 @@ import 'package:flutter/material.dart';
 //this is the third section  for courses detailes in the screen of OnlineCourseDetails
 Widget listofcoursedetails(Image img4, String title, String text) {
   return Row(
-    mainAxisAlignment: MainAxisAlignment.center,
+    mainAxisAlignment: MainAxisAlignment.start,
+    crossAxisAlignment: CrossAxisAlignment.start,
     children: [
       img4,
       SizedBox(

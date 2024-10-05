@@ -1,7 +1,11 @@
-import 'package:e_learning_app/views/studentprofilesetting/UI/change_password.dart';
+import 'package:e_learning_app/views/coursepage/UI/home.dart';
+import 'package:e_learning_app/views/splash/Ui/splash_screen.dart';
+import 'package:e_learning_app/views/splash/Ui/splash_screen_explore.dart';
+
 
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:get/get_navigation/src/root/get_material_app.dart';
 
 
 void main() {
@@ -15,10 +19,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ScreenUtilInit(
-      designSize: const Size(300, 812),
+
+      
+      designSize: const Size(360, 812),
       minTextAdapt: true,
       splitScreenMode: true,
-      builder: (context, child) => MaterialApp(
+      builder: (context, child) => GetMaterialApp(
+        
         debugShowCheckedModeBanner: false,
         title: 'ELearning App',
         theme: ThemeData(
@@ -26,7 +33,7 @@ class MyApp extends StatelessWidget {
         ),
         home: child,
       ),
-      child: const ChangePasswordScreen(),
+      child: SplashScreen(),
     );
   }
 }

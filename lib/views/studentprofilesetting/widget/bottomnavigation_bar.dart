@@ -1,5 +1,6 @@
 import 'package:e_learning_app/Theme/colors.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 Widget BottomNavigationbarScreen() {
   return BottomNavigationBar(
@@ -23,13 +24,13 @@ Widget BottomNavigationbarScreen() {
         icon: Row(
           children: [
             Container(
-                width: 40,
-                height: 40,
+                width: 30.w,
+                height: 40.h,
                 decoration:
                     BoxDecoration(color: bluecolor, shape: BoxShape.circle),
                 child: Icon(Icons.person)),
             SizedBox(
-              width: 10,
+              width: 10.w,
             ),
             Text('Profile'),
           ],

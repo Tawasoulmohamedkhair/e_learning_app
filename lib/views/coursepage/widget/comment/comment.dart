@@ -50,7 +50,7 @@ Widget Comments() {
                 style: fontsize14,
               )),
         ),
-        const SizedBox(
+         SizedBox(
           child: sizeboxs,
         ),
         studentcomment(

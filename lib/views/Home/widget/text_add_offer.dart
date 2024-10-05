@@ -3,13 +3,13 @@ import 'package:flutter/material.dart';
 
 Widget List_add_offer(Image img, String text) {
   return Container(
-    width: 130,
+    width: 150,
     height: 18,
     child: Row(
       mainAxisAlignment: MainAxisAlignment.center,
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
-        img,
+        Expanded(child: img),
         Text(text, style: fontsizew400),
       ],
     ),

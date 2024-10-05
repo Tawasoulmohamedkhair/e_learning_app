@@ -1,10 +1,9 @@
 import 'package:e_learning_app/Theme/colors.dart';
-import 'package:e_learning_app/views/coursepage/UI/course_detials.dart';
-import 'package:e_learning_app/views/studentprofilesetting/UI/following_student.dart';
 import 'package:e_learning_app/views/studentprofilesetting/widget/courses_list.dart';
 import 'package:e_learning_app/views/studentprofilesetting/widget/following_list_student.dart';
 import 'package:e_learning_app/views/studentprofilesetting/widget/project_tab.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 Widget TabBarItem(String text1, String text2, String text3, String text4,
     String text5, String text6) {
@@ -54,7 +53,7 @@ Widget TabBarItem(String text1, String text2, String text3, String text4,
           ),
           Container(
             color: lavender,
-            height: 1200,
+            height: 1200.h,
             child: TabBarView(children: [
               ProjectTab(),
               CourserListScreen(),

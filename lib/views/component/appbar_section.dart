@@ -8,6 +8,7 @@ Widget appbarsection(
   VoidCallback onTap,
 ) {
   return Container(
+      height: 26,
       padding: const EdgeInsets.only(left: 20, right: 20),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -17,7 +18,7 @@ Widget appbarsection(
             title,
             style: fontsize18,
           ),
-          InkWell(onTap: onTap, child: img)
+          InkWell(onTap: onTap, child: img),
         ],
       ));
 }

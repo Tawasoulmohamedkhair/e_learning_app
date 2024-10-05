@@ -1,5 +1,4 @@
 import 'package:e_learning_app/Theme/colors.dart';
-import 'package:e_learning_app/Theme/fontstyle.dart';
 import 'package:flutter/material.dart';
 
 //the last section of product screen include BuyNow button

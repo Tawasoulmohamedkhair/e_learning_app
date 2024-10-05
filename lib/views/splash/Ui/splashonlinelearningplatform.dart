@@ -1,35 +1,31 @@
 import 'package:e_learning_app/Theme/colors.dart';
-import 'package:e_learning_app/views/splash/Ui/splashscreen_two.dart';
+import 'package:e_learning_app/Theme/fontstyle.dart';
+import 'package:e_learning_app/views/splash/Ui/SplashScreenSchedule.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_custom_clippers/flutter_custom_clippers.dart';
-import 'package:google_fonts/google_fonts.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:get/get.dart';
 import 'package:step_progress_indicator/step_progress_indicator.dart';
 
-class SplashOnlineLearning extends StatelessWidget {
-  const SplashOnlineLearning({super.key});
+class SplashOnlineLearningPlatform extends StatelessWidget {
+  SplashOnlineLearningPlatform({super.key});
 
   @override
   Widget build(BuildContext context) {
-    var height = MediaQuery.of(context).size.height;
-    var width = MediaQuery.of(context).size.width;
     return SafeArea(
       child: Scaffold(
-        appBar: AppBar(
-          backgroundColor: lavender,
-        ),
-        body: SingleChildScrollView(
-          child: Container(
-            width: width,
-            height: height,
-            decoration: const BoxDecoration(
-              color: lavender,
-            ),
+        body: Container(
+          width: 375.w,
+          height: 812.h,
+          decoration: const BoxDecoration(
+            color: lavender,
+          ),
+          child: SingleChildScrollView(
             child: Column(children: [
               Stack(
                 children: [
                   Container(
-                    width: double.infinity,
-                    height: 360,
+                    height: 408,
                     decoration: const BoxDecoration(
                       image: DecorationImage(
                         image: AssetImage('assets/images/online.png'),
@@ -46,8 +42,8 @@ class SplashOnlineLearning extends StatelessWidget {
                           borderRadius: BorderRadius.circular(18),
                           color: bluecolor,
                         ),
-                        width: 56,
-                        height: 52,
+                        width: 52.61,
+                        height: 52.61,
                         child: Container(
                           child: Image.asset('assets/images/cap.png'),
                         ),
@@ -61,8 +57,8 @@ class SplashOnlineLearning extends StatelessWidget {
                     child: Align(
                       alignment: const Alignment(-.50, -.30),
                       child: Container(
-                        width: 52,
-                        height: 52,
+                        width: 60,
+                        height: 60,
                         decoration: BoxDecoration(
                             color: royalorange,
                             borderRadius: BorderRadius.circular(18)),
@@ -82,35 +78,28 @@ class SplashOnlineLearning extends StatelessWidget {
                         child: Container(
                           width: double.infinity,
                           padding: const EdgeInsets.only(top: 90),
-                          height: 500,
-                          decoration: const BoxDecoration(
+                          height: 517,
+                          decoration: BoxDecoration(
                             color: Colors.white,
                             borderRadius: BorderRadius.only(
-                                topLeft: Radius.circular(80),
-                                topRight: Radius.circular(80)),
+                                topLeft: Radius.circular(80.r),
+                                topRight: Radius.circular(80.r)),
                           ),
                           child: Column(
                             children: [
-                              const SizedBox(
-                                height: 20,
+                              SizedBox(
+                                height: 15.h,
                               ),
                               Text('Online Learning\nPlatform',
                                   textAlign: TextAlign.center,
-                                  style: GoogleFonts.dmSans(
-                                      color: blackcolor,
-                                      fontSize: 25,
-                                      fontWeight: FontWeight.w500)),
+                                  style: fontsize25),
                               Text(
                                 textAlign: TextAlign.center,
                                 'A handful of model sentence structures,\n too generate Lorem which looks reason\n able.',
-                                style: GoogleFonts.dmSans(
-                                  fontSize: 15,
-                                  fontWeight: FontWeight.w500,
-                                  color: blackcolor,
-                                ),
+                                style: fontsize15,
                               ),
-                              const SizedBox(
-                                height: 60,
+                              SizedBox(
+                                height: 20,
                               ),
                               CircularStepProgressIndicator(
                                 totalSteps: 100,
@@ -124,13 +113,8 @@ class SplashOnlineLearning extends StatelessWidget {
                                 selectedStepSize: 2,
                                 roundedCap: (_, __) => true,
                                 child: TextButton(
-                                  onPressed: () {
-                                    Navigator.pushReplacement(
-                                        context,
-                                        MaterialPageRoute(
-                                            builder: (context) =>
-                                                const SplashScreenSchedule()));
-                                  },
+                                  onPressed: () =>
+                                      Get.offAll(() => SplashScreenSchedule()),
                                   child: const Icon(
                                       color: bluecolor,
                                       size: 44,
@@ -162,7 +146,7 @@ class SplashOnlineLearning extends StatelessWidget {
                           height: 52,
                           decoration: BoxDecoration(
                               color: royalorange,
-                              borderRadius: BorderRadius.circular(18)),
+                              borderRadius: BorderRadius.circular(18.r)),
                           child: Container(
                             child: Image.asset('assets/images/Frame.png'),
                           ),
