@@ -2,8 +2,9 @@ import 'dart:async';
 
 import 'package:e_learning_app/Theme/colors.dart';
 import 'package:e_learning_app/Theme/fontstyle.dart';
+import 'package:e_learning_app/views/Onboarding/onboarding_home_screen.dart';
 import 'package:e_learning_app/views/splash/widget/splash_screen_content.dart';
-import 'package:e_learning_app/views/splash/Ui/splashonlinelearningplatform.dart';
+import 'package:e_learning_app/views/Onboarding/ui/onboardingonlinelearningplatform.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
@@ -20,8 +21,7 @@ class _SplashScreenState extends State<SplashScreen> {
   void initState() {
     super.initState();
     Timer(
-        const Duration(seconds: 3),
-        () => Get.to(() => SplashOnlineLearningPlatform()));
+        const Duration(seconds: 5), () => Get.to(() => OnboardingHomeScreen()));
   }
 
   @override
@@ -30,12 +30,12 @@ class _SplashScreenState extends State<SplashScreen> {
     var width = MediaQuery.of(context).size.width;
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: lavender,
+        backgroundColor: AppColor.lavender,
       ),
       body: SafeArea(
         child: SingleChildScrollView(
           child: Container(
-            color: lavender,
+            color: AppColor.lavender,
             height: height,
             width: width,
             child: Column(
@@ -47,7 +47,7 @@ class _SplashScreenState extends State<SplashScreen> {
                     Align(
                         alignment: const Alignment(-0.98, 0.30),
                         child: SplashContentScreen(
-                          color: royalorange,
+                          color: AppColor.royalorange,
                           img1: Image.asset('assets/images/Frame.png'),
                         )),
                     Container(
@@ -56,7 +56,7 @@ class _SplashScreenState extends State<SplashScreen> {
                       decoration: const BoxDecoration(),
                       child: Stack(children: [
                         SplashContentScreen(
-                          color: royalorange,
+                          color: AppColor.royalorange,
                           img1: Image.asset('assets/images/Vector.png'),
                         ),
                         Align(
@@ -64,27 +64,27 @@ class _SplashScreenState extends State<SplashScreen> {
                           child: Text(
                             'Education\nApp',
                             textAlign: TextAlign.center,
-                            style: fontsize29,
+                            style: AppFont.fontsize29,
                           ),
                         ),
                         Align(
                           alignment: const Alignment(-0.80, .80),
                           child: SplashContentScreen(
-                            color: philippineGray,
+                            color: AppColor.philippineGray,
                             img1: Image.asset('assets/images/circle.png'),
                           ),
                         ),
                         Align(
                           alignment: const Alignment(1, -0.40),
                           child: SplashContentScreen(
-                            color: bluecolor,
+                            color: AppColor.bluecolor,
                             img1: Image.asset('assets/images/cap.png'),
                           ),
                         ),
                         Align(
                           alignment: const Alignment(1, 1.3),
                           child: SplashContentScreen(
-                            color: bluecolor,
+                            color: AppColor.bluecolor,
                             img1: Image.asset('assets/images/contact-card.png'),
                           ),
                         ),
@@ -95,7 +95,7 @@ class _SplashScreenState extends State<SplashScreen> {
                 Align(
                   alignment: const Alignment(-.90, 0),
                   child: SplashContentScreen(
-                    color: royalorange,
+                    color: AppColor.royalorange,
                     img1: Image.asset('assets/images/healthicons.png'),
                   ),
                 ),

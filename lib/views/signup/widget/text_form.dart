@@ -6,14 +6,14 @@ Widget textformsignup(Icon icon, String title) {
   return TextFormField(
     obscureText: true,
     decoration: InputDecoration(
-      focusColor: blackcolor,
+      focusColor: AppColor.blackcolor,
       focusedBorder:
           OutlineInputBorder(borderRadius: BorderRadius.circular(50)),
       border: OutlineInputBorder(
         borderRadius: BorderRadius.circular(50.0),
       ),
       labelText: title,
-      labelStyle: fontsizew500,
+      labelStyle: AppFont.fontsizew500,
       prefixIcon: icon,
     ),
   );

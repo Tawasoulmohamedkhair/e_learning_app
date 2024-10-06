@@ -6,22 +6,22 @@ class SocialMediaLink extends StatelessWidget {
   SocialMediaLink(this.img, this.color, this.radius, this.width2,
       double this.width, double this.height,
       {required this.title, super.key});
-  Image img;
+  final Image img;
 
-  String title;
-  bool showimage = true;
-  Color color;
-  double radius;
-  double width2;
-  double width;
-  double height;
+  final String title;
+  final bool showimage = true;
+  final Color color;
+  final double radius;
+  final double width2;
+  final double width;
+  final double height;
 
   @override
   Widget build(BuildContext context) {
     return Container(
         padding: EdgeInsets.only(left: 20),
-        width: width.sp,
-        height: height.sp,
+        width: width.w,
+        height: height.h,
         decoration: BoxDecoration(
           color: color,
           borderRadius: BorderRadius.circular(radius.r),
@@ -31,9 +31,9 @@ class SocialMediaLink extends StatelessWidget {
           children: [
             img,
             SizedBox(
-              width: 10.sp,
+              width: 10.w,
             ),
-            Text(title, style: fontsize18),
+            Text(title, style: AppFont.fontsize18),
           ],
         ));
   }

@@ -12,7 +12,7 @@ class CreateAccount extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: lavender,
+      backgroundColor: AppColor.lavender,
       body: SafeArea(
         child: Container(
           width: 375.w,
@@ -23,39 +23,39 @@ class CreateAccount extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               SizedBox(
-                height: 60.sp,
+                height: 60.h,
               ),
              
               Image.asset('assets/images/Icons.png'),
               SizedBox(
-                height: 10.sp,
+                height: 10.h,
               ),
               Text(
                 'Create an Account',
-                style: fontsize25,
+                style: AppFont.fontsize25,
               ),
               SizedBox(
-                height: 10,
+                height: 10.h,
               ),
               
               Text(
                 'A handful of model sentence structures',
-                style: fontsize12w500,
+                style: AppFont.fontsize12w500,
               ),
               SizedBox(
-                height: 40,
+                height: 40.h,
               ),
               textformsignup(Icon(Icons.person), 'UserName'),
 
              
               SizedBox(
-                height: 20,
+                height: 20.h,
               ),
               textformsignup(Icon(Icons.email_outlined), 'Email id'),
 
               
               SizedBox(
-                height: 20,
+                height: 20.h,
               ),
               Row(
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -63,8 +63,8 @@ class CreateAccount extends StatelessWidget {
                 children: [
                   SocialMediaLink(
                       Image.asset(
-                          width: 17, height: 22, 'assets/images/Hide.png'),
-                      lavender,
+                          width: 17.w, height: 22.h, 'assets/images/Hide.png'),
+                      AppColor.lavender,
                       50.r,
                       1,
                       200.sp,
@@ -72,13 +72,13 @@ class CreateAccount extends StatelessWidget {
                       title: 'Password'),
                  
                   SizedBox(
-                    width: 10.sp,
+                    width: 10.w,
                   ),
                   Container(
-                    width: 66.sp,
-                    height: 53.sp,
+                    width: 66.w,
+                    height: 53.h,
                     decoration: BoxDecoration(
-                        border: Border.all(color: blackcolor),
+                        border: Border.all(color: AppColor.blackcolor),
                         borderRadius: BorderRadius.circular(50.r)),
                     child: Image.asset('assets/images/Icon.png'),
                   )
@@ -86,38 +86,38 @@ class CreateAccount extends StatelessWidget {
               ),
               
               Container(
-                width: 285.sp,
-                height: 45.sp,
+                width: 285.w,
+                height: 45.h,
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Container(
-                      height: 22.sp,
-                      width: 22.sp,
+                      height: 22.h,
+                      width: 22.w,
                       decoration: BoxDecoration(
                         color: Colors.white,
                         borderRadius: BorderRadius.circular(8.r),
                       ),
                     ),
                     SizedBox(
-                      width: 20,
+                      width: 20.w,
                     ),
                     Row(
                       children: [
                         Text(
                           'I hereby agree to the ',
-                          style: fontsize14w500,
+                          style: AppFont.fontsize14w500,
                         ),
                         SizedBox(
-                          width: 10,
+                          width: 10.w,
                         ),
                         InkWell(
                           onTap: () {},
                           child: Text(
                             'terms of services ',
                             style: TextStyle(
-                              color: bluecolor,
+                              color: AppColor.bluecolor,
                             ),
                           ),
                         ),
@@ -126,7 +126,7 @@ class CreateAccount extends StatelessWidget {
                             child: Text(
                           ' privacy policy',
                           style: TextStyle(
-                            color: bluecolor,
+                            color: AppColor.bluecolor,
                           ),
                         )),
                       ],
@@ -135,8 +135,9 @@ class CreateAccount extends StatelessWidget {
                 ),
               ),
              
-              ButtonScreen('Create Account', fontsize18w500, bluecolor,
-                  width: 332, height: 53, onTap: () {}),
+              ButtonScreen(
+                  'Create Account', AppFont.fontsize18w500, AppColor.bluecolor,
+                  width: 332.w, height: 53.h, onTap: () {}),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,

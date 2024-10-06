@@ -10,91 +10,89 @@ class ContinueScreenSignup extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: lavender,
+        backgroundColor: AppColor.lavender,
         body: SafeArea(
           child: Container(
-            width: 375.sp,
-            height: 812.sp,
+            width: 375.w,
+            height: 812.h,
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 SizedBox(
-                  height: 30.sp,
+                  height: 30.h,
                 ),
                 Text(
                   textAlign: TextAlign.center,
                   'Welcome!\nSign up to continue!',
-                  style: fontsize25,
+                  style: AppFont.fontsize25,
                 ),
                 SizedBox(
-                  height: 60.sp,
+                  height: 60.h,
                 ),
                 SocialMediaLink(
                   Image.asset(
-                      width: 28.sp,
-                      height: 28.sp,
+                      width: 28.w, height: 28.h,
                       'assets/images/Rectangle.png'),
                   title: ' Sign Up with Google',
                   Colors.white,
                   50.r,
                   0,
-                  300.sp,
-                  60.sp,
+                  300.w,
+                  60.h,
                 ),
                 SizedBox(
-                  height: 20.sp,
+                  height: 20.h,
                 ),
                 SocialMediaLink(
                   Image.asset(
-                      width: 28.sp,
-                      height: 28.sp,
+                      width: 28.w, height: 28.h,
                       'assets/images/facebook1.png'),
                   title: ' Sign Up with Facebook',
                   Colors.white,
                   50.r,
                   0,
-                  300.sp,
-                  60.sp,
+                  300.w,
+                  60.h,
                 ),
                 SizedBox(
-                  height: 20.sp,
+                  height: 20.h,
                 ),
                 Text('Or'),
                 SizedBox(
-                  height: 20.sp,
+                  height: 20.h,
                 ),
                 Container(
                   decoration: BoxDecoration(
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(50.r),
                   ),
-                  width: 300.sp,
-                  height: 60.sp,
+                  width: 300.w,
+                  height: 60.h,
                   child: Center(
                       child: Text(
                     'Sign up with email',
-                    style: fontsize18,
+                    style: AppFont.fontsize18,
                   )),
                 ),
                 SizedBox(
-                  height: 10.sp,
+                  height: 10.h,
                 ),
                 Text(
                   'By signing up you are agreed with our \nfriendly terms and condition.',
-                  style: fontweghitw500,
+                  style: AppFont.fontweghitw500,
                 ),
                 SizedBox(
-                  height: 60.sp,
+                  height: 60.h,
                 ),
                 Text(
                   'Already have an account?',
-                  style: fontsize18,
+                  style: AppFont.fontsize18,
                 ),
                 SizedBox(
-                  height: 10.sp,
+                  height: 10.h,
                 ),
-                ButtonScreen('Signin', fontweghit500, Colors.white,
-                    width: 300, height: 60, onTap: () {})
+                ButtonScreen('Signin', AppFont.fontweghit500, Colors.white,
+                    width: 300.w, height: 60.h, onTap: () {})
               ],
             ),
           ),

@@ -4,7 +4,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 final sizeboxs = SizedBox(height: 40.sp);
 final decortiondelivery = BoxDecoration(
-  color: bluecolor,
+  color: AppColor.bluecolor,
   borderRadius: BorderRadius.all(Radius.circular(30.0.r)),
 );
 var borderradius50 = BorderRadius.circular(50.r);

@@ -10,7 +10,7 @@ class SuccessfullySceenAccount extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: lavender,
+        backgroundColor: AppColor.lavender,
         body: SafeArea(
           child: Container(
             child: Column(
@@ -47,18 +47,20 @@ class SuccessfullySceenAccount extends StatelessWidget {
                 ),
                 Text(
                   'Account Created\nSuccessfully!',
-                  style: fontsize25,
+                  style: AppFont.fontsize25,
                 ),
                 SizedBox(
                   height: 40.h,
                 ),
                 Text(
                     "If you are going to use a passage of Lorem Ipsum,\n you need to be sure there isn't anything \nembarrassing.",
-                    style: fontsize12w500),
+                    style: AppFont.fontsize12w500),
                 SizedBox(
                   height: 100.h,
                 ),
-                ButtonScreen('Forgot Password', fontsize18w500, bluecolor,width: 332,height: 53,
+                ButtonScreen('Forgot Password', AppFont.fontsize18w500,
+                    AppColor.bluecolor,
+                    width: 332.w, height: 53.h,
                     onTap: () {})
               ],
             ),

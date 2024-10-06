@@ -1,5 +1,6 @@
 import 'package:e_learning_app/Theme/fontstyle.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 Widget appbarsection(
   IconData icon,
@@ -8,7 +9,7 @@ Widget appbarsection(
   VoidCallback onTap,
 ) {
   return Container(
-      height: 26,
+      height: 26.h,
       padding: const EdgeInsets.only(left: 20, right: 20),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -16,7 +17,7 @@ Widget appbarsection(
           Icon(icon),
           Text(
             title,
-            style: fontsize18,
+            style: AppFont.fontsize18,
           ),
           InkWell(onTap: onTap, child: img),
         ],

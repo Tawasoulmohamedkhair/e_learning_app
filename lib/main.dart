@@ -1,6 +1,4 @@
-import 'package:e_learning_app/views/coursepage/UI/home.dart';
 import 'package:e_learning_app/views/splash/Ui/splash_screen.dart';
-import 'package:e_learning_app/views/splash/Ui/splash_screen_explore.dart';
 
 
 import 'package:flutter/material.dart';
