@@ -1,6 +1,6 @@
 import 'package:e_learning_app/Theme/colors.dart';
-import 'package:e_learning_app/views/Onboarding/widget/clip_path_splash_screen.dart';
-import 'package:e_learning_app/views/splash/widget/splash_screen_content.dart';
+import 'package:e_learning_app/views/Onboarding/widget/clip_path_onboarding_screen.dart';
+import 'package:e_learning_app/views/component/splashand_onboarding_screen_content.dart';
 import 'package:e_learning_app/views/Onboarding/ui/onboarding_screen_explore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
