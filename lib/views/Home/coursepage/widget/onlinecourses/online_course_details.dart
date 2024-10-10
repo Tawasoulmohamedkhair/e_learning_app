@@ -1,3 +1,4 @@
+import 'package:e_learning_app/Theme/assets_imge.dart';
 import 'package:e_learning_app/Theme/colors.dart';
 import 'package:e_learning_app/Theme/fontstyle.dart';
 import 'package:e_learning_app/Theme/style.dart';
@@ -28,12 +29,12 @@ Widget onlinecoursescreen() {
               ),
             ],
           ),
-          Container(
+          SizedBox(
             height: 107.h,
             child: Stack(children: [
               Align(
                   alignment: Alignment.center,
-                  child: Image.asset('assets/images/Rectangle 896.png')),
+                  child: Image.asset(AssetsImages.Rectangle)),
               Align(
                 alignment: Alignment.center,
                 child: Container(
@@ -41,17 +42,17 @@ Widget onlinecoursescreen() {
                   height: 90.h,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(20.r),
-                    color: AppColor.sonicSilver.withOpacity(.5),
+                    color: AppColor.sonicSilver,
                   ),
                 ),
               ),
               Center(
                 child: Image.asset(
-                    width: 90.w, height: 90.h, 'assets/images/Mask Group.png'),
+                    width: 90.w, height: 90.h, AssetsImages.Mask),
               ),
             ]),
           ),
-          Container(
+          SizedBox(
             width: 120.w,
             height: 29.h,
             child: Text(
@@ -72,7 +73,7 @@ Widget onlinecoursescreen() {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Image.asset('assets/images/cap 1.png'),
+                Image.asset(AssetsImages.cap1),
                 Text(
                   'Student',
                   style: AppFont.fontsize14w500,
@@ -91,7 +92,7 @@ Widget onlinecoursescreen() {
                   Image.asset(
                       width: 30.w,
                       height: 40.h,
-                      'assets/images/perspaleta1.png'),
+                      AssetsImages.perspaleta1),
                   '85%',
                   'Goal',
                   AppColor.bluecolor),
@@ -102,7 +103,7 @@ Widget onlinecoursescreen() {
                   Image.asset(
                       width: 37.w,
                       height: 39.h,
-                      'assets/images/perspaleta.png'),
+                     AssetsImages.perspaleta),
                   '32',
                   'Total Class',
                   AppColor.royalorange),
@@ -111,7 +112,7 @@ Widget onlinecoursescreen() {
               ),
               detailsofstudent(
                   Image.asset(
-                      width: 34, height: 46, 'assets/images/Instapost.png'),
+                      width: 34, height: 46, AssetsImages.Instapost),
                   '+10',
                   'Total Books',
                   AppColor.bluecolor),
@@ -136,7 +137,7 @@ Widget onlinecoursescreen() {
                     borderRadius: BorderRadius.circular(6)),
                 child: Row(
                   children: [
-                    Image.asset('assets/images/Clocks.png'),
+                    Image.asset(AssetsImages.Clocks),
                     SizedBox(
                       width: 5.w,
                     ),
@@ -153,21 +154,21 @@ Widget onlinecoursescreen() {
             height: 40.h,
           ),
           listofcoursedetails(
-              Image.asset('assets/images/Group 23.png'),
+              Image.asset(AssetsImages.Group23),
               'Introduction',
               'Lorem ipsum dolor sit amet, consectetur\n adipiscing elit.'),
           SizedBox(
             height: 20.h,
           ),
           listofcoursedetails(
-              Image.asset('assets/images/Group 23.png'),
+              Image.asset(AssetsImages.Group23),
               'The Language of Color',
               'Lorem ipsum dolor sit amet, consectetur \nadipiscing elit.'),
           SizedBox(
             height: 20.h,
           ),
           listofcoursedetails(
-              Image.asset('assets/images/Group 23.png'),
+              Image.asset(AssetsImages.Group23),
               'The Psychology of Color',
               'Lorem ipsum dolor sit amet, consectetur\n adipiscing elit.'),
         ],

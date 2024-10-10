@@ -7,7 +7,7 @@ Widget projectscreen() {
     child: SingleChildScrollView(
       child: Container(
         color: AppColor.lavender,
-        height: 500,
+        height: 513,
         padding: const EdgeInsets.only(left: 20, right: 20),
         child: Column(
           children: [

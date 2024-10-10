@@ -8,15 +8,15 @@ Widget BottomNavigationbarScreen() {
     selectedItemColor: AppColor.bluecolor,
     unselectedItemColor: AppColor.blackcolor,
     items: <BottomNavigationBarItem>[
-      BottomNavigationBarItem(
+      const BottomNavigationBarItem(
         icon: Icon(Icons.home),
         label: '',
       ),
-      BottomNavigationBarItem(
+      const BottomNavigationBarItem(
         icon: Icon(Icons.search),
         label: '',
       ),
-      BottomNavigationBarItem(
+      const BottomNavigationBarItem(
         icon: Icon(Icons.bookmark_outline),
         label: '',
       ),
@@ -27,13 +27,13 @@ Widget BottomNavigationbarScreen() {
                 width: 30.w,
                 height: 40.h,
                 decoration:
-                    BoxDecoration(
+                    const BoxDecoration(
                     color: AppColor.bluecolor, shape: BoxShape.circle),
-                child: Icon(Icons.person)),
+                child: const Icon(Icons.person)),
             SizedBox(
               width: 10.w,
             ),
-            Text('Profile'),
+            const Text('Profile'),
           ],
         ),
         label: '',

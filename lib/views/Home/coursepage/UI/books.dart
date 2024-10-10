@@ -7,12 +7,12 @@ class Books extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Books"),
+        title: const Text("Books"),
         centerTitle: true,
       ),
-      body: SafeArea(
+      body: const SafeArea(
           child: Center(
-              child: Text(
+              child: const Text(
         'Books',
         style: TextStyle(fontSize: 20),
       ))),

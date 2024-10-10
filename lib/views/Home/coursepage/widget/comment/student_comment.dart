@@ -1,3 +1,4 @@
+import 'package:e_learning_app/Theme/assets_imge.dart';
 import 'package:e_learning_app/Theme/fontstyle.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -13,7 +14,7 @@ Widget studentcomment(
     children: [
       img,
        SizedBox(
-        width: 20.w,
+        width: 10.w,
       ),
       Column(
         mainAxisAlignment: MainAxisAlignment.start,
@@ -50,7 +51,7 @@ Widget studentcomment(
               SizedBox(
                 width: 150.w,
               ),
-              Image.asset('assets/images/like.png'),
+              Image.asset(AssetsImages.like),
               Text(text4),
             ],
           ),

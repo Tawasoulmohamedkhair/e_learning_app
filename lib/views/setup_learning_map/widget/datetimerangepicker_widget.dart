@@ -11,11 +11,11 @@ class TimePickerOfPlanScreen extends StatefulWidget {
 }
 
 class _TimePickerOfPlanScreenState extends State<TimePickerOfPlanScreen> {
-  DateTime _dateTime = DateTime.now();
+  DateTime dateTime = DateTime.now();
 
   @override
   Widget build(BuildContext context) {
-    return new Container(
+    return Container(
       decoration: BoxDecoration(
           color: AppColor.bluecolor, borderRadius: BorderRadius.circular(20)),
       width: 375.w,
@@ -31,7 +31,7 @@ class _TimePickerOfPlanScreenState extends State<TimePickerOfPlanScreen> {
                 height: 5,
                 thickness: 2,
               ),
-              hourMinute15Interval(),
+              hourMinute12HCustomStyle(),
             ],
           ),
           const Divider(
@@ -45,11 +45,12 @@ class _TimePickerOfPlanScreenState extends State<TimePickerOfPlanScreen> {
   }
 
   Widget hourMinute12H() {
+
     return TimePickerSpinner(
       is24HourMode: true,
       onTimeChange: (time) {
         setState(() {
-          _dateTime = time;
+          dateTime = time;
         });
       },
     );
@@ -60,7 +61,7 @@ class _TimePickerOfPlanScreenState extends State<TimePickerOfPlanScreen> {
       isShowSeconds: false,
       onTimeChange: (time) {
         setState(() {
-          _dateTime = time;
+          dateTime = time;
         });
       },
     );
@@ -73,7 +74,7 @@ class _TimePickerOfPlanScreenState extends State<TimePickerOfPlanScreen> {
       minutesInterval: 1,
       onTimeChange: (time) {
         setState(() {
-          _dateTime = time;
+          dateTime = time;
         });
       },
     );
@@ -87,10 +88,10 @@ class _TimePickerOfPlanScreenState extends State<TimePickerOfPlanScreen> {
       spacing: 30,
       itemHeight: 80,
       isForce2Digits: true,
-      minutesInterval: 2,
+      minutesInterval: 1,
       onTimeChange: (time) {
         setState(() {
-          _dateTime = time;
+          dateTime = time;
         });
       },
     );

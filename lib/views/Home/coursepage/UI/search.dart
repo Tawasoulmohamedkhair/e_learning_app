@@ -9,10 +9,10 @@ class SearchScreen extends GetView<SearchController> {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: Text("Search"),
+        title: const Text("Search"),
         //  centerTitle: true,
       ),
-      body: Center(
+      body: const Center(
           child: Text(
         'Search',
         style: TextStyle(fontSize: 20, color: Colors.red),

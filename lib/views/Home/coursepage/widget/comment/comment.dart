@@ -1,3 +1,4 @@
+import 'package:e_learning_app/Theme/assets_imge.dart';
 import 'package:e_learning_app/Theme/colors.dart';
 import 'package:e_learning_app/Theme/fontstyle.dart';
 import 'package:e_learning_app/Theme/style.dart';
@@ -33,7 +34,7 @@ Widget Comments() {
           ],
         ),
         studentcomment(
-          Image.asset('assets/images/avata.png'),
+          Image.asset(AssetsImages.Avatr),
           '@mouni',
           '11 mins ago   .   Student',
           'How to get better at line? I am really stuck in this\n step!',
@@ -54,7 +55,7 @@ Widget Comments() {
           child: sizeboxs,
         ),
         studentcomment(
-          Image.asset('assets/images/Avatars.png'),
+          Image.asset(AssetsImages.Avatars),
           '@mouni',
           '11 mins ago   .   Student',
           'How to get better at line? I am really stuck in this\n step!',

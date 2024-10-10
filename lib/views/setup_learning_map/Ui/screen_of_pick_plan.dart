@@ -1,3 +1,4 @@
+import 'package:e_learning_app/Theme/assets_imge.dart';
 import 'package:e_learning_app/Theme/colors.dart';
 import 'package:e_learning_app/Theme/fontstyle.dart';
 import 'package:e_learning_app/views/Onboarding/onboarding_home_screen.dart';
@@ -5,7 +6,6 @@ import 'package:e_learning_app/views/setup_learning_map/widget/containerListofpi
 import 'package:e_learning_app/views/setup_learning_map/widget/image_container_discount.dart';
 import 'package:e_learning_app/views/setup_learning_map/widget/triangle_clip.dart';
 import 'package:e_learning_app/views/Home/coursepage/UI/CourseScreen/online_courses_screen.dart';
-import 'package:e_learning_app/views/Onboarding/ui/onboardingonlinelearningplatform.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
@@ -19,7 +19,7 @@ class ScreenOfPickPlan extends StatelessWidget {
       backgroundColor: AppColor.lavender,
       body: SafeArea(
         child: SingleChildScrollView(
-            padding: const EdgeInsets.only(left: 20),
+            padding: const EdgeInsets.only(left: 10, right: 10),
             child: Center(
               child: Container(
                 height: double.maxFinite,
@@ -51,7 +51,7 @@ class ScreenOfPickPlan extends StatelessWidget {
                       Align(
                           alignment: Alignment.topLeft,
                           child: containerListofpickplantutor(
-                              Image.asset('assets/images/tick.png'),
+                              Image.asset(AssetsImages.tick),
                               'BRAINLY \n TUTOR',
                               'All answers, no ads1',
                               '\$100.99',
@@ -61,7 +61,7 @@ class ScreenOfPickPlan extends StatelessWidget {
                         Align(
                           alignment: Alignment(.50, 0),
                           child: containerListofpickplantutor(
-                              Image.asset('assets/images/tick.png'),
+                              Image.asset(AssetsImages.tick),
                               'BRAINLY \nTUTOR',
                               'All answers, no ads',
                               '\$100.99',
@@ -76,7 +76,7 @@ class ScreenOfPickPlan extends StatelessWidget {
                             child: Image.asset(
                                 alignment: AlignmentDirectional.topCenter,
                                 color: AppColor.bluecolor,
-                                'assets/images/tick.png'),
+                                AssetsImages.tick),
                           ),
                         ),
                       ]),
@@ -87,7 +87,7 @@ class ScreenOfPickPlan extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsets.only(left: 50),
                       child: Row(children: [
-                        Image.asset('assets/images/informations.png'),
+                        Image.asset(AssetsImages.informations),
                         SizedBox(
                           width: 15.w,
                         ),

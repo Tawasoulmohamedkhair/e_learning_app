@@ -22,17 +22,17 @@ class _PremiumUserScreenState extends State<PremiumUserScreen> {
       bottomNavigationBar: BottomNavigationbarScreen(),
       body: SafeArea(
           child: SingleChildScrollView(
-        padding: EdgeInsets.only(top: 20, right: 10, left: 10),
+        padding: const EdgeInsets.only(top: 20, right: 10, left: 10),
         child: Container(
           height: 1200.h,
           child:
               Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-            Icon(Icons.arrow_back_ios),
+            const Icon(Icons.arrow_back_ios),
             studentinformation(() {
               Navigator.pushReplacement(context,
-                  MaterialPageRoute(builder: (context) => CoursesScreen()));
+                  MaterialPageRoute(builder: (context) => const CoursesScreen()));
             },
-                Icon(Icons.settings_outlined),
+                const Icon(Icons.settings_outlined),
                 Image.asset('assets/images/Profile Avatar.png'),
                 '@isayef',
                 'Just a simple guy who loves do \nsomething new and fun! 😜',
@@ -50,7 +50,7 @@ class _PremiumUserScreenState extends State<PremiumUserScreen> {
             SizedBox(
               height: 40.h,
             ),
-            ProjectTab(),
+            const ProjectTab(),
           ]),
         ),
       )),

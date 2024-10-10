@@ -11,7 +11,7 @@ Widget onlinecourse(
   Widget circlecontainer,
 ) {
   return Container(
-    padding: EdgeInsets.only(left: 20, top: 20, right: 12),
+    padding: const EdgeInsets.only(left: 20, top: 20, right: 12),
     width: 350,
     height: 86,
     decoration: BoxDecoration(

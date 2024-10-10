@@ -1,3 +1,4 @@
+import 'package:e_learning_app/Theme/assets_imge.dart';
 import 'package:e_learning_app/Theme/colors.dart';
 import 'package:e_learning_app/Theme/fontstyle.dart';
 import 'package:e_learning_app/views/component/appbar_section.dart';
@@ -24,7 +25,7 @@ Widget Detailesofvideos() {
                   Icons.arrow_back_ios_new,
                   'Details',
                   Image.asset(
-                    'assets/images/Book.png',
+                    AssetsImages.Book,
                     
                   ),
                   () {}
@@ -34,7 +35,7 @@ Widget Detailesofvideos() {
                 height: 20.h,
               ),
               Image.asset(
-                'assets/images/Playback.png',
+                AssetsImages.Playback,
                 width: double.infinity,
                 fit: BoxFit.contain,
               ),
@@ -68,12 +69,12 @@ Widget Detailesofvideos() {
                       ),
                       Row(
                         children: [
-                          Container(
+                          SizedBox(
                             width: 38.w,
                             height: 38.h,
                             child: CircleAvatar(
                               radius: 20.r,
-                              child: Image.asset('assets/images/Avatar.png'),
+                              child: Image.asset(AssetsImages.Avatar),
                             ),
                           ),
                           SizedBox(
@@ -88,7 +89,7 @@ Widget Detailesofvideos() {
                       SizedBox(
                         height: 20.h,
                       ),
-                      Container(
+                      SizedBox(
                         width: 270.w,
                         height: 54.h,
                         child: Text(
@@ -99,21 +100,21 @@ Widget Detailesofvideos() {
                       SizedBox(
                         height: 20.h,
                       ),
-                      Container(
+                      SizedBox(
                         width: 280.w,
                         child: Column(
                           children: [
                             Row(
                               children: [
                                 subdetailes(
-                                  Image.asset('assets/images/Frame2.png'),
+                                  Image.asset(AssetsImages.Frame2),
                                   '1.hour 30 min',
                                 ),
                                 SizedBox(
                                   width: 20.w,
                                 ),
                                 subdetailes(
-                                    Image.asset('assets/images/video.png'),
+                                    Image.asset(AssetsImages.video),
                                     '12 Lessons'),
                               ],
                             ),
@@ -123,13 +124,13 @@ Widget Detailesofvideos() {
                             Row(
                               children: [
                                 subdetailes(
-                                    Image.asset('assets/images/Frame3.png'),
+                                    Image.asset(AssetsImages.Frame3),
                                     '4.7  (753)'),
                                 SizedBox(
-                                  width: 10.w,
+                                  width: 40.w,
                                 ),
                                 subdetailes(
-                                    Image.asset('assets/images/Frame2.png'),
+                                    Image.asset(AssetsImages.Frame4),
                                     '2K  students'),
                               ],
                             ),

@@ -1,3 +1,4 @@
+import 'package:e_learning_app/Theme/assets_imge.dart';
 import 'package:e_learning_app/Theme/colors.dart';
 import 'package:e_learning_app/views/Onboarding/widget/clip_path_onboarding_screen.dart';
 import 'package:e_learning_app/views/component/splashand_onboarding_screen_content.dart';
@@ -5,7 +6,6 @@ import 'package:e_learning_app/views/Onboarding/ui/onboarding_screen_explore.dar
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
 
 class OnboardingFindCourseScreen extends StatelessWidget {
   const OnboardingFindCourseScreen({super.key});
@@ -30,13 +30,13 @@ class OnboardingFindCourseScreen extends StatelessWidget {
                   height: 420,
                   decoration: const BoxDecoration(
                     image: DecorationImage(
-                        image: AssetImage('assets/images/find.png')),
+                        image: AssetImage((AssetsImages.find))),
                   ),
                   child: Align(
                       alignment: const Alignment(.600, -.50),
                       child: SplashContentScreen(
                         color: AppColor.philippineGray,
-                        img1: Image.asset('assets/images/circle.png'),
+                        img1: Image.asset(AssetsImages.circle),
                       )),
                 ),
                 Positioned(
@@ -47,7 +47,7 @@ class OnboardingFindCourseScreen extends StatelessWidget {
                     alignment: const Alignment(-.400, -.700),
                     child: SplashContentScreen(
                       color: AppColor.royalorange,
-                      img1: Image.asset('assets/images/Frame.png'),
+                      img1: Image.asset(AssetsImages.Frame),
                     ),
                   ),
                 ),
@@ -58,7 +58,7 @@ class OnboardingFindCourseScreen extends StatelessWidget {
                       alignment: const Alignment(.900, -.400),
                       child: SplashContentScreen(
                         color: AppColor.bluecolor,
-                        img1: Image.asset('assets/images/contact-card.png'),
+                        img1: Image.asset(AssetsImages.contact_card),
                       )),
                 ),
                 Positioned(
@@ -68,7 +68,7 @@ class OnboardingFindCourseScreen extends StatelessWidget {
                       alignment: const Alignment(1, -.80),
                       child: SplashContentScreen(
                         color: AppColor.royalorange,
-                        img1: Image.asset('assets/images/healthicons.png'),
+                        img1: Image.asset(AssetsImages.healthicons),
                       )),
                 ),
               ],
@@ -80,7 +80,7 @@ class OnboardingFindCourseScreen extends StatelessWidget {
                     'Ready to find \n a Course',
                     'A handful of model sentence structures,\n too generate Lorem which looks reason\n able.',
                     70,
-                    onTap: () => Get.to(() => OnboardingScreenExplore()),
+                    onTap: () => Get.to(() => const OnboardingScreenExplore()),
                   ),
                 ]),
               )

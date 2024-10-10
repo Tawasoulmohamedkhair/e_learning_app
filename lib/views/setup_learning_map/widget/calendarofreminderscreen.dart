@@ -40,7 +40,7 @@ class _CalendarOfReminderScreenState extends State<CalendarOfReminderScreen> {
           child: Container(
               child: ListView.separated(
             separatorBuilder: (BuildContext context, int index) {
-              return SizedBox(width: 10);
+              return const SizedBox(width: 10);
             },
             itemCount: 365,
             controller: scrollController,
@@ -60,7 +60,7 @@ class _CalendarOfReminderScreenState extends State<CalendarOfReminderScreen> {
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(16.r),
                       boxShadow: [
-                        BoxShadow(offset: Offset(3, 3), blurRadius: 5)
+                        const BoxShadow(offset: Offset(3, 3), blurRadius: 5)
                       ],
                       color: currentDateSelectedIndex == index % 2
                           ? AppColor.sonicSilver

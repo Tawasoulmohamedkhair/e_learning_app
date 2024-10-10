@@ -1,6 +1,5 @@
+
 import 'package:e_learning_app/views/splash/Ui/splash_screen.dart';
-
-
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
@@ -31,7 +30,7 @@ class MyApp extends StatelessWidget {
         ),
         home: child,
       ),
-      child: SplashScreen(),
+      child: const SplashScreen(),
     );
   }
 }

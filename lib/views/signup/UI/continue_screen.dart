@@ -1,3 +1,4 @@
+import 'package:e_learning_app/Theme/assets_imge.dart';
 import 'package:e_learning_app/Theme/colors.dart';
 import 'package:e_learning_app/Theme/fontstyle.dart';
 import 'package:e_learning_app/views/component/button.dart';
@@ -32,7 +33,7 @@ class ContinueScreenSignup extends StatelessWidget {
                 SocialMediaLink(
                   Image.asset(
                       width: 28.w, height: 28.h,
-                      'assets/images/Rectangle.png'),
+                     AssetsImages.google),
                   title: ' Sign Up with Google',
                   Colors.white,
                   50.r,
@@ -46,7 +47,8 @@ class ContinueScreenSignup extends StatelessWidget {
                 SocialMediaLink(
                   Image.asset(
                       width: 28.w, height: 28.h,
-                      'assets/images/facebook1.png'),
+                    AssetsImages.facebook,
+                  ),
                   title: ' Sign Up with Facebook',
                   Colors.white,
                   50.r,

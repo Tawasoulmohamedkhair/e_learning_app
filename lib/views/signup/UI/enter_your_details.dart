@@ -5,8 +5,8 @@ class EnterYouDetails extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: SafeArea(
+    return const Scaffold(
+      body: const SafeArea(
           child: SingleChildScrollView(
         child: Column(
           children: [

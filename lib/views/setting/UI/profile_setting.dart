@@ -17,14 +17,14 @@ class ProfileSetting extends StatelessWidget {
       body: SafeArea(
         child: Container(
           color: AppColor.lavender,
-          padding: EdgeInsets.only(left: 20),
+          padding: const EdgeInsets.only(left: 20),
           width: 375.w,
           height: 812.h,
           child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Icon(Icons.arrow_back_ios),
+              const Icon(Icons.arrow_back_ios),
               SizedBox(height: 20.h),
               Text(
                 'Profile Setting',

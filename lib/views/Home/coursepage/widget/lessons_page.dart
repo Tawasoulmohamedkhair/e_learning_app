@@ -13,7 +13,7 @@ class _LessonPageState extends State<LessonPage> {
   Widget build(BuildContext context) {
     return const Scaffold(
         backgroundColor: AppColor.lavender,
-        body: const Center(
+        body: Center(
           child: Text('Lessons Page'),
         ));
   }

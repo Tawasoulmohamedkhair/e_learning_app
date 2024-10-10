@@ -13,7 +13,8 @@ Widget coursedetails(
   img,
 }) {
   return Container(
-    padding: EdgeInsets.only(left: 20, right: 20),
+    
+    padding: const EdgeInsets.only(left: 20, right: 20),
     child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -41,7 +42,7 @@ Widget coursedetails(
               text3,
                   style: AppFont.fontsize15,
             ),
-            SizedBox(
+                const SizedBox(
               width: 20,
             ),
             Text(
@@ -56,14 +57,14 @@ Widget coursedetails(
                       width: 15.w,
                       height: 15.h,
                   decoration:
-                      BoxDecoration(
+                      const BoxDecoration(
                           color: AppColor.bluecolor, shape: BoxShape.circle),
                   child: (text1 == '01') ? Icon(size: 10, icon1) : null)
           ]),
         ],
       ),
       SizedBox(
-            width: 100.w,
+            width: 50.w,
       ),
           Container(
             width: 44.w,

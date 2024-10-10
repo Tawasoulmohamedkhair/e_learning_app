@@ -1,3 +1,4 @@
+import 'package:e_learning_app/Theme/assets_imge.dart';
 import 'package:e_learning_app/Theme/colors.dart';
 import 'package:e_learning_app/views/Onboarding/ui/onboarding_screen_find_course.dart';
 import 'package:e_learning_app/views/Onboarding/widget/clip_path_onboarding_screen.dart';
@@ -5,7 +6,6 @@ import 'package:e_learning_app/views/component/splashand_onboarding_screen_conte
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
 
 class OnboardingScheduleScreen extends StatelessWidget {
   const OnboardingScheduleScreen({super.key});
@@ -31,7 +31,7 @@ class OnboardingScheduleScreen extends StatelessWidget {
                     decoration: const BoxDecoration(
                       image: DecorationImage(
                           image: AssetImage(
-                        'assets/images/schedule.png',
+                        AssetsImages.schedule,
                       )),
                     ),
                     child: Column(
@@ -41,7 +41,7 @@ class OnboardingScheduleScreen extends StatelessWidget {
                             child: SplashContentScreen(
                               color: AppColor.philippineGray,
                               img1: Image.asset(
-                                'assets/images/circle.png',
+                                AssetsImages.circle,
                               ),
                             )),
                       ],
@@ -55,7 +55,7 @@ class OnboardingScheduleScreen extends StatelessWidget {
                       alignment: const Alignment(-.50, -.900),
                       child: SplashContentScreen(
                         color: AppColor.bluecolor,
-                        img1: Image.asset('assets/images/contact-card.png'),
+                        img1: Image.asset(AssetsImages.contact_card),
                       ),
                     ),
                   ),
@@ -76,7 +76,7 @@ class OnboardingScheduleScreen extends StatelessWidget {
                         alignment: const Alignment(1, -.80),
                         child: SplashContentScreen(
                           color: AppColor.bluecolor,
-                          img1: Image.asset('assets/images/cap.png'),
+                          img1: Image.asset(AssetsImages.cap),
                         ),
                       ),
                     ),
@@ -91,7 +91,7 @@ class OnboardingScheduleScreen extends StatelessWidget {
                               color: AppColor.royalorange,
                               borderRadius: BorderRadius.circular(18)),
                           child: Container(
-                            child: Image.asset('assets/images/Frame.png'),
+                            child: Image.asset(AssetsImages.Frame),
                           ),
                         ),
                       ),

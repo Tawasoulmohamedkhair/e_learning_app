@@ -1,3 +1,4 @@
+import 'package:e_learning_app/Theme/assets_imge.dart';
 import 'package:e_learning_app/Theme/colors.dart';
 import 'package:e_learning_app/Theme/fontstyle.dart';
 import 'package:e_learning_app/Theme/style.dart';
@@ -33,7 +34,7 @@ class _TrackongOrderScreenState extends State<TrackongOrderScreen> {
                   Padding(
                     padding: const EdgeInsets.only(left: 20),
                     child: Image.asset(
-                        width: 24.w, height: 15.h, 'assets/images/Path.png'),
+                        width: 24.w, height: 15.h, AssetsImages.Path),
                   ),
                   SizedBox(
                     width: 20.w,
@@ -79,7 +80,7 @@ class _TrackongOrderScreenState extends State<TrackongOrderScreen> {
                           borderRadius: BorderRadius.circular(10)),
                       child: Row(
                         children: [
-                          Image.asset('assets/images/clock.png'),
+                          Image.asset(AssetsImages.clock),
                           SizedBox(
                             width: 2.w,
                           ),
@@ -113,28 +114,28 @@ class _TrackongOrderScreenState extends State<TrackongOrderScreen> {
                         SizedBox(
                           height: 20.h,
                         ),
-                        stateoforder(Image.asset('assets/images/Group.png'),
+                        stateoforder(Image.asset(AssetsImages.Group),
                             'On the way', AppColor.bluecolor),
                         SizedBox(
                           width: 30.w,
                           height: 60.h,
                           child: VerticalDivider(
-                            color: AppColor.blackcolor.withOpacity(0.5),
+                            color: AppColor.blackcolor,
                             thickness: 1,
                           ),
                         ),
-                        stateoforder(Image.asset('assets/images/Group.png'),
+                        stateoforder(Image.asset(AssetsImages.Group),
                             'Dispatched', AppColor.pink),
                         SizedBox(
                           width: 30.w,
                           height: 60.h,
                           child: VerticalDivider(
-                            color: AppColor.blackcolor.withOpacity(.5),
+                            color: AppColor.blackcolor,
                             thickness: 1,
                           ),
                         ),
                         stateoforder(
-                          Image.asset('assets/images/archive-check .png'),
+                          Image.asset(AssetsImages.archive),
                           'Order placed successfully',
                           const Color(0xff7FD77D),
                         )

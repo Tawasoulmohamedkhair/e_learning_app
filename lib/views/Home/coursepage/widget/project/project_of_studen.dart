@@ -1,3 +1,4 @@
+import 'package:e_learning_app/Theme/assets_imge.dart';
 import 'package:e_learning_app/Theme/colors.dart';
 import 'package:e_learning_app/Theme/fontstyle.dart';
 import 'package:e_learning_app/Theme/style.dart';
@@ -14,15 +15,15 @@ Widget projectofstudent() {
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
         projectitem(
-          Image.asset('assets/images/unsplash.png'),
-          Image.asset('assets/images/Project 2.png'),
+          Image.asset(AssetsImages.unsplash),
+          Image.asset(AssetsImages.project2),
         ),
         SizedBox(
           height: 20.h,
         ),
         projectitem(
-          Image.asset('assets/images/Project 3.png'),
-          Image.asset('assets/images/unsplash3.png'),
+          Image.asset(AssetsImages.project3),
+          Image.asset(AssetsImages.unsplash3),
         ),
         SizedBox(
           child: sizeboxs,

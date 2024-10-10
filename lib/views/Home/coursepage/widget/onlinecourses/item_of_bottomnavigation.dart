@@ -1,4 +1,3 @@
-import 'dart:developer';
 
 import 'package:e_learning_app/Theme/colors.dart';
 import 'package:e_learning_app/views/Home/coursepage/UI/books.dart';
@@ -20,34 +19,31 @@ class _CoursesBottomNavigationbarState
   int myindex = 0;
 
   List<Widget> screens = [
-    OnlineCourseDetails(),
-    Books(),
-    SearchScreen(),
-    MenuScreen(),
+    const OnlineCourseDetails(),
+    const Books(),
+    const SearchScreen(),
+    const MenuScreen(),
   ];
   final PageStorageBucket bucket = PageStorageBucket();
 
-  Future<void> anything() async {
-    log('hello' + MediaQuery.of(context).size.width.toString());
-  }
+  
 
   @override
   void initState() {
     super.initState();
-    anything();
   }
 
-  Widget currentScreen = OnlineCourseDetails();
+  Widget currentScreen = const OnlineCourseDetails();
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: AppColor.lavender,
       floatingActionButton: FloatingActionButton(
-        shape: CircleBorder(),
+        shape: const CircleBorder(),
         backgroundColor: Colors.blue,
         onPressed: () {},
-        child: Icon(
+        child: const Icon(
           Icons.add,
           color: Colors.white,
         ),
@@ -56,8 +52,8 @@ class _CoursesBottomNavigationbarState
       bottomNavigationBar: BottomAppBar(
         color: Colors.blue,
         notchMargin: 10,
-        shape: CircularNotchedRectangle(),
-        child: Container(
+        shape: const CircularNotchedRectangle(),
+        child: SizedBox(
             height: 60,
             child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -69,10 +65,10 @@ class _CoursesBottomNavigationbarState
                         minWidth: 40,
                         onPressed: () {
                           setState(() {
-                            currentScreen = OnlineCourseDetails();
+                            currentScreen = const OnlineCourseDetails();
                           });
                         },
-                        child: Column(
+                        child: const Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Icon(
@@ -90,10 +86,10 @@ class _CoursesBottomNavigationbarState
                         minWidth: 40,
                         onPressed: () {
                           setState(() {
-                            currentScreen = Books();
+                            currentScreen = const Books();
                           });
                         },
-                        child: Column(
+                        child: const Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Icon(
@@ -116,10 +112,10 @@ class _CoursesBottomNavigationbarState
                           minWidth: 40,
                           onPressed: () {
                             setState(() {
-                              currentScreen = SearchScreen();
+                              currentScreen = const SearchScreen();
                             });
                           },
-                          child: Column(
+                          child: const Column(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               Icon(
@@ -136,10 +132,10 @@ class _CoursesBottomNavigationbarState
                         minWidth: 40,
                         onPressed: () {
                           setState(() {
-                            currentScreen = MenuScreen();
+                            currentScreen = const MenuScreen();
                           });
                         },
-                        child: Column(
+                        child: const Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Icon(
@@ -167,131 +163,4 @@ class _CoursesBottomNavigationbarState
     
     
     
-    /*BottomAppBar(
-      elevation: 0.3,
-      notchMargin: 10,
-      clipBehavior: Clip.antiAlias,
-      color: bluecolor,
-      shape: CircularNotchedRectangle(),
-      child: Container(
-        height: 60,
-        child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: <Widget>[
-              Row(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    MaterialButton(
-                      minWidth: 40,
-                      onPressed: () {
-                        setState(() {
-                          currentScreen = Home();
-                          currentTab = 0;
-                        });
-                      },
-                      child: Column(
-                        children: [
-                          Icon(Icons.home_outlined,
-                              color: currentTab == 0
-                                  ? Colors.white
-                                  : Colors.white60),
-                          Text(
-                            'Home',
-                            style: fontsize10,
-                          ),
-                        ],
-                      ),
-                    ),
-                    MaterialButton(
-                      minWidth: 40,
-                      onPressed: () {
-                        setState(() {
-                          print('kl');
 
-                          currentScreen = Books();
-                          currentTab = 1;
-                        });
-                      },
-                      child: Column(
-                        children: [
-                          Icon(Icons.menu_book_outlined,
-                              color: currentTab == 1
-                                  ? Colors.white
-                                  : Colors.white60),
-                          Text(
-                            'Books',
-                            style: fontsize10,
-                          ),
-                        ],
-                      ),
-                    ),
-                  ]),
-              Row(
-                children: [
-                  MaterialButton(
-                    minWidth: 40,
-                    onPressed: () {
-                      setState(() {
-                        print('jl');
-
-                        currentScreen = SearchScreen();
-                        currentTab = 2;
-                      });
-                    },
-                    child: Column(
-                      children: [
-                        Icon(Icons.search,
-                            color: currentTab == 2
-                                ? Colors.white
-                                : Colors.white60),
-                        Text(
-                          'Search',
-                          style: fontsize10,
-                        ),
-                      ],
-                    ),
-                  ),
-                  MaterialButton(
-                    onPressed: () {
-                      setState(() {
-                        print('l');
-
-                        currentScreen = MenuScreen();
-                        currentTab = 3;
-                      });
-                    },
-                    child: Column(
-                      children: [
-                        Icon(Icons.person_outline,
-                            color: currentTab == 3
-                                ? Colors.white
-                                : Colors.white60),
-                        Text(
-                          'Profile',
-                          style: fontsize10,
-                        ),
-                      ],
-                    ),
-                  ),
-                ],
-              ),
-            ]),
-      ),
-    );
-  }
-}*/
-
-/*Widget itemofbottomnavigationbar(
-    VoidCallback onPressed, String text, IconData icon) {
-  return MaterialButton(
-    minWidth: 40,
-    onPressed: onPressed,
-    child: Column(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: <Widget>[
-        Icon(color: Colors.white, icon),
-        Text(
-          text,
-          style: fontsize10,
-        */
-      

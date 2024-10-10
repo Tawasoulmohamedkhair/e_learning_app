@@ -32,14 +32,14 @@ class _OnboardingHomeScreenState extends State<OnboardingHomeScreen> {
             PageView(
                 scrollDirection: Axis.horizontal,
                 controller: pagecontroller,
-                children: [
+                children: const [
                   OnboardingOnlineLearningPlatform(),
                   OnboardingScheduleScreen(),
                   OnboardingFindCourseScreen(),
                   OnboardingScreenExplore(),
                 ]),
             Container(
-              alignment: Alignment(0.0, .90),
+              alignment: const Alignment(0.0, .90),
               child: SmoothPageIndicator(
                 controller: pagecontroller,
                 count: 4,

@@ -1,3 +1,4 @@
+import 'package:e_learning_app/Theme/assets_imge.dart';
 import 'package:e_learning_app/Theme/colors.dart';
 import 'package:e_learning_app/Theme/fontstyle.dart';
 import 'package:e_learning_app/views/component/button.dart';
@@ -27,7 +28,7 @@ class SuccessfullySceenAccount extends StatelessWidget {
                           Image.asset(
                               width: 40.w,
                               height: 40.h,
-                              'assets/images/stars.png'),
+                              AssetsImages.stars),
                           SizedBox(
                             width: 80.w,
                           ),
@@ -35,12 +36,12 @@ class SuccessfullySceenAccount extends StatelessWidget {
                               color: Colors.red,
                               width: 60.w,
                               height: 40.h,
-                              'assets/images/stars.png'),
+                              AssetsImages.stars),
                         ],
                       ),
                     ],
                   ),
-                  Image.asset('assets/images/stars.png'),
+                  Image.asset(AssetsImages.stars),
                 ]),
                 SizedBox(
                   height: 40.h,

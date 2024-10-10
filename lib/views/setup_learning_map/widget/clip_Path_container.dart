@@ -11,12 +11,15 @@ class ClipPathContainer extends StatelessWidget {
     return ClipPath(
       clipper: RoundedDiagonalPathClipper(),
       child: Container(
-        padding: const EdgeInsets.only(left: 100),
+        padding: const EdgeInsets.only(
+          left: 60,
+        ),
         width: 327.w,
         height: 143.h,
         decoration: const BoxDecoration(
           borderRadius: BorderRadius.only(
-            topLeft: Radius.circular(16.0),
+              topRight: Radius.circular(16.0),
+              bottomRight: Radius.circular(16.0)
           ),
           color: AppColor.fawn,
         ),

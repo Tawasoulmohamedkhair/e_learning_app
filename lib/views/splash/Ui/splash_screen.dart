@@ -1,5 +1,6 @@
 import 'dart:async';
 
+import 'package:e_learning_app/Theme/assets_imge.dart';
 import 'package:e_learning_app/Theme/colors.dart';
 import 'package:e_learning_app/Theme/fontstyle.dart';
 import 'package:e_learning_app/views/Onboarding/onboarding_home_screen.dart';
@@ -20,7 +21,8 @@ class _SplashScreenState extends State<SplashScreen> {
   void initState() {
     super.initState();
     Timer(
-        const Duration(seconds: 5), () => Get.to(() => OnboardingHomeScreen()));
+        const Duration(seconds: 5),
+        () => Get.to(() => const OnboardingHomeScreen()));
   }
 
   @override
@@ -47,7 +49,7 @@ class _SplashScreenState extends State<SplashScreen> {
                         alignment: const Alignment(-0.98, 0.30),
                         child: SplashContentScreen(
                           color: AppColor.royalorange,
-                          img1: Image.asset('assets/images/Frame.png'),
+                          img1: Image.asset(AssetsImages.Frame),
                         )),
                     Container(
                       width: 300.w,
@@ -56,7 +58,7 @@ class _SplashScreenState extends State<SplashScreen> {
                       child: Stack(children: [
                         SplashContentScreen(
                           color: AppColor.royalorange,
-                          img1: Image.asset('assets/images/Vector.png'),
+                          img1: Image.asset(AssetsImages.Vector),
                         ),
                         Align(
                           alignment: const Alignment(-0.60, .40),
@@ -70,21 +72,21 @@ class _SplashScreenState extends State<SplashScreen> {
                           alignment: const Alignment(-0.80, .80),
                           child: SplashContentScreen(
                             color: AppColor.philippineGray,
-                            img1: Image.asset('assets/images/circle.png'),
+                            img1: Image.asset(AssetsImages.circle),
                           ),
                         ),
                         Align(
                           alignment: const Alignment(1, -0.40),
                           child: SplashContentScreen(
                             color: AppColor.bluecolor,
-                            img1: Image.asset('assets/images/cap.png'),
+                            img1: Image.asset(AssetsImages.cap),
                           ),
                         ),
                         Align(
                           alignment: const Alignment(1, 1.3),
                           child: SplashContentScreen(
                             color: AppColor.bluecolor,
-                            img1: Image.asset('assets/images/contact-card.png'),
+                            img1: Image.asset(AssetsImages.contact_card),
                           ),
                         ),
                       ]),
@@ -95,7 +97,7 @@ class _SplashScreenState extends State<SplashScreen> {
                   alignment: const Alignment(-.90, 0),
                   child: SplashContentScreen(
                     color: AppColor.royalorange,
-                    img1: Image.asset('assets/images/healthicons.png'),
+                    img1: Image.asset(AssetsImages.healthicons),
                   ),
                 ),
               ],

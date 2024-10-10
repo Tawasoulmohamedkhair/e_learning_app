@@ -1,3 +1,4 @@
+import 'package:e_learning_app/Theme/assets_imge.dart';
 import 'package:e_learning_app/Theme/colors.dart';
 import 'package:e_learning_app/views/Onboarding/widget/clip_path_onboarding_screen.dart';
 import 'package:e_learning_app/views/setup_learning_map/Ui/reminder_screen.dart';
@@ -5,7 +6,6 @@ import 'package:e_learning_app/views/component/splashand_onboarding_screen_conte
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
 
 class OnboardingScreenExplore extends StatelessWidget {
   const OnboardingScreenExplore({super.key});
@@ -29,13 +29,13 @@ class OnboardingScreenExplore extends StatelessWidget {
                   height: 420,
                   decoration: const BoxDecoration(
                     image: DecorationImage(
-                        image: AssetImage('assets/images/explore.png')),
+                        image: AssetImage(AssetsImages.explore)),
                   ),
                   child: Align(
                     alignment: const Alignment(.600, -.900),
                     child: SplashContentScreen(
                         color: AppColor.bluecolor,
-                        img1: Image.asset('assets/images/cap.png')),
+                        img1: Image.asset(AssetsImages.cap)),
                   ),
                 ),
                 Positioned(
@@ -45,7 +45,7 @@ class OnboardingScreenExplore extends StatelessWidget {
                   child: Align(
                     alignment: const Alignment(-.400, -.700),
                     child: SplashContentScreen(
-                        img1: Image.asset('assets/images/healthicons.png'),
+                        img1: Image.asset(AssetsImages.healthicons),
                         color: AppColor.royalorange),
                   ),
                 ),
@@ -56,7 +56,7 @@ class OnboardingScreenExplore extends StatelessWidget {
                       alignment: const Alignment(.900, -.400),
                       child: SplashContentScreen(
                         color: AppColor.philippineGray,
-                        img1: Image.asset('assets/images/circle.png'),
+                        img1: Image.asset(AssetsImages.circle),
                       )),
                 ),
                 Positioned(
@@ -66,7 +66,7 @@ class OnboardingScreenExplore extends StatelessWidget {
                       alignment: const Alignment(1, -.80),
                       child: SplashContentScreen(
                         color: AppColor.royalorange,
-                        img1: Image.asset('assets/images/Frame.png'),
+                        img1: Image.asset(AssetsImages.Frame),
                       )),
                 ),
               ],
@@ -78,7 +78,7 @@ class OnboardingScreenExplore extends StatelessWidget {
                     'Explore it \nToday!',
                     'A handful of model sentence structures,\n too generate Lorem which looks reason\n able.',
                     100,
-                    onTap: () => Get.to(() => Learning_Reminder_Screen()),
+                    onTap: () => Get.to(() => const Learning_Reminder_Screen()),
                   ),
                 ]),
               )

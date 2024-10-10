@@ -9,10 +9,10 @@ class MenuScreen extends GetView<MenuController> {
     return Scaffold(
       appBar: AppBar(
         
-        title: Text("Menu"),
+        title: const Text("Menu"),
         centerTitle: true,
       ),
-      body: SafeArea(
+      body: const SafeArea(
           child: Center(
               child: Text(
         'Menu,',

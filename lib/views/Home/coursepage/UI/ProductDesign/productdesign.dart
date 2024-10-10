@@ -1,3 +1,4 @@
+import 'package:e_learning_app/Theme/assets_imge.dart';
 import 'package:e_learning_app/Theme/colors.dart';
 import 'package:e_learning_app/Theme/fontstyle.dart';
 import 'package:e_learning_app/views/Home/coursepage/UI/ProductDesign/productDesignDetails.dart';
@@ -21,12 +22,12 @@ class _ProductDesginScreenState extends State<ProductDesginScreen> {
       backgroundColor: AppColor.lavender,
     
       body: SafeArea(
-        child: Container(
+        child: SizedBox(
           width: double.infinity,
           child: SingleChildScrollView(
             child: Column(
               children: [
-                SizedBox(
+                const SizedBox(
                   height: 40,
                 ),
                 Padding(
@@ -42,10 +43,10 @@ class _ProductDesginScreenState extends State<ProductDesginScreen> {
                                   context,
                                   MaterialPageRoute(
                                       builder: (context) =>
-                                          ProductDesigndetails()));
+                                          const ProductDesigndetails()));
                             });
                           },
-                          child: Icon(Icons.arrow_back_ios)),
+                          child: const Icon(Icons.arrow_back_ios)),
                     ],
                   ),
                 ),
@@ -53,14 +54,14 @@ class _ProductDesginScreenState extends State<ProductDesginScreen> {
                   children: [
                     
                     Container(
-                      padding: EdgeInsets.only(left: 10),
+                      padding: const EdgeInsets.only(left: 10),
                       width: 179,
                       height: 160,
                       color: AppColor.lavender,
                       child: Column(
                         children: [
                           trainglepoint(),
-                          SizedBox(
+                          const SizedBox(
                             height: 20,
                           ),
                           Text(
@@ -74,13 +75,13 @@ class _ProductDesginScreenState extends State<ProductDesginScreen> {
                             Align(
                               alignment: const Alignment(.60, .90),
                               child: Image.asset(
-                                'assets/images/arrows.png',
+                                AssetsImages.arrows,
                                 color: AppColor.Lightgrey,
                               ),
                             ),
                             Align(
                               alignment: Alignment.centerRight,
-                              child: Image.asset('assets/images/arrow.png',
+                              child: Image.asset(AssetsImages.arrow,
                                   color: AppColor.Lightgrey),
                             ),
                           ]),
@@ -96,11 +97,11 @@ class _ProductDesginScreenState extends State<ProductDesginScreen> {
                           Image.asset(
                               width: 175,
                               height: 224,
-                              'assets/images/Frames.png'),
+                              AssetsImages.Frames),
                           Positioned(
                               right: 30,
                               top: 100,
-                              child: Image.asset('assets/images/curve.png')),
+                              child: Image.asset(AssetsImages.curve)),
                         ],
                       ),
                     ),

@@ -1,3 +1,4 @@
+import 'package:e_learning_app/Theme/assets_imge.dart';
 import 'package:e_learning_app/Theme/colors.dart';
 import 'package:e_learning_app/Theme/fontstyle.dart';
 import 'package:e_learning_app/views/Onboarding/ui/onboardingscreenschedule.dart';
@@ -8,7 +9,7 @@ import 'package:get/get.dart';
 import 'package:step_progress_indicator/step_progress_indicator.dart';
 
 class OnboardingOnlineLearningPlatform extends StatelessWidget {
-  OnboardingOnlineLearningPlatform({super.key});
+  const OnboardingOnlineLearningPlatform({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -29,7 +30,7 @@ class OnboardingOnlineLearningPlatform extends StatelessWidget {
                     height: 320.h,
                     decoration: const BoxDecoration(
                       image: DecorationImage(
-                        image: AssetImage('assets/images/online.png'),
+                        image: AssetImage(AssetsImages.online),
                       ),
                     ),
                   ),
@@ -46,7 +47,7 @@ class OnboardingOnlineLearningPlatform extends StatelessWidget {
                         width: 52.61.w,
                         height: 52.61.h,
                         child: Container(
-                          child: Image.asset('assets/images/cap.png'),
+                          child: Image.asset(AssetsImages.cap),
                         ),
                       ),
                     ),
@@ -64,7 +65,7 @@ class OnboardingOnlineLearningPlatform extends StatelessWidget {
                             color: AppColor.royalorange,
                             borderRadius: BorderRadius.circular(18)),
                         child: Container(
-                          child: Image.asset('assets/images/healthicons.png'),
+                          child: Image.asset(AssetsImages.healthicons),
                         ),
                       ),
                     ),
@@ -115,7 +116,7 @@ class OnboardingOnlineLearningPlatform extends StatelessWidget {
                                 roundedCap: (_, __) => true,
                                 child: TextButton(
                                   onPressed: () => Get.offAll(
-                                      () => OnboardingScheduleScreen()),
+                                      () => const OnboardingScheduleScreen()),
                                   child: const Icon(
                                       color: AppColor.bluecolor,
                                       size: 44,
@@ -134,7 +135,7 @@ class OnboardingOnlineLearningPlatform extends StatelessWidget {
                             color: AppColor.philippineGray,
                             borderRadius: BorderRadius.circular(18.r)),
                         child: Container(
-                          child: Image.asset('assets/images/circle.png'),
+                          child: Image.asset(AssetsImages.circle),
                         ),
                       ),
                     ),
@@ -149,7 +150,7 @@ class OnboardingOnlineLearningPlatform extends StatelessWidget {
                               color: AppColor.royalorange,
                               borderRadius: BorderRadius.circular(18.r)),
                           child: Container(
-                            child: Image.asset('assets/images/Frame.png'),
+                            child: Image.asset(AssetsImages.Frame),
                           ),
                         ),
                       ),

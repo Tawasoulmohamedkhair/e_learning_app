@@ -14,7 +14,7 @@ class CourserListScreen extends StatelessWidget {
         width: 700.w,
         height: 700.h,
         child: ListView.builder(
-          padding: EdgeInsets.only(top: 10),
+          padding: const EdgeInsets.only(top: 10),
           scrollDirection: Axis.vertical,
           shrinkWrap: true,
           itemCount: courses_list.length,
@@ -22,7 +22,7 @@ class CourserListScreen extends StatelessWidget {
             final item = courses_list[index];
             return Container(
               width: 300.w,
-              padding: EdgeInsets.only(top: 5),
+              padding: const EdgeInsets.only(top: 5),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.start,
                 crossAxisAlignment: CrossAxisAlignment.start,

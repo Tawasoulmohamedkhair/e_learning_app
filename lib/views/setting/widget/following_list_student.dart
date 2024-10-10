@@ -12,12 +12,12 @@ class FollowingStudentListScreen extends StatelessWidget {
       height: 700.h,
       width: 700.w,
       child: ListView.builder(
-          padding: EdgeInsets.only(top: 30),
+          padding: const EdgeInsets.only(top: 30),
           itemCount: followingList.length,
           itemBuilder: (context, index) {
             final items = followingList[index];
             return Container(
-              padding: EdgeInsets.only(top: 10),
+              padding: const EdgeInsets.only(top: 10),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [

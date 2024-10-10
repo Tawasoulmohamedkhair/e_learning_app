@@ -5,7 +5,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 //this widet for the details of student the totalbook and the goal and the total class of student
 Widget detailsofstudent(Image img3, String text1, String text2, Color color) {
   return Container(
-    padding: EdgeInsets.only(top: 5, left: 5),
+    padding: const EdgeInsets.only(top: 5, left: 5),
     width: 100.w,
     height: 127.h,
     decoration: BoxDecoration(

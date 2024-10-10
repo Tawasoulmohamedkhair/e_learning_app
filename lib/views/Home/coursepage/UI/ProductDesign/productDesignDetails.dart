@@ -3,8 +3,6 @@ import 'package:e_learning_app/Theme/fontstyle.dart';
 import 'package:e_learning_app/views/Home/coursepage/UI/ProductDesign/productdesign.dart';
 import 'package:e_learning_app/views/Home/coursepage/widget/productdesign/bottom_container.dart';
 import 'package:e_learning_app/views/Home/coursepage/widget/productdesign/course_container.dart';
-import 'package:video_player/video_player.dart';
-import 'package:flick_video_player/flick_video_player.dart';
 import 'package:flutter/material.dart';
 
 //the screen of the video of productDesign
@@ -16,15 +14,8 @@ class ProductDesigndetails extends StatefulWidget {
 }
 
 class _ProductDesigndetailsState extends State<ProductDesigndetails> {
-  late FlickManager flickManager;
   @override
-  void initState() {
-    super.initState();
-
-    flickManager = FlickManager(
-        videoPlayerController: VideoPlayerController.networkUrl(Uri.parse(
-            'https://flutter.github.io/assets-for-api-docs/assets/videos/bee.mp4')));
-  }
+ 
 
   @override
   Widget build(BuildContext context) {
@@ -52,11 +43,7 @@ class _ProductDesigndetailsState extends State<ProductDesigndetails> {
                         },
                         child: Icon(Icons.arrow_back_ios)),
                   ),
-                  Center(
-                    child: AspectRatio(
-                        aspectRatio: 14 / 8,
-                        child: FlickVideoPlayer(flickManager: flickManager)),
-                  ),
+                 
                   coursecontainer(AppColor.lavender),
                   bottomcontainer(
                       Colors.white,

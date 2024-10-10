@@ -1,3 +1,4 @@
+import 'package:e_learning_app/Theme/assets_imge.dart';
 import 'package:e_learning_app/Theme/colors.dart';
 import 'package:e_learning_app/Theme/fontstyle.dart';
 import 'package:e_learning_app/views/Home/coursepage/widget/productdesign/course_details.dart';
@@ -17,7 +18,7 @@ Widget coursecontainer(Color color) {
               )
             : BorderRadius.circular(0.r)),
     width: double.infinity,
-    height: 500.h,
+    height: 450.h,
     child: Stack(
       children: [
         Column(children: [
@@ -51,7 +52,7 @@ Widget coursecontainer(Color color) {
             text2: 'Welcome to the Course',
             text3: '6:10',
             text4: 'mins',
-            img: Image.asset('assets/images/Polygon 1.png'),
+            img: Image.asset(AssetsImages.Polygon),
           ),
           SizedBox(
             height: 10.h,
@@ -64,21 +65,21 @@ Widget coursecontainer(Color color) {
             text3: '6:10',
             text4: 'mins',
             img: Image.asset(
-              'assets/images/Polygon 1.png',
+              AssetsImages.Polygon,
             ),
           ),
           SizedBox(
             height: 10.h,
           ),
           coursedetails(
-            color: AppColor.bluecolor.withOpacity(.4),
+            color: AppColor.bluecolor,
             Icons.add,
             text1: '03 ',
             text2: 'Discovery',
             text3: '6:10',
             text4: 'mins',
             img: Image.asset(
-              'assets/images/lock.png',
+              AssetsImages.lock,
             ),
           ),
           

@@ -1,3 +1,4 @@
+import 'package:e_learning_app/Theme/assets_imge.dart';
 import 'package:e_learning_app/Theme/colors.dart';
 import 'package:e_learning_app/Theme/fontstyle.dart';
 import 'package:e_learning_app/views/component/appbar_section.dart';
@@ -29,7 +30,7 @@ class _OnlineCoursesScreenState extends State<OnlineCoursesScreen> {
               appbarsection(
                 Icons.arrow_back,
                 'Courses',
-                Image.asset('assets/images/Book.png'),
+                Image.asset(AssetsImages.Book),
                 () => Get.to(() => Home()),
               ),
               SizedBox(
@@ -46,13 +47,13 @@ class _OnlineCoursesScreenState extends State<OnlineCoursesScreen> {
                   SizedBox(
                     width: 40.w,
                   ),
-                  Container(
+                  SizedBox(
                       width: 154.w,
                       height: 154.h,
                       child: Image.asset(
                           width: 140.w,
                           height: 200.h,
-                          'assets/images/illustration.png'))
+                          AssetsImages.illustration))
                 ],
               ),
               Stack(
@@ -71,7 +72,7 @@ class _OnlineCoursesScreenState extends State<OnlineCoursesScreen> {
                         ),
                         onlinecourse(
                           Image.asset(
-                            'assets/images/Adobe XD icon.png',
+                            AssetsImages.Adobe,
                           ),
                           'XD Prototyping',
                           '10 hours, 19 lessons',
@@ -80,59 +81,59 @@ class _OnlineCoursesScreenState extends State<OnlineCoursesScreen> {
                               width: 6.w,
                               height: 8.h,
                               color: AppColor.bluecolor,
-                              'assets/images/Polygon 1.png')),
+                              AssetsImages.Polygon)),
                         ),
                         SizedBox(
                           height: 20.h,
                         ),
                         onlinecourse(
                           Image.asset(
-                            'assets/images/Sketch Icon.png',
+                            AssetsImages.Sketch,
                           ),
                           'Sketch',
                           '10 hours, 19 lessons',
                           '25%',
                           circlecontainer(
-                              Image.asset('assets/images/Path 109 (1).png')),
+                              Image.asset(AssetsImages.bluecircle)),
                         ),
                         SizedBox(
                           height: 20.h,
                         ),
                         onlinecourse(
                           Image.asset(
-                            'assets/images/After Effects Icon.png',
+                            AssetsImages.AfterEffects,
                           ),
                           'After Effects',
                           '10 hours, 19 lessons',
                           '25%',
                           circlecontainer(
-                              Image.asset('assets/images/Path 109 (1).png')),
+                              Image.asset(AssetsImages.bluecircle)),
                         ),
                         SizedBox(
                           height: 20.h,
                         ),
                         onlinecourse(
                           Image.asset(
-                            'assets/images/Figma icon.png',
+                            AssetsImages.Figma,
                           ),
                           'Figma',
                           '10 hours, 19 lessons',
                           '25%',
                           circlecontainer(
-                              Image.asset('assets/images/Path 109 (1).png')),
+                              Image.asset(AssetsImages.bluecircle)),
                         ),
                         SizedBox(
                           height: 20.h,
                         ),
                         onlinecourse(
                           Image.asset(
-                            'assets/images/Photoshop Icon.png',
+                            AssetsImages.Photoshop,
                           ),
                           'Adobe Photoshop.',
                           '10 hours, 19 lessons',
                           '25%',
                           circlecontainer(
-                              Image.asset('assets/images/Path 109 (1).png')),
+                              Image.asset(AssetsImages.bluecircle)),
                         ),
 
                         //

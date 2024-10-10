@@ -1,3 +1,4 @@
+import 'package:e_learning_app/Theme/assets_imge.dart';
 import 'package:e_learning_app/Theme/colors.dart';
 import 'package:e_learning_app/Theme/fontstyle.dart';
 import 'package:e_learning_app/views/setup_learning_map/Ui/screen_of_pick_plan.dart';
@@ -15,7 +16,7 @@ class Learning_Reminder_Screen extends StatelessWidget {
     return Scaffold(
         appBar: AppBar(
           backgroundColor: AppColor.lavender,
-          leading: Image.asset('assets/images/cross.png'),
+          leading: Image.asset(AssetsImages.cross),
         ),
         body: SafeArea(
           child: Container(

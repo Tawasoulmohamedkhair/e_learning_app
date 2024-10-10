@@ -1,3 +1,4 @@
+import 'package:e_learning_app/Theme/assets_imge.dart';
 import 'package:e_learning_app/Theme/colors.dart';
 import 'package:e_learning_app/Theme/fontstyle.dart';
 import 'package:e_learning_app/Theme/style.dart';
@@ -34,7 +35,7 @@ Widget feedbackscreen() {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 feedbackcontainer(
-                  Image.asset('assets/images/star.png'),
+                  Image.asset(AssetsImages.star),
                   '4.7',
                   'Reviews',
                 ),
@@ -42,7 +43,7 @@ Widget feedbackscreen() {
                   width: 40.w,
                 ),
                 feedbackcontainer(
-                    Image.asset('assets/images/User.png'), '753', 'Students'),
+                    Image.asset(AssetsImages.User), '753', 'Students'),
               ],
             ),
             SizedBox(
@@ -56,18 +57,18 @@ Widget feedbackscreen() {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     feedbackstudent(
-                        Image.asset('assets/images/Avatars.png'),
+                        Image.asset(AssetsImages.Avatars),
                         '@mannes_sammy',
                         '31 mins ago',
                         'Sed suspendisse elit sit trist gristi queget quis \n tristique pulectus!'),
                     feedbackstudent(
-                        Image.asset('assets/images/avata.png'),
+                        Image.asset(AssetsImages.Avatr),
                         '@justin',
                         '01 hour ago',
                         'Great suspendisse elit sit trist gristi'),
                     feedbackstudent(
                         Image.asset(
-                          'assets/images/Avatar.png',
+                          AssetsImages.men,
                         ),
                         '@mouni',
                         '11 hour ago',

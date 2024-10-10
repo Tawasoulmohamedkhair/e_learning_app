@@ -5,6 +5,6 @@ Widget circlecontainer(Image img) {
   return Container(
       width: 33,
       height: 33,
-      decoration: BoxDecoration(shape: BoxShape.circle, color: Colors.white),
+      decoration: const BoxDecoration(shape: BoxShape.circle, color: Colors.white),
       child: Center(child: img));
 }

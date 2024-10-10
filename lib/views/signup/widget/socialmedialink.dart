@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class SocialMediaLink extends StatelessWidget {
-  SocialMediaLink(this.img, this.color, this.radius, this.width2,
-      double this.width, double this.height,
+  const SocialMediaLink(this.img, this.color, this.radius, this.width2,
+      this.width, this.height,
       {required this.title, super.key});
   final Image img;
 
@@ -19,7 +19,7 @@ class SocialMediaLink extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-        padding: EdgeInsets.only(left: 20),
+        padding: const EdgeInsets.only(left: 20),
         width: width.w,
         height: height.h,
         decoration: BoxDecoration(

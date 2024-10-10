@@ -1,6 +1,8 @@
+import 'package:e_learning_app/Theme/assets_imge.dart';
 import 'package:e_learning_app/Theme/colors.dart';
 import 'package:e_learning_app/Theme/fontstyle.dart';
 import 'package:e_learning_app/views/component/button.dart';
+import 'package:e_learning_app/views/signup/widget/link-button.dart';
 import 'package:e_learning_app/views/signup/widget/socialmedialink.dart';
 import 'package:e_learning_app/views/signup/widget/text_form.dart';
 import 'package:flutter/material.dart';
@@ -17,7 +19,7 @@ class CreateAccount extends StatelessWidget {
         child: Container(
           width: 375.w,
           height: 812.h,
-          padding: EdgeInsets.only(top: 60, right: 20, left: 20),
+          padding: const EdgeInsets.only(top: 60, right: 20, left: 20),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.center,
@@ -26,7 +28,7 @@ class CreateAccount extends StatelessWidget {
                 height: 60.h,
               ),
              
-              Image.asset('assets/images/Icons.png'),
+              Image.asset(AssetsImages.Icons),
               SizedBox(
                 height: 10.h,
               ),
@@ -45,13 +47,13 @@ class CreateAccount extends StatelessWidget {
               SizedBox(
                 height: 40.h,
               ),
-              textformsignup(Icon(Icons.person), 'UserName'),
+              textformsignup(const Icon(Icons.person), 'UserName'),
 
              
               SizedBox(
                 height: 20.h,
               ),
-              textformsignup(Icon(Icons.email_outlined), 'Email id'),
+              textformsignup(const Icon(Icons.email_outlined), 'Email id'),
 
               
               SizedBox(
@@ -63,7 +65,7 @@ class CreateAccount extends StatelessWidget {
                 children: [
                   SocialMediaLink(
                       Image.asset(
-                          width: 17.w, height: 22.h, 'assets/images/Hide.png'),
+                          width: 17.w, height: 22.h, AssetsImages.Hide),
                       AppColor.lavender,
                       50.r,
                       1,
@@ -80,13 +82,13 @@ class CreateAccount extends StatelessWidget {
                     decoration: BoxDecoration(
                         border: Border.all(color: AppColor.blackcolor),
                         borderRadius: BorderRadius.circular(50.r)),
-                    child: Image.asset('assets/images/Icon.png'),
+                    child: Image.asset(AssetsImages.Fingerprint),
                   )
                 ],
               ),
               
               Container(
-                width: 285.w,
+                width: 400.w,
                 height: 45.h,
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.start,
@@ -100,39 +102,42 @@ class CreateAccount extends StatelessWidget {
                         borderRadius: BorderRadius.circular(8.r),
                       ),
                     ),
-                    SizedBox(
-                      width: 20.w,
-                    ),
-                    Row(
-                      children: [
-                        Text(
-                          'I hereby agree to the ',
-                          style: AppFont.fontsize14w500,
+                      SizedBox(
+                        width: 10.w,
+                      ),
+                      /*    Expanded(
+                        flex: 1,
+                        child: RichText(
+                          text: TextSpan(
+                              text: 'I hereby agree to the ',
+                              style: AppFont.fontsize14w500,
+                              children: <InlineSpan>[
+                                WidgetSpan(
+                                    alignment: PlaceholderAlignment.baseline,
+                                    baseline: TextBaseline.alphabetic,
+                                    child: LinkButton(
+                                      urlLabel: 'terms ofservices',
+                                      url: '',
+                                    )),
+                                TextSpan(
+                                  text: 'and',
+                                  style: AppFont.fontsize14w500,
+                                ),
+                                WidgetSpan(
+                                  alignment: PlaceholderAlignment.baseline,
+                                  baseline: TextBaseline.alphabetic,
+                                  child: LinkButton(
+                                    urlLabel: 'privacy policy',
+                                    url: '',
+                                  ),
+                                )
+                              ]),
                         ),
-                        SizedBox(
-                          width: 10.w,
-                        ),
-                        InkWell(
-                          onTap: () {},
-                          child: Text(
-                            'terms of services ',
-                            style: TextStyle(
-                              color: AppColor.bluecolor,
-                            ),
-                          ),
-                        ),
-                        Text('and'),
-                        InkWell(
-                            child: Text(
-                          ' privacy policy',
-                          style: TextStyle(
-                            color: AppColor.bluecolor,
-                          ),
-                        )),
-                      ],
-                    ),
-                  ],
-                ),
+                      ),*/
+                    ]),
+
+
+                   
               ),
              
               ButtonScreen(
@@ -142,10 +147,10 @@ class CreateAccount extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  Text('Already have an account?'),
+                  const Text('Already have an account?'),
                   TextButton(
                     onPressed: () {},
-                    child: Text(' Sign in'),
+                    child: const Text(' Sign in'),
                   ),
                 ],
               ),

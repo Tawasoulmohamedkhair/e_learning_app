@@ -13,7 +13,7 @@ Widget bottomcontainer(
 
 }) {
   return Container(
-    padding: EdgeInsets.only(left: 20),
+    padding: const EdgeInsets.only(left: 20),
     height: 89,
     decoration:
         BoxDecoration(color: color1, borderRadius: BorderRadius.circular(16)),
@@ -29,9 +29,9 @@ Widget bottomcontainer(
                 color: Colors.white,
                 borderRadius: BorderRadius.circular(20),
               ),
-              child: Icon(color: AppColor.bluecolor, Icons.star_outline),
+              child: const Icon(color: AppColor.bluecolor, Icons.star_outline),
             ),
-            SizedBox(
+            const SizedBox(
               width: 80,
             ),
             Container(

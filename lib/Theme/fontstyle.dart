@@ -77,7 +77,7 @@ class AppFont {
       fontWeight: FontWeightHelper.regular,
       color: AppColor.blackcolor);
   static var fontsize14w500 = GoogleFonts.dmSans(
-      fontSize: 14.sp,
+      fontSize: 14.4.sp,
       fontWeight: FontWeightHelper.medium,
       color: AppColor.blackcolor);
 
@@ -167,6 +167,10 @@ class AppFont {
       fontSize: 11.sp,
       fontWeight: FontWeightHelper.regular,
       color: AppColor.sonicSilver);
+  static var fontweghit14 = GoogleFonts.dmSans(
+      fontSize: 14.4.sp,
+      fontWeight: FontWeightHelper.medium,
+      color: AppColor.bluecolor);
   static var fontweghit400size18 = GoogleFonts.plusJakartaSans(
       fontSize: 18.sp,
       fontWeight: FontWeightHelper.regular,
