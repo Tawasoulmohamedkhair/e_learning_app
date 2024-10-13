@@ -6,12 +6,15 @@ import 'package:e_learning_app/views/Home/coursepage/UI/home.dart';
 import 'package:e_learning_app/views/Home/coursepage/widget/onlinecourses/onlinecourse.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:flutter_staggered_animations/flutter_staggered_animations.dart';
 import 'package:get/get.dart';
 import 'package:e_learning_app/controller/onlinecourse/online_course_controller.dart';
 
 //the mian screen of online courses
 class CoursesScreen extends StatelessWidget {
   final CoursesController controller = Get.put(CoursesController());
+
+  CoursesScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -22,16 +25,16 @@ class CoursesScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            SizedBox(
+            const SizedBox(
               height: 30,
             ),
             appbarsection(
               Icons.arrow_back,
               'Courses',
               Image.asset(AssetsImages.Book),
-              () => Get.to(() => Home()),
+              () => Get.to(() => HomeScreen()),
             ),
-            SizedBox(height: 16),
+            const SizedBox(height: 16),
             Container(
               padding: const EdgeInsets.only(top: 20, bottom: 20),
               width: 375.w,
@@ -56,9 +59,9 @@ class CoursesScreen extends StatelessWidget {
             ),
             Expanded(
               child: Obx(() => Container(
-                    padding: EdgeInsets.only(left: 10, right: 10),
+                    padding: const EdgeInsets.only(left: 10, right: 10),
                     height: 600,
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                         color: Colors.white,
                         borderRadius: BorderRadius.only(
                             topLeft: Radius.circular(28),
@@ -67,7 +70,13 @@ class CoursesScreen extends StatelessWidget {
                       itemCount: controller.courses.length,
                       itemBuilder: (context, index) {
                         final course = controller.courses[index];
-                        return CourseList(course: course);
+                        return AnimationConfiguration.staggeredList(
+                            position: index,
+                            duration: const Duration(milliseconds: 500),
+                            child: SlideAnimation(
+                                verticalOffset: 50.0,
+                                child: FadeInAnimation(
+                                    child: CourseList(course: course))));
                       },
                     ),
                   )),

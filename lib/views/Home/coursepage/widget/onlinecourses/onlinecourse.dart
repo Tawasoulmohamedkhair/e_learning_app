@@ -56,21 +56,7 @@ class CourseList extends StatelessWidget {
             ],
           ),
         ),
-        /* trailing: Stack(
-          alignment: Alignment.center,
-          children: [
-         /*   CircularProgressIndicator(
-              value: course.progress / 100,
-              backgroundColor: Colors.grey[300],
-            ),
-            IconButton(
-              icon: Icon(Icons.play_circle_outline),
-              onPressed: () {
-                // handle play action
-              },
-            ),*/
-          ],
-        ),*/
+
       ),
     );
   }

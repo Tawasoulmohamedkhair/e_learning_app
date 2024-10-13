@@ -1,7 +1,7 @@
-import 'package:e_learning_app/Theme/assets_imge.dart';
+//import 'package:e_learning_app/Theme/assets_imge.dart';
 
-import 'package:e_learning_app/model/online_courses_model.dart';
-import 'package:get/get.dart';
+//import 'package:e_learning_app/model/online_courses_model.dart';
+//import 'package:get/get.dart';
 
 /*AssetsImages images = Get.put(AssetsImages());
 
