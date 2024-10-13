@@ -3,7 +3,8 @@ import 'dart:async';
 import 'package:e_learning_app/Theme/assets_imge.dart';
 import 'package:e_learning_app/Theme/colors.dart';
 import 'package:e_learning_app/Theme/fontstyle.dart';
-import 'package:e_learning_app/views/Onboarding/onboarding_home_screen.dart';
+import 'package:e_learning_app/model/data/splash.dart';
+import 'package:e_learning_app/views/Onboarding/ui/onboarding_home_screen.dart';
 import 'package:e_learning_app/views/component/splashand_onboarding_screen_content.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -22,7 +23,7 @@ class _SplashScreenState extends State<SplashScreen> {
     super.initState();
     Timer(
         const Duration(seconds: 5),
-        () => Get.to(() => const OnboardingHomeScreen()));
+        () => Get.to(() => OnboardingHomeScreen()));
   }
 
   @override
@@ -63,7 +64,7 @@ class _SplashScreenState extends State<SplashScreen> {
                         Align(
                           alignment: const Alignment(-0.60, .40),
                           child: Text(
-                            'Education\nApp',
+                            splashlist[0].title,
                             textAlign: TextAlign.center,
                             style: AppFont.fontsize29,
                           ),

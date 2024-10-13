@@ -4,39 +4,39 @@ import 'package:e_learning_app/Theme/fontstyle.dart';
 import 'package:e_learning_app/views/component/appbar_section.dart';
 import 'package:e_learning_app/views/Home/coursepage/UI/home.dart';
 import 'package:e_learning_app/views/Home/coursepage/widget/onlinecourses/onlinecourse.dart';
-import 'package:e_learning_app/views/Home/coursepage/widget/onlinecourses/icon_circle.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
+import 'package:e_learning_app/controller/onlinecourse/online_course_controller.dart';
 
 //the mian screen of online courses
-class OnlineCoursesScreen extends StatefulWidget {
-  OnlineCoursesScreen({super.key});
-
-  @override
-  State<OnlineCoursesScreen> createState() => _OnlineCoursesScreenState();
-}
-
-class _OnlineCoursesScreenState extends State<OnlineCoursesScreen> {
-  Widget currentScreen = OnlineCoursesScreen();
+class CoursesScreen extends StatelessWidget {
+  final CoursesController controller = Get.put(CoursesController());
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: AppColor.lavender,
-        body: SafeArea(
-          child: SingleChildScrollView(
-            child: Column(children: [
-              appbarsection(
-                Icons.arrow_back,
-                'Courses',
-                Image.asset(AssetsImages.Book),
-                () => Get.to(() => Home()),
-              ),
-              SizedBox(
-                height: 40.h,
-              ),
-              Row(
+      backgroundColor: AppColor.lavender,
+      body: Padding(
+        padding: const EdgeInsets.only(top: 12),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            SizedBox(
+              height: 30,
+            ),
+            appbarsection(
+              Icons.arrow_back,
+              'Courses',
+              Image.asset(AssetsImages.Book),
+              () => Get.to(() => Home()),
+            ),
+            SizedBox(height: 16),
+            Container(
+              padding: const EdgeInsets.only(top: 20, bottom: 20),
+              width: 375.w,
+              height: 200.h,
+              child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
@@ -50,100 +50,32 @@ class _OnlineCoursesScreenState extends State<OnlineCoursesScreen> {
                   SizedBox(
                       width: 154.w,
                       height: 154.h,
-                      child: Image.asset(
-                          width: 140.w,
-                          height: 200.h,
-                          AssetsImages.illustration))
+                      child: Image.asset(AssetsImages.illustration))
                 ],
               ),
-              Stack(
-                children: [
-                  Container(
-                    width: double.infinity,
-                    height: 700.h,
+            ),
+            Expanded(
+              child: Obx(() => Container(
+                    padding: EdgeInsets.only(left: 10, right: 10),
+                    height: 600,
                     decoration: BoxDecoration(
-                      color: Colors.white,
-                      borderRadius: BorderRadius.circular(50),
+                        color: Colors.white,
+                        borderRadius: BorderRadius.only(
+                            topLeft: Radius.circular(28),
+                            topRight: Radius.circular(28))),
+                    child: ListView.builder(
+                      itemCount: controller.courses.length,
+                      itemBuilder: (context, index) {
+                        final course = controller.courses[index];
+                        return CourseList(course: course);
+                      },
                     ),
-                    child: Column(
-                      children: [
-                        SizedBox(
-                          height: 40.h,
-                        ),
-                        onlinecourse(
-                          Image.asset(
-                            AssetsImages.Adobe,
-                          ),
-                          'XD Prototyping',
-                          '10 hours, 19 lessons',
-                          '25%',
-                          circlecontainer(Image.asset(
-                              width: 6.w,
-                              height: 8.h,
-                              color: AppColor.bluecolor,
-                              AssetsImages.Polygon)),
-                        ),
-                        SizedBox(
-                          height: 20.h,
-                        ),
-                        onlinecourse(
-                          Image.asset(
-                            AssetsImages.Sketch,
-                          ),
-                          'Sketch',
-                          '10 hours, 19 lessons',
-                          '25%',
-                          circlecontainer(
-                              Image.asset(AssetsImages.bluecircle)),
-                        ),
-                        SizedBox(
-                          height: 20.h,
-                        ),
-                        onlinecourse(
-                          Image.asset(
-                            AssetsImages.AfterEffects,
-                          ),
-                          'After Effects',
-                          '10 hours, 19 lessons',
-                          '25%',
-                          circlecontainer(
-                              Image.asset(AssetsImages.bluecircle)),
-                        ),
-                        SizedBox(
-                          height: 20.h,
-                        ),
-                        onlinecourse(
-                          Image.asset(
-                            AssetsImages.Figma,
-                          ),
-                          'Figma',
-                          '10 hours, 19 lessons',
-                          '25%',
-                          circlecontainer(
-                              Image.asset(AssetsImages.bluecircle)),
-                        ),
-                        SizedBox(
-                          height: 20.h,
-                        ),
-                        onlinecourse(
-                          Image.asset(
-                            AssetsImages.Photoshop,
-                          ),
-                          'Adobe Photoshop.',
-                          '10 hours, 19 lessons',
-                          '25%',
-                          circlecontainer(
-                              Image.asset(AssetsImages.bluecircle)),
-                        ),
-
-                        //
-                      ],
-                    ),
-                  ),
-                ],
-              ),
-            ]),
-          ),
-        ));
+                  )),
+            ),
+          ],
+        ),
+      ),
+    );
   }
 }
+

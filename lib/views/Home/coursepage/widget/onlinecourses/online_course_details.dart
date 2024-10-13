@@ -2,7 +2,7 @@ import 'package:e_learning_app/Theme/assets_imge.dart';
 import 'package:e_learning_app/Theme/colors.dart';
 import 'package:e_learning_app/Theme/fontstyle.dart';
 import 'package:e_learning_app/Theme/style.dart';
-import 'package:e_learning_app/views/Home/coursepage/UI/CourseScreen/online_courses_screen.dart';
+import 'package:e_learning_app/views/Home/coursepage/UI/CourseScreen/onlinecoursdetails.dart';
 import 'package:e_learning_app/views/Home/coursepage/widget/onlinecourses/details_of_student.dart';
 import 'package:e_learning_app/views/Home/coursepage/widget/onlinecourses/list_of_course_details.dart';
 import 'package:flutter/material.dart';
@@ -24,7 +24,7 @@ Widget onlinecoursescreen() {
               GestureDetector(child: const Icon(Icons.arrow_back)),
               sizeboxs,
               GestureDetector(
-                onTap: () => Get.offAll(() => OnlineCoursesScreen()),
+                onTap: () => Get.offAll(() => OnlineCourseDetails()),
                 child: const Icon(Icons.settings),
               ),
             ],

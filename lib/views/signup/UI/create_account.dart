@@ -2,7 +2,6 @@ import 'package:e_learning_app/Theme/assets_imge.dart';
 import 'package:e_learning_app/Theme/colors.dart';
 import 'package:e_learning_app/Theme/fontstyle.dart';
 import 'package:e_learning_app/views/component/button.dart';
-import 'package:e_learning_app/views/signup/widget/link-button.dart';
 import 'package:e_learning_app/views/signup/widget/socialmedialink.dart';
 import 'package:e_learning_app/views/signup/widget/text_form.dart';
 import 'package:flutter/material.dart';

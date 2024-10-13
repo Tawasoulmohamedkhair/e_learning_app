@@ -60,4 +60,5 @@ class AssetsImages {
   static const String Icons = 'assets/images/Icons.png';
   static const String Hide = 'assets/images/Hide.png';
   static const String Fingerprint = 'assets/images/Icon.png';
+  static const String triangle = 'assets/images/Path 109.png';
 }

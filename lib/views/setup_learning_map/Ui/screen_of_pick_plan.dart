@@ -1,11 +1,11 @@
 import 'package:e_learning_app/Theme/assets_imge.dart';
 import 'package:e_learning_app/Theme/colors.dart';
 import 'package:e_learning_app/Theme/fontstyle.dart';
-import 'package:e_learning_app/views/Onboarding/onboarding_home_screen.dart';
+import 'package:e_learning_app/views/Home/coursepage/UI/CourseScreen/onlinecoursdetails.dart';
+import 'package:e_learning_app/views/Onboarding/ui/onboarding_home_screen.dart';
 import 'package:e_learning_app/views/setup_learning_map/widget/containerListofpickplantutor.dart';
 import 'package:e_learning_app/views/setup_learning_map/widget/image_container_discount.dart';
 import 'package:e_learning_app/views/setup_learning_map/widget/triangle_clip.dart';
-import 'package:e_learning_app/views/Home/coursepage/UI/CourseScreen/online_courses_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
@@ -119,7 +119,7 @@ class ScreenOfPickPlan extends StatelessWidget {
                                 ));
                           },
                           child: GestureDetector(
-                            onTap: () => Get.to(() => OnlineCoursesScreen()),
+                            onTap: () => Get.to(() => OnlineCourseDetails()),
                             child: Container(
                                 width: 260.w,
                                 height: 60.h,

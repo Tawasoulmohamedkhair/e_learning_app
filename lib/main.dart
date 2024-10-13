@@ -6,7 +6,7 @@ import 'package:get/get_navigation/src/root/get_material_app.dart';
 
 
 void main() {
-  runApp(const MyApp());
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -16,8 +16,6 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ScreenUtilInit(
-
-      
       designSize: const Size(360, 812),
       minTextAdapt: true,
       splitScreenMode: true,
@@ -28,9 +26,9 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           useMaterial3: true,
         ),
-        home: child,
+          home: SplashScreen()
       ),
-      child: const SplashScreen(),
+    
     );
   }
 }

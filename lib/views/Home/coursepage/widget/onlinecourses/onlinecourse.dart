@@ -1,58 +1,77 @@
 import 'package:e_learning_app/Theme/colors.dart';
 import 'package:e_learning_app/Theme/fontstyle.dart';
+import 'package:e_learning_app/model/online_courses_model.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-//the second section of onlinecoursescreen about the courses
-Widget onlinecourse(
-  Image img,
-  String text1,
-  String text2,
-  String text3,
-  Widget circlecontainer,
-) {
-  return Container(
-    padding: const EdgeInsets.only(left: 20, top: 20, right: 12),
-    width: 350,
-    height: 86,
-    decoration: BoxDecoration(
-        color: AppColor.bluecolor, borderRadius: BorderRadius.circular(28)),
-    child: Row(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: [
-          Container(child: img),
-          const SizedBox(
-            width: 15,
+
+class CourseList extends StatelessWidget {
+  final Course course;
+
+  const CourseList({required this.course});
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      margin: EdgeInsets.all(10),
+      width: 321.w,
+      height: 86.h,
+      decoration: BoxDecoration(
+          color: AppColor.bluecolor, borderRadius: BorderRadius.circular(28)),
+      child: ListTile(
+        leading: Container(
+          width: 55,
+          height: 55,
+          decoration: BoxDecoration(
+            image: DecorationImage(image: AssetImage(course.imagePath)),
           ),
-          Column(
-            mainAxisAlignment: MainAxisAlignment.start,
-            crossAxisAlignment: CrossAxisAlignment.start,
+        ),
+        title: Text(
+          course.name,
+          style: AppFont.fontsize14,
+        ),
+        subtitle: Text(
+          '${course.hours} hours, ${course.lessons} lessons',
+          style: AppFont.fontsize11,
+        ),
+        trailing: Container(
+          width: 100,
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.end,
             children: [
               Text(
-                text1,
-                style: AppFont.fontsize14,
-              ),
-              Text(
-                text2,
-                style: AppFont.fontsize11,
-              ),
-            ],
-          ),
-          const SizedBox(
-            width: 25,
-          ),
-          Row(
-            children: [
-              Text(
-                text3,
+                '${course.percent}%',
                 style: AppFont.fontsize10,
               ),
-              const SizedBox(
-                width: 20,
+              SizedBox(
+                width: 15,
               ),
-              circlecontainer
+              Container(
+                decoration:
+                    BoxDecoration(color: Colors.white, shape: BoxShape.circle),
+                width: 33.w,
+                height: 33.h,
+                child: Image.asset(course.image1),
+              )
             ],
           ),
-        ]),
-  );
+        ),
+        /* trailing: Stack(
+          alignment: Alignment.center,
+          children: [
+         /*   CircularProgressIndicator(
+              value: course.progress / 100,
+              backgroundColor: Colors.grey[300],
+            ),
+            IconButton(
+              icon: Icon(Icons.play_circle_outline),
+              onPressed: () {
+                // handle play action
+              },
+            ),*/
+          ],
+        ),*/
+      ),
+    );
+  }
 }

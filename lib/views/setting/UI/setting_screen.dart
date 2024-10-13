@@ -1,8 +1,8 @@
 import 'package:e_learning_app/Theme/colors.dart';
 import 'package:e_learning_app/Theme/fontstyle.dart';
 import 'package:e_learning_app/Theme/style.dart';
+import 'package:e_learning_app/views/Home/coursepage/UI/CourseScreen/onlinecoursdetails.dart';
 import 'package:e_learning_app/views/component/button.dart';
-import 'package:e_learning_app/views/Home/coursepage/UI/CourseScreen/online_courses_screen.dart';
 import 'package:e_learning_app/views/setting/widget/help_and_support_section.dart';
 import 'package:e_learning_app/views/setting/widget/setting_item.dart';
 import 'package:e_learning_app/views/setting/widget/switch_notification_widget.dart';
@@ -37,7 +37,7 @@ class _SettingScreenState extends State<SettingScreen> {
               padding: const EdgeInsets.only(left: 30, right: 20),
               child: Row(children: [
                 GestureDetector(
-                    onTap: () => Get.offAll(() => OnlineCoursesScreen()),
+                    onTap: () => Get.offAll(() => OnlineCourseDetails()),
                     child: const Icon(Icons.arrow_back_ios)),
                 SizedBox(
                   width: 100.w,
