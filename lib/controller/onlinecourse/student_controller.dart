@@ -28,5 +28,4 @@ class StudentController extends GetxController {
     ],
   ).obs;
 
-  // You can add more logic to fetch or update student data.
 }

@@ -214,7 +214,6 @@ class OnlineCourseDetails extends StatelessWidget {
           ),
         );
       }),
-      // bottomNavigationBar: CoursesBottomNavigationbar(),
     );
   }
 }
