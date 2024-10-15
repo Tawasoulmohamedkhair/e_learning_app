@@ -6,7 +6,7 @@ import 'package:get/get_navigation/src/root/get_material_app.dart';
 
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -27,7 +27,7 @@ class MyApp extends StatelessWidget {
           useMaterial3: true,
         ),
         // home: SplashScreen()
-        home: SplashScreen(),
+        home: const SplashScreen(),
       ),
     
     );

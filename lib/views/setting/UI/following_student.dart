@@ -26,13 +26,13 @@ class _StudentFollowingState extends State<StudentFollowing> {
             child: SingleChildScrollView(
           scrollDirection: Axis.vertical,
           child: Container(
-              padding: EdgeInsets.only(left: 20, right: 20, top: 20),
+              padding: const EdgeInsets.only(left: 20, right: 20, top: 20),
               child: Column(
                 children: [
                   studentinformation(() {
                   
                   },
-                      Icon(Icons.settings_outlined),
+                      const Icon(Icons.settings_outlined),
                       Image.asset('assets/images/Profile Avatar.png'),
                       '@isayef',
                       'Just a simple guy who loves do \nsomething new and fun! 😜',
@@ -47,7 +47,7 @@ class _StudentFollowingState extends State<StudentFollowing> {
                     '08',
                     'Following',
                   ),
-                  FollowingStudentListScreen(),
+                  const FollowingStudentListScreen(),
                 ],
               )),
         )),

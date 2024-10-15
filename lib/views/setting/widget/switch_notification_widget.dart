@@ -16,7 +16,7 @@ class _SwitchNotificationState extends State<SwitchNotification> {
   Widget build(BuildContext context) {
     var _value = true;
     return Container(
-      padding: EdgeInsets.only(left: 30, right: 20),
+      padding: const EdgeInsets.only(left: 30, right: 20),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
@@ -36,7 +36,7 @@ class _SwitchNotificationState extends State<SwitchNotification> {
           ),
           Container(
             alignment: Alignment.topCenter,
-            padding: EdgeInsets.symmetric(vertical: 40),
+            padding: const EdgeInsets.symmetric(vertical: 40),
             child: Switch(
               activeTrackColor: AppColor.bluecolor,
               value: _value,

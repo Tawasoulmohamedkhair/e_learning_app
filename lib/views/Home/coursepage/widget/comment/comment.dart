@@ -34,7 +34,7 @@ Widget Comments() {
           ],
         ),
         studentcomment(
-          Image.asset(AssetsImages.Avatr),
+          Image.asset(AssetsImages.avatr),
           '@mouni',
           '11 mins ago   .   Student',
           'How to get better at line? I am really stuck in this\n step!',
@@ -55,7 +55,7 @@ Widget Comments() {
           child: sizeboxs,
         ),
         studentcomment(
-          Image.asset(AssetsImages.Avatars),
+          Image.asset(AssetsImages.avatars),
           '@mouni',
           '11 mins ago   .   Student',
           'How to get better at line? I am really stuck in this\n step!',

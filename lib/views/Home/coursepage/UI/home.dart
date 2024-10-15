@@ -16,6 +16,8 @@ class HomeScreen extends StatelessWidget {
     const MenuScreen(),
   ];
 
+  HomeScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Obx(() {
@@ -23,13 +25,13 @@ class HomeScreen extends StatelessWidget {
         body: pages[controller.selectedIndex.value], // Show the selected page
         bottomNavigationBar: BottomAppBar(
           color: Colors.blue,
-          shape: CircularNotchedRectangle(), // To create notch for FAB
+          shape: const CircularNotchedRectangle(), // To create notch for FAB
           notchMargin: 8.0, // Margin around FAB
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               MaterialButton(
-                child: Column(
+                child: const Column(
                   children: [
                     Icon(Icons.home, color: Colors.white),
                     Text('Home', style: TextStyle(color: Colors.white)),
@@ -38,7 +40,7 @@ class HomeScreen extends StatelessWidget {
                 onPressed: () => controller.changeTabIndex(0),
               ),
               MaterialButton(
-                child: Column(
+                child: const Column(
                   children: [
                     Icon(Icons.book, color: Colors.white),
                     Text('Books', style: TextStyle(color: Colors.white)),
@@ -46,11 +48,11 @@ class HomeScreen extends StatelessWidget {
                 ),
                 onPressed: () => controller.changeTabIndex(1),
               ),
-              SizedBox(width: 40), // Spacer for FAB in the center
+              const SizedBox(width: 40), // Spacer for FAB in the center
               Row(
                 children: [
                   MaterialButton(
-                    child: Column(
+                    child: const Column(
                       children: [
                         Icon(Icons.search, color: Colors.white),
                         Text('Search', style: TextStyle(color: Colors.white)),
@@ -61,7 +63,7 @@ class HomeScreen extends StatelessWidget {
                 ],
               ),
               MaterialButton(
-                child: Column(
+                child: const Column(
                   children: [
                     Icon(Icons.menu, color: Colors.white),
                     Text('Menu', style: TextStyle(color: Colors.white)),
@@ -76,7 +78,7 @@ class HomeScreen extends StatelessWidget {
           shape: const CircleBorder(),
           backgroundColor: Colors.blue,
           onPressed: () {},
-          child: Icon(color: Colors.white, Icons.add),
+          child: const Icon(color: Colors.white, Icons.add),
         ),
         floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       );

@@ -27,7 +27,7 @@ class CreateAccount extends StatelessWidget {
                 height: 60.h,
               ),
              
-              Image.asset(AssetsImages.Icons),
+              Image.asset(AssetsImages.icons),
               SizedBox(
                 height: 10.h,
               ),
@@ -64,7 +64,7 @@ class CreateAccount extends StatelessWidget {
                 children: [
                   SocialMediaLink(
                       Image.asset(
-                          width: 17.w, height: 22.h, AssetsImages.Hide),
+                          width: 17.w, height: 22.h, AssetsImages.hide),
                       AppColor.lavender,
                       50.r,
                       1,
@@ -81,7 +81,7 @@ class CreateAccount extends StatelessWidget {
                     decoration: BoxDecoration(
                         border: Border.all(color: AppColor.blackcolor),
                         borderRadius: BorderRadius.circular(50.r)),
-                    child: Image.asset(AssetsImages.Fingerprint),
+                    child: Image.asset(AssetsImages.fingerprint),
                   )
                 ],
               ),

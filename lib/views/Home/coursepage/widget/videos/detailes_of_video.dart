@@ -25,7 +25,7 @@ Widget Detailesofvideos() {
                   Icons.arrow_back_ios_new,
                   'Details',
                   Image.asset(
-                    AssetsImages.Book,
+                    AssetsImages.book,
                     
                   ),
                   () {}
@@ -35,7 +35,7 @@ Widget Detailesofvideos() {
                 height: 20.h,
               ),
               Image.asset(
-                AssetsImages.Playback,
+                AssetsImages.playback,
                 width: double.infinity,
                 fit: BoxFit.contain,
               ),
@@ -74,7 +74,7 @@ Widget Detailesofvideos() {
                             height: 38.h,
                             child: CircleAvatar(
                               radius: 20.r,
-                              child: Image.asset(AssetsImages.Avatar),
+                              child: Image.asset(AssetsImages.avatar),
                             ),
                           ),
                           SizedBox(
@@ -107,7 +107,7 @@ Widget Detailesofvideos() {
                             Row(
                               children: [
                                 subdetailes(
-                                  Image.asset(AssetsImages.Frame2),
+                                  Image.asset(AssetsImages.frame2),
                                   '1.hour 30 min',
                                 ),
                                 SizedBox(
@@ -124,13 +124,13 @@ Widget Detailesofvideos() {
                             Row(
                               children: [
                                 subdetailes(
-                                    Image.asset(AssetsImages.Frame3),
+                                    Image.asset(AssetsImages.frame3),
                                     '4.7  (753)'),
                                 SizedBox(
                                   width: 40.w,
                                 ),
                                 subdetailes(
-                                    Image.asset(AssetsImages.Frame4),
+                                    Image.asset(AssetsImages.frame4),
                                     '2K  students'),
                               ],
                             ),

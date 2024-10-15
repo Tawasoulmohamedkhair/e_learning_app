@@ -21,7 +21,7 @@ class _ChangePasswordScreenState extends State<ChangePasswordScreen> {
       backgroundColor: AppColor.lavender,
       body: SafeArea(
           child: Container(
-        padding: EdgeInsets.only(left: 20, right: 20),
+        padding: const EdgeInsets.only(left: 20, right: 20),
 
         height: MediaQuery.of(context).size.height,
         width: MediaQuery.of(context).size.width,
@@ -30,7 +30,7 @@ class _ChangePasswordScreenState extends State<ChangePasswordScreen> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
            
-            Icon(Icons.arrow_back_ios),
+            const Icon(Icons.arrow_back_ios),
             SizedBox(
               height: 20.h,
             ),
@@ -48,12 +48,12 @@ class _ChangePasswordScreenState extends State<ChangePasswordScreen> {
             SizedBox(
               height: 20.h,
             ),
-            TextFormeSetting(Icon(Icons.remove_red_eye_outlined),
+            TextFormeSetting(const Icon(Icons.remove_red_eye_outlined),
                 title: 'Enter new password'),
             SizedBox(
               height: 20.h,
             ),
-            TextFormeSetting(Icon(Icons.remove_red_eye_outlined),
+            TextFormeSetting(const Icon(Icons.remove_red_eye_outlined),
                 title: '*************'),
             SizedBox(
               child: sizeboxs,
@@ -61,7 +61,7 @@ class _ChangePasswordScreenState extends State<ChangePasswordScreen> {
             ButtonScreen('Reset', AppFont.fontsize16w500, AppColor.bluecolor,
                 width: 335.w, height: 60.h, onTap: () {
               Navigator.pushReplacement(context,
-                  MaterialPageRoute(builder: (context) => CoursesScreen()));
+                  MaterialPageRoute(builder: (context) => const CoursesScreen()));
             }),
           ],
         ),

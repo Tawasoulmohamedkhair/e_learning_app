@@ -7,7 +7,7 @@ class AppColor {
   static const royalorange = Color(0xffFF9D42);
   static const fawn = Color(0xffE5AA77);
   static const peachPuff = Color(0xffFFD9BB);
-  static const Lightgrey = Color(0xffF4F3FD);
+  static const lightgrey = Color(0xffF4F3FD);
   static const lavender = Color(0xffE4F1F8);
   static const darkblack = Color(0xff000000);
   static const blackcolor = Color(0xff060302);

@@ -16,19 +16,3 @@ class Course {
     required this.lessons,
   });
 }
-
-/*class OnlineCoursesModel {
-  String image;
-  String title;
-  final int hours;
-  final int lessons;
-  double percent;
-  String image1;
-
-  OnlineCoursesModel(
-      {required this.image,
-      required this.title,
-      required this.hours,
-      required this.lessons,
-      required this.percent,
-      required this.image1})*/

@@ -19,14 +19,14 @@ class CoursesScreen extends StatelessWidget {
           child: SingleChildScrollView(
         scrollDirection: Axis.vertical,
         child: Container(
-          padding: EdgeInsets.only(right: 10),
+          padding: const EdgeInsets.only(right: 10),
           width: double.infinity,
           child: Column(
             children: [
               studentinformation(
                   () {
               },
-                  Icon(Icons.settings_outlined),
+                  const Icon(Icons.settings_outlined),
                   Image.asset('assets/images/Profile Avatar.png'),
                   '@isayef',
                   'Just a simple guy who loves do \nsomething new and fun! 😜',

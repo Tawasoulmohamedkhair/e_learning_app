@@ -49,7 +49,7 @@ class _SplashScreenState extends State<SplashScreen> {
                         alignment: const Alignment(-0.98, 0.30),
                         child: SplashContentScreen(
                           color: AppColor.royalorange,
-                          img1: Image.asset(AssetsImages.Frame),
+                          img1: Image.asset(AssetsImages.frame),
                         )),
                     Container(
                       width: 300.w,
@@ -58,7 +58,7 @@ class _SplashScreenState extends State<SplashScreen> {
                       child: Stack(children: [
                         SplashContentScreen(
                           color: AppColor.royalorange,
-                          img1: Image.asset(AssetsImages.Vector),
+                          img1: Image.asset(AssetsImages.vector),
                         ),
                         Align(
                           alignment: const Alignment(-0.60, .40),
@@ -86,7 +86,7 @@ class _SplashScreenState extends State<SplashScreen> {
                           alignment: const Alignment(1, 1.3),
                           child: SplashContentScreen(
                             color: AppColor.bluecolor,
-                            img1: Image.asset(AssetsImages.contact_card),
+                            img1: Image.asset(AssetsImages.contactcard),
                           ),
                         ),
                       ]),

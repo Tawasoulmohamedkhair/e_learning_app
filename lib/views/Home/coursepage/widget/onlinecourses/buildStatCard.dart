@@ -13,10 +13,10 @@ Widget buildStatCard(String title, String value, Image img, Color color) {
     child: Column(
       children: [
         img,
-        SizedBox(height: 10),
+        const SizedBox(height: 10),
         Text(value,
-            style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold)),
-        SizedBox(height: 5),
+            style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold)),
+        const SizedBox(height: 5),
         Text(title),
       ],
     ),

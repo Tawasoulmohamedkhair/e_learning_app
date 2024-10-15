@@ -21,22 +21,22 @@ class OnlineCourseDetails extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: AppColor.lavender,
         leading: InkWell(
-            child: Icon(Icons.arrow_back),
+            child: const Icon(Icons.arrow_back),
             onTap: () {
               Get.off(() => CoursesScreen());
             }),
         actions: [
           IconButton(
-              icon: Icon(Icons.settings),
+              icon: const Icon(Icons.settings),
               onPressed: () {
-                Get.offAll(() => SettingScreen());
+                Get.offAll(() => const SettingScreen());
               }),
         ],
       ),
       body: Obx(() {
         var student = controller.student.value;
         return Container(
-          padding: EdgeInsets.only(left: 20, right: 20),
+          padding: const EdgeInsets.only(left: 20, right: 20),
           color: AppColor.lavender,
           height: 813.h,
           child: Column(
@@ -55,7 +55,7 @@ class OnlineCourseDetails extends StatelessWidget {
                             alpha: 0.5,
                           )),
                       child: Image.asset(
-                          width: 90.w, height: 90.h, AssetsImages.Mask),
+                          width: 90.w, height: 90.h, AssetsImages.mask),
                     ),
                     SizedBox(
                       height: 10.h,
@@ -80,8 +80,8 @@ class OnlineCourseDetails extends StatelessWidget {
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
-                              Icon(Icons.school),
-                              SizedBox(width: 5),
+                              const Icon(Icons.school),
+                              const SizedBox(width: 5),
                               Text(student.role),
                             ],
                           ),
@@ -89,7 +89,7 @@ class OnlineCourseDetails extends StatelessWidget {
                       ],
                     ),
                   ]),
-                  SizedBox(
+                  const SizedBox(
                     height: 40,
                   ),
                 ],
@@ -124,7 +124,7 @@ class OnlineCourseDetails extends StatelessWidget {
                         buildStatCard(
                             "Total Books",
                             "+${student.totalBooks}",
-                            Image.asset(AssetsImages.Instapost),
+                            Image.asset(AssetsImages.instapost),
                             AppColor.bluecolor),
                       ],
                     ),
@@ -149,7 +149,7 @@ class OnlineCourseDetails extends StatelessWidget {
                                 borderRadius: BorderRadius.circular(6)),
                             child: Row(
                               children: [
-                                Image.asset(AssetsImages.Clocks),
+                                Image.asset(AssetsImages.clocks),
                                 SizedBox(
                                   width: 5.w,
                                 ),
@@ -167,7 +167,7 @@ class OnlineCourseDetails extends StatelessWidget {
                 ),
               ),
 
-              SizedBox(
+              const SizedBox(
                 height: 10,
               ),
               // Course Details
@@ -180,7 +180,7 @@ class OnlineCourseDetails extends StatelessWidget {
                       var course = student.courses[index];
                       return AnimationConfiguration.staggeredList(
                         position: index,
-                        duration: Duration(milliseconds: 375),
+                        duration: const Duration(milliseconds: 375),
                         child: SlideAnimation(
                           verticalOffset: 50.0,
                           child: FadeInAnimation(
@@ -193,7 +193,7 @@ class OnlineCourseDetails extends StatelessWidget {
                                     borderRadius:
                                         BorderRadius.all(Radius.circular(10.r)),
                                   ),
-                                  child: Icon(
+                                  child: const Icon(
                                       color: Colors.white,
                                       Icons.play_arrow_sharp)),
                               title: Text(

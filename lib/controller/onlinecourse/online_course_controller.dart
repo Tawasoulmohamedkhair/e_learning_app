@@ -6,7 +6,7 @@ class CoursesController extends GetxController {
   var courses = <Course>[
     Course(
       name: 'XD Prototyping',
-      imagePath: AssetsImages.Adobe,
+      imagePath: AssetsImages.adobe,
       percent: 25,
       image1: AssetsImages.triangle,
       hours: 10,
@@ -14,7 +14,7 @@ class CoursesController extends GetxController {
     ),
     Course(
       name: 'Sketch',
-      imagePath: AssetsImages.Sketch,
+      imagePath: AssetsImages.sketch,
       percent: 25,
       image1: AssetsImages.bluecircle,
       hours: 10,
@@ -22,7 +22,7 @@ class CoursesController extends GetxController {
     ),
     Course(
       name: 'After Effects',
-      imagePath: AssetsImages.AfterEffects,
+      imagePath: AssetsImages.afterEffects,
       percent: 25,
       image1: AssetsImages.bluecircle,
       hours: 10,
@@ -30,7 +30,7 @@ class CoursesController extends GetxController {
     ),
     Course(
       name: 'Figma',
-      imagePath: AssetsImages.Figma,
+      imagePath: AssetsImages.figma,
       percent: 25,
       image1: AssetsImages.bluecircle,
       hours: 10,
@@ -38,7 +38,7 @@ class CoursesController extends GetxController {
     ),
     Course(
       name: 'Adobe Photoshop',
-      imagePath: AssetsImages.Photoshop,
+      imagePath: AssetsImages.photoshop,
       percent: 25,
       image1: AssetsImages.bluecircle,
       hours: 10,
@@ -47,6 +47,7 @@ class CoursesController extends GetxController {
     
   ].obs;
 
+  @override
   void update([List<Object>? ids, bool condition = true]) {
     super.update(ids, condition);
     update();

@@ -13,7 +13,7 @@ class CourseList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.all(10),
+      margin: const EdgeInsets.all(10),
       width: 321.w,
       height: 86.h,
       decoration: BoxDecoration(
@@ -43,12 +43,12 @@ class CourseList extends StatelessWidget {
                 '${course.percent}%',
                 style: AppFont.fontsize10,
               ),
-              SizedBox(
+              const SizedBox(
                 width: 15,
               ),
               Container(
                 decoration:
-                    BoxDecoration(color: Colors.white, shape: BoxShape.circle),
+                    const BoxDecoration(color: Colors.white, shape: BoxShape.circle),
                 width: 33.w,
                 height: 33.h,
                 child: Image.asset(course.image1),

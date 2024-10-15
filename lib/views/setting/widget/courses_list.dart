@@ -17,9 +17,9 @@ class CourserListScreen extends StatelessWidget {
           padding: const EdgeInsets.only(top: 10),
           scrollDirection: Axis.vertical,
           shrinkWrap: true,
-          itemCount: courses_list.length,
+          itemCount: courseslist.length,
           itemBuilder: (context, index) {
-            final item = courses_list[index];
+            final item = courseslist[index];
             return Container(
               width: 300.w,
               padding: const EdgeInsets.only(top: 5),

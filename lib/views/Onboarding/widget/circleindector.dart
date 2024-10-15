@@ -29,7 +29,7 @@ class CircleIndector extends GetView<OnboardingController> {
                 onTap: () {
                   Get.off(() => CoursesScreen());
                 },
-                child: Icon(color: Colors.blue, Icons.arrow_forward)));
+                child: const Icon(color: Colors.blue, Icons.arrow_forward)));
       },
     );
   }

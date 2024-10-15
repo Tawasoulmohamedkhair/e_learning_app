@@ -31,7 +31,7 @@ class CoursesScreen extends StatelessWidget {
             appbarsection(
               Icons.arrow_back,
               'Courses',
-              Image.asset(AssetsImages.Book),
+              Image.asset(AssetsImages.book),
               () => Get.to(() => HomeScreen()),
             ),
             const SizedBox(height: 16),

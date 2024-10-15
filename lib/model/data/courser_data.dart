@@ -1,7 +1,7 @@
 import 'package:e_learning_app/model/courses_model.dart';
 import 'package:flutter/material.dart';
 
-final List<CoursesModel> courses_list = [
+final List<CoursesModel> courseslist = <CoursesModel>[
   CoursesModel(
       image: 'assets/images/img1.png',
       title: 'Adobe illustrator for all\nbeginner artist',

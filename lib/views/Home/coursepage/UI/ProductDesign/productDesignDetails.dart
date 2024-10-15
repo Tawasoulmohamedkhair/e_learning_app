@@ -20,13 +20,13 @@ class _ProductDesigndetailsState extends State<ProductDesigndetails> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Colors.white.withOpacity(0.9),
+        backgroundColor: Colors.white,
         appBar: AppBar(
-          backgroundColor: Color(0xffA1AAAE),
+          backgroundColor: const Color(0xffA1AAAE),
         ),
         body: SafeArea(
             child: Container(
-          color: Color(0xffA1AAAE),
+          color: const Color(0xffA1AAAE),
           child: SingleChildScrollView(
             child: Column(
                 mainAxisAlignment: MainAxisAlignment.start,
@@ -39,9 +39,9 @@ class _ProductDesigndetailsState extends State<ProductDesigndetails> {
                           Navigator.pushReplacement(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => ProductDesginScreen()));
+                                  builder: (context) => const ProductDesginScreen()));
                         },
-                        child: Icon(Icons.arrow_back_ios)),
+                        child: const Icon(Icons.arrow_back_ios)),
                   ),
                  
                   coursecontainer(AppColor.lavender),

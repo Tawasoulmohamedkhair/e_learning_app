@@ -52,7 +52,7 @@ Widget coursecontainer(Color color) {
             text2: 'Welcome to the Course',
             text3: '6:10',
             text4: 'mins',
-            img: Image.asset(AssetsImages.Polygon),
+            img: Image.asset(AssetsImages.polygon),
           ),
           SizedBox(
             height: 10.h,
@@ -65,7 +65,7 @@ Widget coursecontainer(Color color) {
             text3: '6:10',
             text4: 'mins',
             img: Image.asset(
-              AssetsImages.Polygon,
+              AssetsImages.polygon,
             ),
           ),
           SizedBox(

@@ -43,7 +43,7 @@ Widget feedbackscreen() {
                   width: 40.w,
                 ),
                 feedbackcontainer(
-                    Image.asset(AssetsImages.User), '753', 'Students'),
+                    Image.asset(AssetsImages.user), '753', 'Students'),
               ],
             ),
             SizedBox(
@@ -57,12 +57,12 @@ Widget feedbackscreen() {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     feedbackstudent(
-                        Image.asset(AssetsImages.Avatars),
+                        Image.asset(AssetsImages.avatars),
                         '@mannes_sammy',
                         '31 mins ago',
                         'Sed suspendisse elit sit trist gristi queget quis \n tristique pulectus!'),
                     feedbackstudent(
-                        Image.asset(AssetsImages.Avatr),
+                        Image.asset(AssetsImages.avatr),
                         '@justin',
                         '01 hour ago',
                         'Great suspendisse elit sit trist gristi'),

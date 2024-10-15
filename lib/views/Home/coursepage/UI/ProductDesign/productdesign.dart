@@ -76,13 +76,13 @@ class _ProductDesginScreenState extends State<ProductDesginScreen> {
                               alignment: const Alignment(.60, .90),
                               child: Image.asset(
                                 AssetsImages.arrows,
-                                color: AppColor.Lightgrey,
+                                color: AppColor.lightgrey,
                               ),
                             ),
                             Align(
                               alignment: Alignment.centerRight,
                               child: Image.asset(AssetsImages.arrow,
-                                  color: AppColor.Lightgrey),
+                                  color: AppColor.lightgrey),
                             ),
                           ]),
                         ],
@@ -97,7 +97,7 @@ class _ProductDesginScreenState extends State<ProductDesginScreen> {
                           Image.asset(
                               width: 175,
                               height: 224,
-                              AssetsImages.Frames),
+                              AssetsImages.frames),
                           Positioned(
                               right: 30,
                               top: 100,

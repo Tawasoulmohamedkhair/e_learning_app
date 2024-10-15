@@ -13,6 +13,7 @@ import 'package:get/get.dart';
 class OnboardingHomeScreen extends GetView<OnboardingController> {
   OnboardingHomeScreen({super.key});
 
+  @override
   final controller = Get.put(OnboardingController());
   @override
   Widget build(BuildContext context) {
@@ -52,7 +53,7 @@ class OnboardingHomeScreen extends GetView<OnboardingController> {
                               alignment: Alignment.topRight,
                               child: SplashContentScreen(
                                 color: AppColor.bluecolor,
-                                img1: Image.asset(AssetsImages.contact_card),
+                                img1: Image.asset(AssetsImages.contactcard),
                               ),
                             ),
                           ],
@@ -84,7 +85,7 @@ class OnboardingHomeScreen extends GetView<OnboardingController> {
                                     color: AppColor.royalorange,
                                     borderRadius: BorderRadius.circular(18)),
                                 child: Container(
-                                  child: Image.asset(AssetsImages.Frame),
+                                  child: Image.asset(AssetsImages.frame),
                                 ),
                               ),
                             ),
@@ -109,7 +110,7 @@ class OnboardingHomeScreen extends GetView<OnboardingController> {
                                     style: AppFont.fontsize24),
                                 Text(onBoardingList[index].description),
                                 CircleIndector(),
-                                SizedBox(
+                                const SizedBox(
                                   height: 20,
                                 ),
                               ],

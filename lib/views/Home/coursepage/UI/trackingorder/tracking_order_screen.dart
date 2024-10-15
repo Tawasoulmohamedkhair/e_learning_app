@@ -34,7 +34,7 @@ class _TrackongOrderScreenState extends State<TrackongOrderScreen> {
                   Padding(
                     padding: const EdgeInsets.only(left: 20),
                     child: Image.asset(
-                        width: 24.w, height: 15.h, AssetsImages.Path),
+                        width: 24.w, height: 15.h, AssetsImages.path),
                   ),
                   SizedBox(
                     width: 20.w,
@@ -114,22 +114,22 @@ class _TrackongOrderScreenState extends State<TrackongOrderScreen> {
                         SizedBox(
                           height: 20.h,
                         ),
-                        stateoforder(Image.asset(AssetsImages.Group),
+                        stateoforder(Image.asset(AssetsImages.group),
                             'On the way', AppColor.bluecolor),
                         SizedBox(
                           width: 30.w,
                           height: 60.h,
-                          child: VerticalDivider(
+                          child: const VerticalDivider(
                             color: AppColor.blackcolor,
                             thickness: 1,
                           ),
                         ),
-                        stateoforder(Image.asset(AssetsImages.Group),
+                        stateoforder(Image.asset(AssetsImages.group),
                             'Dispatched', AppColor.pink),
                         SizedBox(
                           width: 30.w,
                           height: 60.h,
-                          child: VerticalDivider(
+                          child: const VerticalDivider(
                             color: AppColor.blackcolor,
                             thickness: 1,
                           ),
