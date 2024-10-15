@@ -10,6 +10,7 @@ class ImageContainerDiscount extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      padding: EdgeInsets.only(left: 20, right: 20),
       child: Stack(
         children: [
           Positioned(

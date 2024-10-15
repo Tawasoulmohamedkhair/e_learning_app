@@ -2,6 +2,8 @@ import 'package:e_learning_app/Theme/assets_imge.dart';
 import 'package:e_learning_app/Theme/colors.dart';
 import 'package:e_learning_app/Theme/fontstyle.dart';
 import 'package:e_learning_app/controller/onlinecourse/student_controller.dart';
+import 'package:e_learning_app/views/Home/coursepage/UI/CourseScreen/online_courses_screen.dart';
+import 'package:e_learning_app/views/Home/coursepage/widget/onlinecourses/buildStatCard.dart';
 import 'package:e_learning_app/views/setting/UI/setting_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -21,7 +23,7 @@ class OnlineCourseDetails extends StatelessWidget {
         leading: InkWell(
             child: Icon(Icons.arrow_back),
             onTap: () {
-              Get.back();
+              Get.off(() => CoursesScreen());
             }),
         actions: [
           IconButton(
@@ -103,7 +105,7 @@ class OnlineCourseDetails extends StatelessWidget {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        _buildStatCard(
+                        buildStatCard(
                             "Goal",
                             "${student.goalPercentage}%",
                             Image.asset(AssetsImages.perspaleta1),
@@ -111,7 +113,7 @@ class OnlineCourseDetails extends StatelessWidget {
                         SizedBox(
                           width: 5.r,
                         ),
-                        _buildStatCard(
+                        buildStatCard(
                             "Total Class",
                             "${student.totalClasses}",
                             Image.asset(AssetsImages.perspaleta),
@@ -119,7 +121,7 @@ class OnlineCourseDetails extends StatelessWidget {
                         SizedBox(
                           width: 5.r,
                         ),
-                        _buildStatCard(
+                        buildStatCard(
                             "Total Books",
                             "+${student.totalBooks}",
                             Image.asset(AssetsImages.Instapost),
@@ -218,24 +220,4 @@ class OnlineCourseDetails extends StatelessWidget {
   }
 }
 
-Widget _buildStatCard(String title, String value, Image img, Color color) {
-  return Container(
-    padding: const EdgeInsets.only(top: 5, left: 5),
-    width: 90.w,
-    height: 127.h,
-    decoration: BoxDecoration(
-      borderRadius: BorderRadius.circular(14),
-      color: color,
-    ),
-    child: Column(
-      children: [
-        img,
-        SizedBox(height: 10),
-        Text(value,
-            style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold)),
-        SizedBox(height: 5),
-        Text(title),
-      ],
-    ),
-  );
-}
+

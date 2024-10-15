@@ -1,52 +1,57 @@
 import 'package:e_learning_app/Theme/assets_imge.dart';
 import 'package:e_learning_app/Theme/colors.dart';
 import 'package:e_learning_app/Theme/fontstyle.dart';
-import 'package:e_learning_app/views/setup_learning_map/Ui/screen_of_pick_plan.dart';
-import 'package:e_learning_app/views/setup_learning_map/widget/calendarofreminderscreen.dart';
-import 'package:e_learning_app/views/setup_learning_map/widget/datetimerangepicker_widget.dart';
+import 'package:e_learning_app/views/Home/coursepage/UI/CourseScreen/online_courses_screen.dart';
+import 'package:e_learning_app/views/setup_learning_map/widget/MonthDatePicker.dart';
+import 'package:e_learning_app/views/setup_learning_map/widget/time_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:get/get.dart';
 
 class Learning_Reminder_Screen extends StatelessWidget {
   const Learning_Reminder_Screen({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return SafeArea(
+      child: Scaffold(
         appBar: AppBar(
           backgroundColor: AppColor.lavender,
           leading: Image.asset(AssetsImages.cross),
         ),
         body: SafeArea(
-          child: Container(
-            padding: const EdgeInsets.only(right: 20, left: 10),
-            width: double.infinity,
-            height: 812.h,
-            decoration: const BoxDecoration(
-              color: AppColor.lavender,
-            ),
-            child: SingleChildScrollView(
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.start,
-                children: [
-                  Container(
-                    height: 39.h,
-                    child: Text(
-                      'Set up learning reminders',
-                      style: AppFont.fontsize25,
-                    ),
+            child: Container(
+                padding: const EdgeInsets.only(right: 20, left: 10),
+                width: double.infinity,
+                height: 812.h,
+                decoration: const BoxDecoration(
+                  color: AppColor.lavender,
+                ),
+                child: Column(
+              children: [
+      
+      
+                  SizedBox(
+                    height: 80,
+                  ),
+                  Text(
+                    'Set up learning reminders',
+                    style: AppFont.fontsize25,
                   ),
                   Container(
                     width: 301.w,
                     height: 48.h,
                     child: Text(
                         'Tell us when you want to learn and we will send push\n notification to remind you, You can change these\n anytime in the settings menu',
-                        style: AppFont.fontsize15),
+                        style: AppFont.fontsize12w400),
                   ),
-                  
-                  CalendarOfReminderScreen(),
-                  const TimePickerOfPlanScreen(),
+                  MonthDatePicker(),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  TimeListView(),
+                  SizedBox(
+                    height: 20,
+                  ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
@@ -62,11 +67,11 @@ class Learning_Reminder_Screen extends StatelessWidget {
                           Navigator.pushReplacement(
                               context,
                               MaterialPageRoute(
-                                builder: (context) => ScreenOfPickPlan(),
+                                builder: (context) => CoursesScreen(),
                               ));
                         },
                         child: GestureDetector(
-                          onTap: () => Get.to(() => ScreenOfPickPlan()),
+                          // onTap: () => Get.to(() => ScreenOfPickPlan()),
                           child: Container(
                             width: 110.w,
                             height: 110.h,
@@ -81,10 +86,10 @@ class Learning_Reminder_Screen extends StatelessWidget {
                       )
                     ],
                   ),
-                ],
-              ),
-            ),
-          ),
-        ));
+                ]))),
+      ),
+    );
   }
 }
+
+
