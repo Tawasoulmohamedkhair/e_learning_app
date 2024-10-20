@@ -1,16 +1,21 @@
 import 'package:e_learning_app/Theme/colors.dart';
 import 'package:e_learning_app/Theme/fontstyle.dart';
+import 'package:e_learning_app/controller/setup_learning_map/pickplancontroller.dart';
 import 'package:e_learning_app/views/setup_learning_map/widget/clip_Path_container.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:get/get.dart';
 
 class ImageContainerDiscount extends StatelessWidget {
-  const ImageContainerDiscount({super.key});
+  ImageContainerDiscount({super.key});
+  final PickPlanController controller = Get.put(PickPlanController());
 
   @override
   Widget build(BuildContext context) {
+    final pickPlan = controller.pickPlanModel.value!;
+
     return Container(
-      padding: EdgeInsets.only(left: 20, right: 20),
+      padding: const EdgeInsets.only(left: 20, right: 20),
       child: Stack(
         children: [
           Positioned(
@@ -23,17 +28,18 @@ class ImageContainerDiscount extends StatelessWidget {
             ),
             child: const ClipPathContainer(),
           )),
-          Row(
+          OverflowBar(
+            spacing: 0.8,
+            overflowSpacing: 0.8,
             children: [
               Image.asset(
-                'assets/images/home.png',
+                pickPlan.img,
                 width: 141.w,
                 height: 140.h,
               ),
               Padding(
                 padding: const EdgeInsets.only(left: 10),
-                child: Text('-50%',
-                    style: AppFont.fontsize60),
+                child: Text('${pickPlan.discount}%', style: AppFont.fontsize60),
               ),
             ],
           ),

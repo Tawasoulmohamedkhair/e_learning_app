@@ -5,7 +5,7 @@ Widget buildStatCard(String title, String value, Image img, Color color) {
   return Container(
     padding: const EdgeInsets.only(top: 5, left: 5),
     width: 90.w,
-    height: 127.h,
+    height: 150.h,
     decoration: BoxDecoration(
       borderRadius: BorderRadius.circular(14),
       color: color,

@@ -24,7 +24,7 @@ class OnboardingHomeScreen extends GetView<OnboardingController> {
       body: SafeArea(
           child: Container(
               width: double.infinity,
-              height: 813.h,
+              height: 1000.h,
               padding: const EdgeInsets.only(top: 80),
               decoration: BoxDecoration(
                 color: AppColor.lavender,
@@ -36,88 +36,96 @@ class OnboardingHomeScreen extends GetView<OnboardingController> {
                     controller.setPage(value);
                   },
                   itemBuilder: (context, index) {
-                    return Column(
-                      children: [
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: [
-                            Align(
-                                alignment: Alignment.topLeft,
-                                child: SplashContentScreen(
-                                  color: AppColor.philippineGray,
-                                  img1: Image.asset(
-                                    AssetsImages.circle,
-                                  ),
-                                )),
-                            Align(
-                              alignment: Alignment.topRight,
-                              child: SplashContentScreen(
-                                color: AppColor.bluecolor,
-                                img1: Image.asset(AssetsImages.contactcard),
-                              ),
-                            ),
-                          ],
-                        ),
-                        Container(
-                          height: 200.h,
-                          decoration: BoxDecoration(
-                            image: DecorationImage(
-                              image: AssetImage(onBoardingList[index].image),
-                            ),
-                          ),
-                        ),
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: [
-                            Align(
-                              alignment: const Alignment(1, -.80),
-                              child: SplashContentScreen(
-                                color: AppColor.bluecolor,
-                                img1: Image.asset(AssetsImages.cap),
-                              ),
-                            ),
-                            Align(
-                              alignment: const Alignment(1, -.80),
-                              child: Container(
-                                width: 52,
-                                height: 52,
-                                decoration: BoxDecoration(
-                                    color: AppColor.royalorange,
-                                    borderRadius: BorderRadius.circular(18)),
-                                child: Container(
-                                  child: Image.asset(AssetsImages.frame),
-                                ),
-                              ),
-                            ),
-                          ],
-                        ),
-                        ClipPath(
-                          clipper: OvalTopBorderClipper(),
-                          child: Container(
+                    return SingleChildScrollView(
+                      child: Column(
+                        children: [
+                          Container(
                             width: double.infinity,
-                            padding: const EdgeInsets.only(top: 90),
-                            height: 504,
-                            decoration: const BoxDecoration(
-                              color: Colors.white,
-                              borderRadius: BorderRadius.only(
-                                  topLeft: Radius.circular(80),
-                                  topRight: Radius.circular(80)),
-                            ),
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.center,
+                            //   height: 200,
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
-                                Text(onBoardingList[index].title,
-                                    style: AppFont.fontsize24),
-                                Text(onBoardingList[index].description),
-                                CircleIndector(),
-                                const SizedBox(
-                                  height: 20,
+                                Align(
+                                    alignment: Alignment.topLeft,
+                                    child: SplashContentScreen(
+                                      color: AppColor.philippineGray,
+                                      img1: Image.asset(
+                                        AssetsImages.circle,
+                                      ),
+                                    )),
+                                Align(
+                                  alignment: Alignment.topRight,
+                                  child: SplashContentScreen(
+                                    color: AppColor.bluecolor,
+                                    img1: Image.asset(AssetsImages.contactcard),
+                                  ),
                                 ),
                               ],
                             ),
                           ),
-                        ),
-                      ],
+                          Container(
+                            width: 200,
+                            height: 200.h,
+                            decoration: BoxDecoration(
+                              image: DecorationImage(
+                                image: AssetImage(onBoardingList[index].image),
+                              ),
+                            ),
+                          ),
+                          OverflowBar(
+                            overflowSpacing: 0.8,
+                            spacing: 0.8,
+                            children: [
+                              Align(
+                                alignment: const Alignment(1, -.80),
+                                child: SplashContentScreen(
+                                  color: AppColor.bluecolor,
+                                  img1: Image.asset(AssetsImages.cap),
+                                ),
+                              ),
+                              Align(
+                                alignment: const Alignment(1, -.80),
+                                child: Container(
+                                  width: 52,
+                                  height: 52,
+                                  decoration: BoxDecoration(
+                                      color: AppColor.royalorange,
+                                      borderRadius: BorderRadius.circular(18)),
+                                  child: Container(
+                                    child: Image.asset(AssetsImages.frame),
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                          ClipPath(
+                            clipper: OvalTopBorderClipper(),
+                            child: Container(
+                              padding: const EdgeInsets.only(top: 90),
+                              width: double.infinity,
+                              height: 530,
+                              decoration: const BoxDecoration(
+                                color: Colors.white,
+                                borderRadius: BorderRadius.only(
+                                    topLeft: Radius.circular(80),
+                                    topRight: Radius.circular(80)),
+                              ),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                children: [
+                                  Text(onBoardingList[index].title,
+                                      style: AppFont.fontsize24),
+                                  Text(onBoardingList[index].description),
+                                  CircleIndector(),
+                                  const SizedBox(
+                                    height: 20,
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
                     );
                   }))),
     );

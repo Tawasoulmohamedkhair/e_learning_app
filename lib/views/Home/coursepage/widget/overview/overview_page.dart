@@ -64,7 +64,7 @@ Widget overviewscreen() {
             SizedBox(
               height: 60.h,
             ),
-            ButtonScreen(
+            buttonScreen(
               onTap: () {},
               'See more',
                 AppFont.fontsize18w500,

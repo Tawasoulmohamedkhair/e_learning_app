@@ -1,14 +1,14 @@
 import 'package:e_learning_app/Theme/assets_imge.dart';
 import 'package:e_learning_app/Theme/colors.dart';
 import 'package:e_learning_app/Theme/fontstyle.dart';
-import 'package:e_learning_app/views/Home/coursepage/UI/CourseScreen/online_courses_screen.dart';
+import 'package:e_learning_app/views/setup_learning_map/Ui/pickplan.dart';
 import 'package:e_learning_app/views/setup_learning_map/widget/MonthDatePicker.dart';
 import 'package:e_learning_app/views/setup_learning_map/widget/time_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-class Learning_Reminder_Screen extends StatelessWidget {
-  const Learning_Reminder_Screen({super.key});
+class LearningReminderScreen extends StatelessWidget {
+  const LearningReminderScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -30,7 +30,7 @@ class Learning_Reminder_Screen extends StatelessWidget {
               children: [
       
       
-                  SizedBox(
+                  const SizedBox(
                     height: 80,
                   ),
                   Text(
@@ -45,11 +45,11 @@ class Learning_Reminder_Screen extends StatelessWidget {
                         style: AppFont.fontsize12w400),
                   ),
                   MonthDatePicker(),
-                  SizedBox(
+                  const SizedBox(
                     height: 20,
                   ),
                   TimeListView(),
-                  SizedBox(
+                  const SizedBox(
                     height: 20,
                   ),
                   Row(
@@ -67,11 +67,10 @@ class Learning_Reminder_Screen extends StatelessWidget {
                           Navigator.pushReplacement(
                               context,
                               MaterialPageRoute(
-                                builder: (context) => CoursesScreen(),
+                                builder: (context) => PickPlanScreen(),
                               ));
                         },
                         child: GestureDetector(
-                          // onTap: () => Get.to(() => ScreenOfPickPlan()),
                           child: Container(
                             width: 110.w,
                             height: 110.h,

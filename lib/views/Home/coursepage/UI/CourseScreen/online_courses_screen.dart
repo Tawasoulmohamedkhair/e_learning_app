@@ -37,7 +37,7 @@ class CoursesScreen extends StatelessWidget {
             const SizedBox(height: 16),
             Container(
               padding: const EdgeInsets.only(top: 20, bottom: 20),
-              width: 375.w,
+              width: 390.w,
               height: 200.h,
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,

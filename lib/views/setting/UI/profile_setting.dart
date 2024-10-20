@@ -68,10 +68,10 @@ class ProfileSetting extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  ButtonScreen('Cancel', AppFont.fontsize15, Colors.white,
+                  buttonScreen('Cancel', AppFont.fontsize15, Colors.white,
                       width: 91.w, height: 35.h, onTap: () {}),
                   SizedBox(width: 20.w),
-                  ButtonScreen(
+                  buttonScreen(
                       'save', AppFont.fontsize15w500, AppColor.bluecolor,
                       width: 75.w, height: 35.h, onTap: () {})
                 ],

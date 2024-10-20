@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/painting.dart';
 
-class ClipperClipper extends CustomClipper<Path> {
+class ClipperClippers extends CustomClipper<Path> {
   @override
   Path getClip(Size size) {
     Path path = Path();

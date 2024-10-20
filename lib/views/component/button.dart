@@ -2,7 +2,7 @@ import 'package:e_learning_app/Theme/style.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-Widget ButtonScreen(String text1, TextStyle style, Color color,
+Widget buttonScreen(String text1, TextStyle style, Color color,
     {required double width,
     required double height,
     required Null Function() onTap}) {

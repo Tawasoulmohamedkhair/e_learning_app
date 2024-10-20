@@ -1,4 +1,3 @@
-
 import 'package:e_learning_app/views/splash/Ui/splash_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -26,8 +25,8 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           useMaterial3: true,
         ),
-        // home: SplashScreen()
-        home: const SplashScreen(),
+        home: SplashScreen(),
+        
       ),
     
     );

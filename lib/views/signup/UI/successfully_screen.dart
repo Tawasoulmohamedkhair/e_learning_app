@@ -59,7 +59,7 @@ class SuccessfullySceenAccount extends StatelessWidget {
                 SizedBox(
                   height: 100.h,
                 ),
-                ButtonScreen('Forgot Password', AppFont.fontsize18w500,
+                buttonScreen('Forgot Password', AppFont.fontsize18w500,
                     AppColor.bluecolor,
                     width: 332.w, height: 53.h,
                     onTap: () {})

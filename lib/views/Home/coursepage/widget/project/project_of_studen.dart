@@ -28,7 +28,7 @@ Widget projectofstudent() {
         SizedBox(
           child: sizeboxs,
         ),
-         ButtonScreen(
+        buttonScreen(
           onTap: () {},
           'Load more',
           AppFont.fontsize18w500,

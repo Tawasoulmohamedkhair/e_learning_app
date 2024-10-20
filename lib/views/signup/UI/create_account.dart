@@ -139,7 +139,7 @@ class CreateAccount extends StatelessWidget {
                    
               ),
              
-              ButtonScreen(
+              buttonScreen(
                   'Create Account', AppFont.fontsize18w500, AppColor.bluecolor,
                   width: 332.w, height: 53.h, onTap: () {}),
               Row(

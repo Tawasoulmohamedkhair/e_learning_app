@@ -59,7 +59,7 @@ class ContinueScreenSignup extends StatelessWidget {
                 SizedBox(
                   height: 20.h,
                 ),
-                Text('Or'),
+                const Text('Or'),
                 SizedBox(
                   height: 20.h,
                 ),
@@ -93,7 +93,7 @@ class ContinueScreenSignup extends StatelessWidget {
                 SizedBox(
                   height: 10.h,
                 ),
-                ButtonScreen('Signin', AppFont.fontweghit500, Colors.white,
+                buttonScreen('Signin', AppFont.fontweghit500, Colors.white,
                     width: 300.w, height: 60.h, onTap: () {})
               ],
             ),

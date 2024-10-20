@@ -58,7 +58,7 @@ class _ChangePasswordScreenState extends State<ChangePasswordScreen> {
             SizedBox(
               child: sizeboxs,
             ),
-            ButtonScreen('Reset', AppFont.fontsize16w500, AppColor.bluecolor,
+            buttonScreen('Reset', AppFont.fontsize16w500, AppColor.bluecolor,
                 width: 335.w, height: 60.h, onTap: () {
               Navigator.pushReplacement(context,
                   MaterialPageRoute(builder: (context) => const CoursesScreen()));

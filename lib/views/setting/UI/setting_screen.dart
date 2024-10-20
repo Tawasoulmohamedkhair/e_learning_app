@@ -120,7 +120,7 @@ class _SettingScreenState extends State<SettingScreen> {
             SizedBox(
               child: sizeboxs,
             ),
-            ButtonScreen('sign out', AppFont.fontsize16w500, AppColor.bluecolor,
+            buttonScreen('sign out', AppFont.fontsize16w500, AppColor.bluecolor,
                 width: 375.w, height: 60.h, onTap: () {})
           ],
         ),

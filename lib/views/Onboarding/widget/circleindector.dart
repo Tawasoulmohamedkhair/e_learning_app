@@ -1,6 +1,6 @@
 import 'package:e_learning_app/Theme/colors.dart';
 import 'package:e_learning_app/controller/onboarding/onboarding_controller.dart';
-import 'package:e_learning_app/views/Home/coursepage/UI/CourseScreen/online_courses_screen.dart';
+import 'package:e_learning_app/views/setup_learning_map/Ui/reminder_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:step_progress_indicator/step_progress_indicator.dart';
@@ -27,7 +27,7 @@ class CircleIndector extends GetView<OnboardingController> {
             roundedCap: (_, __) => true,
             child: InkWell(
                 onTap: () {
-                  Get.off(() => CoursesScreen());
+                  Get.off(() => LearningReminderScreen());
                 },
                 child: const Icon(color: Colors.blue, Icons.arrow_forward)));
       },

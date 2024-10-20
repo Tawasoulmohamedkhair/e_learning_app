@@ -27,7 +27,6 @@ class _SplashScreenState extends State<SplashScreen> {
 
   @override
   Widget build(BuildContext context) {
-    var height = MediaQuery.of(context).size.height;
     var width = MediaQuery.of(context).size.width;
     return Scaffold(
       appBar: AppBar(
@@ -37,7 +36,7 @@ class _SplashScreenState extends State<SplashScreen> {
         child: SingleChildScrollView(
           child: Container(
             color: AppColor.lavender,
-            height: height,
+            height: 812.h,
             width: width,
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,

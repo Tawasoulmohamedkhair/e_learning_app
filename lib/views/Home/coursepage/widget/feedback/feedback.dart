@@ -80,7 +80,7 @@ Widget feedbackscreen() {
             ),
             Container(
               padding: const EdgeInsets.only(left: 30),
-              child: ButtonScreen(
+              child: buttonScreen(
                 onTap: () {},
                 'Load more',
                 AppFont.fontsize18w500,

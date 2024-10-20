@@ -1,8 +1,8 @@
 import 'package:e_learning_app/controller/onlinecourse/bottomnavigation_controller.dart';
-import 'package:e_learning_app/views/Home/coursepage/UI/books.dart';
 import 'package:e_learning_app/views/Home/coursepage/UI/menu.dart';
 import 'package:e_learning_app/views/Home/coursepage/UI/CourseScreen/onlinecoursdetails.dart';
 import 'package:e_learning_app/views/Home/coursepage/UI/search.dart';
+import 'package:e_learning_app/views/Home/coursepage/UI/trackingorder/tracking_order_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -11,7 +11,7 @@ class HomeScreen extends StatelessWidget {
 
   final List<Widget> pages = [
     OnlineCourseDetails(),
-    const Books(),
+    TrackongOrderScreen(),
     const SearchScreen(),
     const MenuScreen(),
   ];
@@ -22,11 +22,11 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Obx(() {
       return Scaffold(
-        body: pages[controller.selectedIndex.value], // Show the selected page
+        body: pages[controller.selectedIndex.value], 
         bottomNavigationBar: BottomAppBar(
           color: Colors.blue,
-          shape: const CircularNotchedRectangle(), // To create notch for FAB
-          notchMargin: 8.0, // Margin around FAB
+          shape: const CircularNotchedRectangle(),
+          notchMargin: 8.0, 
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
@@ -48,7 +48,7 @@ class HomeScreen extends StatelessWidget {
                 ),
                 onPressed: () => controller.changeTabIndex(1),
               ),
-              const SizedBox(width: 40), // Spacer for FAB in the center
+              const SizedBox(width: 40), 
               Row(
                 children: [
                   MaterialButton(

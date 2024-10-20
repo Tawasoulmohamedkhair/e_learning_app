@@ -7,6 +7,8 @@ import 'package:intl/intl.dart';
 class MonthDatePicker extends StatelessWidget {
   final DateController dateController = Get.put(DateController());
 
+  MonthDatePicker({super.key});
+
   @override
   Widget build(BuildContext context) {
     // Assuming October 2024 for example
@@ -18,8 +20,8 @@ class MonthDatePicker extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            SizedBox(height: 40),
-            SizedBox(height: 20),
+            const SizedBox(height: 40),
+            const SizedBox(height: 20),
             _buildMonthDateSelector(),
           ],
         ),
@@ -47,8 +49,9 @@ class MonthDatePicker extends StatelessWidget {
               dateController.updateSelectedDate(dayNumber, monthName);
             },
             child: Obx(() => Container(
-                  margin: EdgeInsets.symmetric(horizontal: 10),
-                  padding: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
+                  margin: const EdgeInsets.symmetric(horizontal: 10),
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 10, horizontal: 20),
                   decoration: BoxDecoration(
                     color: dateController.model.value.selectedDay == dayNumber
                         ? Colors.blue
@@ -56,7 +59,7 @@ class MonthDatePicker extends StatelessWidget {
                     borderRadius: BorderRadius.circular(15),
                     boxShadow:
                         dateController.model.value.selectedDay == dayNumber
-                            ? [BoxShadow(color: Colors.blue, blurRadius: 10)]
+                        ? [const BoxShadow(color: Colors.blue, blurRadius: 10)]
                             : [],
                   ),
                   child: Column(
@@ -64,14 +67,14 @@ class MonthDatePicker extends StatelessWidget {
                     children: [
                       Text(
                         dayNumber,
-                        style: TextStyle(
+                        style: const TextStyle(
                           fontSize: 22,
                           color: Colors.white,
                         ),
                       ),
                       Text(
                         dayName,
-                        style: TextStyle(
+                        style: const TextStyle(
                           fontSize: 16,
                           color: Colors.white,
                         ),

@@ -36,20 +36,22 @@ class CourseList extends StatelessWidget {
         ),
         trailing: Container(
           width: 100,
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.end,
+          child: OverflowBar(
+            overflowSpacing: 0.8,
+            spacing: 0.8,
+          
             children: [
               Text(
                 '${course.percent}%',
                 style: AppFont.fontsize10,
               ),
-              const SizedBox(
-                width: 15,
+              SizedBox(
+                width: 10,
               ),
               Container(
                 decoration:
                     const BoxDecoration(color: Colors.white, shape: BoxShape.circle),
-                width: 33.w,
+                width: 20.w,
                 height: 33.h,
                 child: Image.asset(course.image1),
               )
