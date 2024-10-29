@@ -1,4 +1,4 @@
-import 'package:e_learning_app/model/date_model.dart';
+import 'package:e_learning_app/model/setup_learning_map/date_model.dart';
 import 'package:get/get.dart';
 
 class DateController extends GetxController {

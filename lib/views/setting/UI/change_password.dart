@@ -1,8 +1,8 @@
 import 'package:e_learning_app/Theme/colors.dart';
 import 'package:e_learning_app/Theme/fontstyle.dart';
 import 'package:e_learning_app/Theme/style.dart';
+import 'package:e_learning_app/views/Home/coursepage/UI/books.dart';
 import 'package:e_learning_app/views/component/button.dart';
-import 'package:e_learning_app/views/setting/UI/courses_screen.dart';
 import 'package:e_learning_app/views/setting/widget/text_form_setting.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -61,7 +61,7 @@ class _ChangePasswordScreenState extends State<ChangePasswordScreen> {
             buttonScreen('Reset', AppFont.fontsize16w500, AppColor.bluecolor,
                 width: 335.w, height: 60.h, onTap: () {
               Navigator.pushReplacement(context,
-                  MaterialPageRoute(builder: (context) => const CoursesScreen()));
+                  MaterialPageRoute(builder: (context) => const Books()));
             }),
           ],
         ),

@@ -1,50 +1,71 @@
 import 'package:e_learning_app/Theme/colors.dart';
+import 'package:e_learning_app/controller/detailesscrenn/navigationhome.dart';
 import 'package:e_learning_app/views/setting/widget/bottomnavigation_bar.dart';
-import 'package:e_learning_app/views/setting/widget/student_information.dart';
-import 'package:e_learning_app/views/setting/widget/tab_bar.dart';
+import 'package:e_learning_app/views/setting/widget/profile_courses.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:get/get.dart';
 
-class CoursesScreen extends StatelessWidget {
-  const CoursesScreen({super.key});
+class ProfileStudentCourses extends StatelessWidget {
+  final BottomNavigationController controller =
+      Get.put(BottomNavigationController());
+  ProfileStudentCourses({super.key});
+  final List<Widget> _screens = [
+    Center(child: Text('Home Screen')), // Placeholder for Home
+    Center(child: Text('Search Screen')),
+    Center(child: Text('Book Screen')), // Placeholder for Search
+    Profilecourses(),
+  ];
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: AppColor.lavender,
-      ),
+     
       backgroundColor: AppColor.lavender,
-      bottomNavigationBar: BottomNavigationbarScreen(),
-      body: SafeArea(
-          child: SingleChildScrollView(
-        scrollDirection: Axis.vertical,
-        child: Container(
-          padding: const EdgeInsets.only(right: 10),
-          width: double.infinity,
-          child: Column(
-            children: [
-              studentinformation(
-                  () {
-              },
-                  const Icon(Icons.settings_outlined),
-                  Image.asset('assets/images/Profile Avatar.png'),
-                  '@isayef',
-                  'Just a simple guy who loves do \nsomething new and fun! 😜',
-                  Image.asset('assets/images/instagram 1.png'),
-                  Image.asset('assets/images/facebook1.png'),
-                  Image.asset('assets/images/twitter 1.png')),
-              TabBarItem(
-                '03',
-                'Projects',
-                '04',
-                'Courses',
-                '20',
-                'Following',
+      body: Obx(() => _screens[controller.selectedIndex.value]),
+      bottomNavigationBar: BottomAppBar(
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            MaterialButton(
+              child: Icon(Icons.home, color: Colors.black),
+              onPressed: () => controller.changeTabIndex(0),
+            ),
+            MaterialButton(
+              child: Icon(Icons.book, color: Colors.black),
+              onPressed: () => controller.changeTabIndex(1),
+            ),
+            Row(
+              children: [
+                MaterialButton(
+                  child: Icon(Icons.search, color: Colors.black),
+                  onPressed: () => controller.changeTabIndex(2),
+                ),
+              ],
+            ),
+            Container(
+              child: MaterialButton(
+                padding: EdgeInsets.only(right: 10),
+                child: Row(
+                  children: [
+                    Container(
+                        width: 30.w,
+                        height: 40.h,
+                        decoration: const BoxDecoration(
+                            color: AppColor.bluecolor, shape: BoxShape.circle),
+                        child: Icon(color: Colors.white, Icons.person)),
+                    SizedBox(
+                      width: 10,
+                    ),
+                    Text('Profile', style: TextStyle(color: Colors.black)),
+                  ],
+                ),
+                onPressed: () => controller.changeTabIndex(3),
               ),
+            ),
             ],
           ),
-        ),
-      )),
+      ),
     );
   }
 }

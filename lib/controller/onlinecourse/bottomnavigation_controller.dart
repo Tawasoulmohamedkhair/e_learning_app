@@ -1,3 +1,4 @@
+import 'package:e_learning_app/views/setting/UI/courses_screen.dart';
 import 'package:get/get.dart';
 
 class BottomNavController extends GetxController {
@@ -6,4 +7,10 @@ class BottomNavController extends GetxController {
   void changeTabIndex(int index) {
     selectedIndex.value = index;
   }
+
+  GoToProfileScreen() {
+    Get.to(ProfileStudentCourses);
+  }
+
+  GoToProfileSettingScreen() {}
 }

@@ -4,6 +4,7 @@ import 'package:e_learning_app/Theme/fontstyle.dart';
 import 'package:e_learning_app/Theme/style.dart';
 import 'package:e_learning_app/controller/trackingorder/tracking_order_controller.dart';
 import 'package:e_learning_app/views/Home/coursepage/UI/CourseScreen/online_courses_screen.dart';
+import 'package:e_learning_app/views/Home/coursepage/widget/videos/detailes_of_video.dart';
 import 'package:e_learning_app/views/component/button.dart';
 import 'package:e_learning_app/views/Home/coursepage/widget/state_of_order.dart';
 import 'package:flutter/material.dart';
@@ -13,7 +14,6 @@ import 'package:get/get.dart';
 class TrackongOrderScreen extends StatelessWidget {
   TrackongOrderScreen({super.key});
   final OrderController orderController = Get.put(OrderController());
-
 
   @override
   Widget build(BuildContext context) {
@@ -29,12 +29,16 @@ class TrackongOrderScreen extends StatelessWidget {
                   child: sizeboxs,
                 ),
                 Row(
-                
                   children: [
                     Padding(
                       padding: const EdgeInsets.only(left: 20),
-                      child: Image.asset(
-                          width: 24.w, height: 15.h, AssetsImages.path),
+                      child: InkWell(
+                        onTap: () {
+                          Get.off(CourseDetailVideo());
+                        },
+                        child: Image.asset(
+                            width: 24.w, height: 15.h, AssetsImages.path),
+                      ),
                     ),
                     SizedBox(
                       width: 20,
@@ -106,7 +110,6 @@ class TrackongOrderScreen extends StatelessWidget {
                     overflowSpacing: 0.8,
                     spacing: 0.8,
                     children: [
-                     
                       Container(
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
@@ -117,7 +120,6 @@ class TrackongOrderScreen extends StatelessWidget {
                               textAlign: TextAlign.center,
                               style: AppFont.fonsize23w500,
                             ),
-                           
                             stateoforder(Image.asset(AssetsImages.group),
                                 'On the way', AppColor.bluecolor),
                             SizedBox(
@@ -157,10 +159,8 @@ class TrackongOrderScreen extends StatelessWidget {
                     'Back to home', AppFont.fontsize15w500, AppColor.bluecolor,
                     width: 250.w, height: 46.h, onTap: () {
                   Navigator.pushReplacement(context,
-                      MaterialPageRoute(
-                          builder: (context) => CoursesScreen()));
+                      MaterialPageRoute(builder: (context) => CoursesScreen()));
                 }),
-                
               ],
             ),
           ),

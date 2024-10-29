@@ -61,4 +61,7 @@ class AssetsImages {
   static const String hide = 'assets/images/Hide.png';
   static const String fingerprint = 'assets/images/Icon.png';
   static const String triangle = 'assets/images/Path 109.png';
+  static const String premium = 'assets/images/premium.png';
+  static const String instagram = 'assets/images/instagram 1.png';
+  static const String twitter = 'assets/images/twitter 1.png';
 }

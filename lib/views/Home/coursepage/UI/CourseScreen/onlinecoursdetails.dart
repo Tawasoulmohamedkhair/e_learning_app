@@ -2,8 +2,8 @@ import 'package:e_learning_app/Theme/assets_imge.dart';
 import 'package:e_learning_app/Theme/colors.dart';
 import 'package:e_learning_app/Theme/fontstyle.dart';
 import 'package:e_learning_app/controller/onlinecourse/student_controller.dart';
+import 'package:e_learning_app/views/Home/coursepage/UI/CourseScreen/course_detials.dart';
 import 'package:e_learning_app/views/Home/coursepage/UI/CourseScreen/online_courses_screen.dart';
-import 'package:e_learning_app/views/Home/coursepage/UI/trackingorder/tracking_order_screen.dart';
 import 'package:e_learning_app/views/Home/coursepage/widget/onlinecourses/buildStatCard.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -29,7 +29,7 @@ class OnlineCourseDetails extends StatelessWidget {
           IconButton(
               icon: const Icon(Icons.settings),
               onPressed: () {
-                Get.offAll(() => TrackongOrderScreen());
+                Get.offAll(() => CourseDetialsScreen());
               }),
         ],
       ),

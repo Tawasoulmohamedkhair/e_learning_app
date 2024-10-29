@@ -1,4 +1,4 @@
-import 'package:e_learning_app/model/timemodel.dart';
+import 'package:e_learning_app/model/setup_learning_map/timemodel.dart';
 import 'package:get/get.dart';
 
 class TimeController extends GetxController {

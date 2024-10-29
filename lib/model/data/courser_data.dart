@@ -1,37 +1,29 @@
-import 'package:e_learning_app/model/courses_model.dart';
-import 'package:flutter/material.dart';
+import 'package:e_learning_app/model/setting/courses_model.dart';
 
-final List<CoursesModel> courseslist = <CoursesModel>[
-  CoursesModel(
-      image: 'assets/images/img1.png',
+final List<CourseModel> courseslist = <CourseModel>[
+  CourseModel(
+      imageUrl: 'assets/images/img1.png',
+      
       title: 'Adobe illustrator for all\nbeginner artist',
-      subtitle: 'Samule Doe',
-      const Icon(Icons.book),
-      '4k student',
-      const Icon(Icons.star),
-      rating: '4.7'),
-  CoursesModel(
-      image: 'assets/images/unsplash_G.png',
+author: 'Samule Doe',
+      students: '4k student',
+      rating: 4.7),
+  CourseModel(
+      imageUrl: 'assets/images/unsplash_G.png',
       title: 'Digital illustration technique for procrete',
-      subtitle: 'Sarrah Morry',
-      const Icon(Icons.book),
-      '2k student',
-      const Icon(Icons.star),
-      rating: '4.0'),
-  CoursesModel(
-      image: 'assets/images/img2.png',
+      author: 'Sarrah Morry',
+      students: '2k student',
+      rating: 4.0),
+  CourseModel(
+      imageUrl: 'assets/images/img2.png',
       title: 'Learn how to draw cartoon face in easy way!',
-      subtitle: 'Sarrah Morry',
-      const Icon(Icons.book),
-      '1k student',
-      const Icon(Icons.star),
-      rating: '4.2'),
-  CoursesModel(
-      image: 'assets/images/img.png',
+      author: 'Sarrah Morry',
+      students: '1k student',
+      rating: 4.2),
+  CourseModel(
+      imageUrl: 'assets/images/img.png',
       title: 'Adobe illustrator for all\nbeginner artist',
-      subtitle: 'Sarrah Morry',
-      const Icon(Icons.book),
-      '2k student',
-      const Icon(Icons.star),
-      rating: '4.0'),
+      author: 'Sarrah Morry',
+      students: '2k student',
+      rating: 4.0),
 ];

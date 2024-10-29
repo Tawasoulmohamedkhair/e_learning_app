@@ -1,4 +1,4 @@
-import 'package:e_learning_app/model/following_model.dart';
+/*import 'package:e_learning_app/model/following_model.dart';
 
 final List<FollowingModel> followingList = [
   FollowingModel(
@@ -36,4 +36,4 @@ final List<FollowingModel> followingList = [
       title: 'Sammuel Jonass',
       subtitle: '@jdoe',
       text: 'Follow'),
-];
+];*/
