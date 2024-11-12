@@ -9,10 +9,17 @@ class PremiumUserScreen extends StatelessWidget {
   final BottomNavigationController controller =
       Get.put(BottomNavigationController());
   final List<Widget> _screen = [
+<<<<<<< HEAD
     const Center(child: Text('Home Screen')), // Placeholder for Home
     const Center(child: Text('Search Screen')),
     const Center(child: Text('Book Screen')), // Placeholder for Search
     const Followingcontent(),
+=======
+    Center(child: Text('Home Screen')), // Placeholder for Home
+    Center(child: Text('Search Screen')),
+    Center(child: Text('Book Screen')), // Placeholder for Search
+    Followingcontent(),
+>>>>>>> origin/main
   ];
   PremiumUserScreen({super.key});
 

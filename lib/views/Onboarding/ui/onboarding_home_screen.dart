@@ -24,8 +24,13 @@ class OnboardingHomeScreen extends GetView<OnboardingController> {
       body: SafeArea(
           child: Container(
               width: double.infinity,
+<<<<<<< HEAD
               height: 800.h,
               padding: const EdgeInsets.only(top: 60),
+=======
+              height: 1000.h,
+              padding: const EdgeInsets.only(top: 80),
+>>>>>>> origin/main
               decoration: BoxDecoration(
                 color: AppColor.lavender,
                 borderRadius: BorderRadius.circular(20),
@@ -72,6 +77,7 @@ class OnboardingHomeScreen extends GetView<OnboardingController> {
                               ),
                             ),
                           ),
+<<<<<<< HEAD
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
@@ -87,6 +93,30 @@ class OnboardingHomeScreen extends GetView<OnboardingController> {
                                     borderRadius: BorderRadius.circular(18)),
                                 child: Container(
                                   child: Image.asset(AssetsImages.frame),
+=======
+                          OverflowBar(
+                            overflowSpacing: 0.8,
+                            spacing: 0.8,
+                            children: [
+                              Align(
+                                alignment: const Alignment(1, -.80),
+                                child: SplashContentScreen(
+                                  color: AppColor.bluecolor,
+                                  img1: Image.asset(AssetsImages.cap),
+                                ),
+                              ),
+                              Align(
+                                alignment: const Alignment(1, -.80),
+                                child: Container(
+                                  width: 52,
+                                  height: 52,
+                                  decoration: BoxDecoration(
+                                      color: AppColor.royalorange,
+                                      borderRadius: BorderRadius.circular(18)),
+                                  child: Container(
+                                    child: Image.asset(AssetsImages.frame),
+                                  ),
+>>>>>>> origin/main
                                 ),
                               ),
                             ],
@@ -96,7 +126,11 @@ class OnboardingHomeScreen extends GetView<OnboardingController> {
                             child: Container(
                               padding: const EdgeInsets.only(top: 90),
                               width: double.infinity,
+<<<<<<< HEAD
                               height: 700,
+=======
+                              height: 530,
+>>>>>>> origin/main
                               decoration: const BoxDecoration(
                                 color: Colors.white,
                                 borderRadius: BorderRadius.only(
