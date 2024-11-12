@@ -2,10 +2,6 @@ import 'package:e_learning_app/Theme/assets_imge.dart';
 import 'package:e_learning_app/Theme/colors.dart';
 import 'package:e_learning_app/Theme/fontstyle.dart';
 import 'package:e_learning_app/controller/detailesscrenn/video_controller.dart';
-<<<<<<< HEAD
-import 'package:e_learning_app/views/Home/coursepage/UI/CourseScreen/online_courses_screen.dart';
-=======
->>>>>>> origin/main
 import 'package:e_learning_app/views/setting/UI/courses_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -24,10 +20,7 @@ class CourseDetailVideo extends StatelessWidget {
         leading: IconButton(
           icon: Icon(Icons.arrow_back_ios),
           onPressed: () {
-<<<<<<< HEAD
-=======
             Get.back();
->>>>>>> origin/main
           },
         ),
         title: Text("Details"),

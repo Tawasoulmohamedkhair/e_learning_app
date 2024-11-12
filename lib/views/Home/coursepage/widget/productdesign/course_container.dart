@@ -1,12 +1,5 @@
-<<<<<<< HEAD
 import 'package:e_learning_app/Theme/colors.dart';
 import 'package:e_learning_app/Theme/fontstyle.dart';
-=======
-import 'package:e_learning_app/Theme/assets_imge.dart';
-import 'package:e_learning_app/Theme/colors.dart';
-import 'package:e_learning_app/Theme/fontstyle.dart';
-import 'package:e_learning_app/views/Home/coursepage/widget/productdesign/course_details.dart';
->>>>>>> origin/main
 import 'package:e_learning_app/views/Home/coursepage/widget/productdesign/text_of_course_details.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -50,50 +43,10 @@ Widget coursecontainer(Color color) {
           SizedBox(
             height: 10.h,
           ),
-<<<<<<< HEAD
           
           SizedBox(
             height: 10.h,
           ),
-=======
-          coursedetails(
-            color: AppColor.bluecolor,
-            Icons.done,
-            text1: '01',
-            text2: 'Welcome to the Course',
-            text3: '6:10',
-            text4: 'mins',
-            img: Image.asset(AssetsImages.polygon),
-          ),
-          SizedBox(
-            height: 10.h,
-          ),
-          coursedetails(
-            color: AppColor.bluecolor,
-            Icons.done,
-            text1: '02 ',
-            text2: 'Process overview',
-            text3: '6:10',
-            text4: 'mins',
-            img: Image.asset(
-              AssetsImages.polygon,
-            ),
-          ),
-          SizedBox(
-            height: 10.h,
-          ),
-          coursedetails(
-            color: AppColor.bluecolor,
-            Icons.add,
-            text1: '03 ',
-            text2: 'Discovery',
-            text3: '6:10',
-            text4: 'mins',
-            img: Image.asset(
-              AssetsImages.lock,
-            ),
-          ),
->>>>>>> origin/main
           
           
         ]),

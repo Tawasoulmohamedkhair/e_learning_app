@@ -32,24 +32,25 @@ Widget BottomNavigationbarScreen() {
       ),
       BottomNavigationBarItem(
         icon: MaterialButton(
-          padding: EdgeInsets.only(right: 10),
+            padding: EdgeInsets.only(right: 10),
           onPressed: () => controller.changeTabIndex(3),
           child: Row(
             children: [
               Container(
-                  width: 30.w,
-                  height: 40.h,
-                  decoration: const BoxDecoration(
-                      color: AppColor.bluecolor, shape: BoxShape.circle),
-                  child: Icon(color: Colors.white, Icons.person)),
-              SizedBox(
-                width: 10,
-              ),
+                    width: 30.w,
+                    height: 40.h,
+                    decoration: const BoxDecoration(
+                        color: AppColor.bluecolor, shape: BoxShape.circle),
+                    child: const Icon(color: Colors.white, Icons.person)),
+                const SizedBox(
+                  width: 10,
+                ),
+             
               const Text('Profile'),
             ],
           ),
         ),
-        label: '',
+          label: ''
       ),
     ],
     

@@ -1,4 +1,5 @@
 import 'package:e_learning_app/controller/onlinecourse/bottomnavigation_controller.dart';
+import 'package:e_learning_app/views/Home/coursepage/UI/CourseScreen/course_detials.dart';
 import 'package:e_learning_app/views/Home/coursepage/UI/menu.dart';
 import 'package:e_learning_app/views/Home/coursepage/UI/CourseScreen/onlinecoursdetails.dart';
 import 'package:e_learning_app/views/Home/coursepage/UI/search.dart';
@@ -12,7 +13,7 @@ class HomeScreen extends StatelessWidget {
   final List<Widget> pages = [
     OnlineCourseDetails(),
     TrackongOrderScreen(),
-    const SearchScreen(),
+    CourseDetialsScreen(),
     const MenuScreen(),
   ];
 

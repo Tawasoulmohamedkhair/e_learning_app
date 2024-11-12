@@ -1,10 +1,6 @@
 import 'package:e_learning_app/Theme/assets_imge.dart';
 import 'package:e_learning_app/Theme/colors.dart';
 import 'package:e_learning_app/views/setting/UI/premium_user_screen.dart';
-<<<<<<< HEAD
-=======
-import 'package:e_learning_app/views/setting/widget/bottomnavigation_bar.dart';
->>>>>>> origin/main
 import 'package:e_learning_app/views/setting/widget/mytabs.dart';
 import 'package:e_learning_app/views/setting/widget/profile_section.dart';
 import 'package:flutter/material.dart';

@@ -2,7 +2,6 @@ import 'package:e_learning_app/Theme/colors.dart';
 import 'package:e_learning_app/Theme/fontstyle.dart';
 import 'package:e_learning_app/model/productdesign/product_designmodel.dart';
 import 'package:e_learning_app/views/Home/coursepage/UI/CourseScreen/online_courses_screen.dart';
-import 'package:e_learning_app/views/Home/coursepage/UI/home.dart';
 import 'package:e_learning_app/views/Home/coursepage/widget/productdesign/bottom_container.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';

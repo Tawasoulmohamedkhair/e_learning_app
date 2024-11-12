@@ -39,11 +39,11 @@ class _ProductDesginScreenState extends State<ProductDesginScreen> {
                       InkWell(
                           onTap: () {
                             setState(() {
-                              Navigator.pushReplacement(
-                                  context,
-                                  MaterialPageRoute(
-                                      builder: (context) =>
-                                          const ProductDesigndetails()));
+                             // Navigator.pushReplacement(
+                                 // context,
+                                  //MaterialPageRoute(
+                                    //  builder: (context) =>
+                                       //   const ProductDesigndetails()));
                             });
                           },
                           child: const Icon(Icons.arrow_back_ios)),
